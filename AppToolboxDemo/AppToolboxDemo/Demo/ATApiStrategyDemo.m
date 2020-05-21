@@ -24,9 +24,12 @@
 
 - (void)demo
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
     self.hold = ^{
         [self description];
     };
+#pragma clang diagnostic pop
     
     [self fluidDemo];
     
