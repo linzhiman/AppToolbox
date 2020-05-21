@@ -1,14 +1,14 @@
 //
-//  UIColor+ATKit.m
-//  ATKit
+//  UIColor+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "UIColor+ATKit.h"
+#import "UIColor+AppToolbox.h"
 
-@implementation UIColor (ATKit)
+@implementation UIColor (AppToolbox)
 
 + (UIColor *)at_colorWithHexString:(NSString *)hexString
 {

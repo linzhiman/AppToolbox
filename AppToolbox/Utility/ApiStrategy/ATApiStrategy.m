@@ -1,9 +1,9 @@
 //
 //  ATApiStrategy.m
-//  ATKit
+//  AppToolbox
 //
 //  Created by linzhiman on 2020/4/13.
-//  Copyright © 2020 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import "ATApiStrategy.h"

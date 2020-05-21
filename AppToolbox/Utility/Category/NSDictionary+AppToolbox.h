@@ -1,16 +1,16 @@
 //
-//  NSDictionary+ATKit.h
-//  ATKit
+//  NSDictionary+AppToolbox.h
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDictionary (ATKit)
+@interface NSDictionary (AppToolbox)
 
 - (NSString *)at_getString:(id)key;
 - (NSAttributedString *)at_getAttributedString:(id)key;

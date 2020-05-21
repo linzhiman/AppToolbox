@@ -1,16 +1,16 @@
 //
-//  NSArray+ATKit.h
-//  ATKit
+//  NSArray+AppToolbox.h
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSArray<__covariant ObjectType> (ATKit)
+@interface NSArray<__covariant ObjectType> (AppToolbox)
 
 - (ObjectType)at_objectAtIndex:(NSUInteger)index;
 - (NSString *)at_stringAtIndex:(NSUInteger)index;

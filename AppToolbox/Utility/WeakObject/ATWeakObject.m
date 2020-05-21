@@ -1,9 +1,9 @@
 //
 //  ATWeakObject.m
-//  ATKit
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/4/24.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import "ATWeakObject.h"

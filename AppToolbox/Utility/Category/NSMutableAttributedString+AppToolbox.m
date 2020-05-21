@@ -1,14 +1,14 @@
 //
-//  NSMutableAttributedString+ATKit.m
-//  ATKit
+//  NSMutableAttributedString+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "NSMutableAttributedString+ATKit.h"
+#import "NSMutableAttributedString+AppToolbox.h"
 
-@implementation NSMutableAttributedString (ATKit)
+@implementation NSMutableAttributedString (AppToolbox)
 
 - (void)at_appendIcon:(UIImage *)icon
 {

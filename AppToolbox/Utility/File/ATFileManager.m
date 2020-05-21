@@ -1,9 +1,9 @@
 //
 //  ATFileManager.m
-//  ATKit
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/7/9.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import "ATFileManager.h"

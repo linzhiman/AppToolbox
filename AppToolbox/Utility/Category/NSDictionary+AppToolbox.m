@@ -1,12 +1,12 @@
 //
-//  NSDictionary+ATKit.m
-//  ATKit
+//  NSDictionary+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "NSDictionary+ATKit.h"
+#import "NSDictionary+AppToolbox.h"
 
 id ATDictionarySafeGet(NSDictionary *dic, Class cls, id key)
 {
@@ -21,7 +21,7 @@ id ATDictionarySafeGet(NSDictionary *dic, Class cls, id key)
     return nil;
 }
 
-@implementation NSDictionary (ATKit)
+@implementation NSDictionary (AppToolbox)
 
 - (NSString *)at_getString:(id)key
 {

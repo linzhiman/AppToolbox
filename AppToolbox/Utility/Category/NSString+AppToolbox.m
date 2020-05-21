@@ -1,12 +1,12 @@
 //
-//  NSString+ATKit.m
-//  ATKit
+//  NSString+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/4/30.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "NSString+ATKit.h"
+#import "NSString+AppToolbox.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
@@ -48,7 +48,7 @@ static const int kBufferSize = 1024;
 
 @end
 
-@implementation NSString (ATKit)
+@implementation NSString (AppToolbox)
 
 #pragma mark - Length
 

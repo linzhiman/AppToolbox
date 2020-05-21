@@ -1,12 +1,12 @@
 //
-//  NSArray+ATKit.m
-//  ATKit
+//  NSArray+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "NSArray+ATKit.h"
+#import "NSArray+AppToolbox.h"
 
 id ATArraySafeGet(NSArray *array, Class cls, NSUInteger index)
 {
@@ -22,7 +22,7 @@ id ATArraySafeGet(NSArray *array, Class cls, NSUInteger index)
     return nil;
 }
 
-@implementation NSArray (ATKit)
+@implementation NSArray (AppToolbox)
 
 - (id)at_objectAtIndex:(NSUInteger)index
 {

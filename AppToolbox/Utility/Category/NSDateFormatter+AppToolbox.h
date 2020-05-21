@@ -1,16 +1,16 @@
 //
-//  NSDateFormatter+ATKit.h
-//  ATKit
+//  NSDateFormatter+AppToolbox.h
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDateFormatter (ATKit)
+@interface NSDateFormatter (AppToolbox)
 
 + (instancetype)at_sharedObject;
 

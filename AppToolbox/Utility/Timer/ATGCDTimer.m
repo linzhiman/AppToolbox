@@ -1,9 +1,9 @@
 //
 //  ATGCDTimer.m
-//  ATKit
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import "ATGCDTimer.h"

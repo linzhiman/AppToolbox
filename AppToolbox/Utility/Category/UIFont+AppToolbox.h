@@ -1,9 +1,9 @@
 //
-//  UIFont+ATKit.h
-//  ATKit
+//  UIFont+AppToolbox.h
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, ATFontWeight) {
     ATFontWeightBlack
 };
 
-@interface UIFont (ATKit)
+@interface UIFont (AppToolbox)
 
 + (UIFont *)at_systemFontOfSize:(CGFloat)fontSize weight:(ATFontWeight)weight;
 

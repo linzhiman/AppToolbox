@@ -1,9 +1,9 @@
 //
 //  ATComponentService.m
-//  ATKit
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/4/28.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import "ATComponentService.h"

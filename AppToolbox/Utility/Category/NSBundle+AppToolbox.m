@@ -1,14 +1,14 @@
 //
-//  NSBundle+ATKit.m
-//  ATKit
+//  NSBundle+AppToolbox.m
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "NSBundle+ATKit.h"
+#import "NSBundle+AppToolbox.h"
 
-@implementation NSBundle (ATKit)
+@implementation NSBundle (AppToolbox)
 
 + (NSArray *)at_loadNibNamed:(NSString *)name owner:(id)owner withBundleName:(NSString *)bundleName
 {

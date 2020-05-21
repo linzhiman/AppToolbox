@@ -1,16 +1,16 @@
 //
-//  UIColor+ATKit.h
-//  ATKit
+//  UIColor+AppToolbox.h
+//  AppToolbox
 //
 //  Created by linzhiman on 2019/5/5.
-//  Copyright © 2019 linzhiman. All rights reserved.
+//  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIColor (ATKit)
+@interface UIColor (AppToolbox)
 
 /**
  *  使用十六进制创建颜色值
