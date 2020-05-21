@@ -11,6 +11,27 @@
 		DCB255692476564900AE8255 /* AppToolbox.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCB255662476564900AE8255 /* AppToolbox.h */; };
 		DCB255762476580D00AE8255 /* AppToolboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255752476580D00AE8255 /* AppToolboxTests.m */; };
 		DCB255782476580D00AE8255 /* libAppToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB255632476564900AE8255 /* libAppToolbox.a */; };
+		DCB255E824765D8A00AE8255 /* ATTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255B324765D8900AE8255 /* ATTaskQueue.m */; };
+		DCB255E924765D8A00AE8255 /* ATWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255B824765D8900AE8255 /* ATWeakObject.m */; };
+		DCB255EA24765D8A00AE8255 /* ATWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255B924765D8900AE8255 /* ATWeakProxy.m */; };
+		DCB255EB24765D8A00AE8255 /* NSDictionary+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255BE24765D8900AE8255 /* NSDictionary+ATKit.m */; };
+		DCB255EC24765D8A00AE8255 /* NSDateFormatter+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255BF24765D8900AE8255 /* NSDateFormatter+ATKit.m */; };
+		DCB255ED24765D8A00AE8255 /* UIFont+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255C024765D8900AE8255 /* UIFont+ATKit.m */; };
+		DCB255EE24765D8A00AE8255 /* NSString+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255C224765D8900AE8255 /* NSString+ATKit.m */; };
+		DCB255EF24765D8A00AE8255 /* UIColor+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255C424765D8900AE8255 /* UIColor+ATKit.m */; };
+		DCB255F024765D8A00AE8255 /* NSArray+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255C524765D8900AE8255 /* NSArray+ATKit.m */; };
+		DCB255F124765D8A00AE8255 /* NSMutableAttributedString+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255C624765D8900AE8255 /* NSMutableAttributedString+ATKit.m */; };
+		DCB255F224765D8A00AE8255 /* NSObject+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255CB24765D8900AE8255 /* NSObject+ATKit.m */; };
+		DCB255F324765D8A00AE8255 /* NSBundle+ATKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255CC24765D8900AE8255 /* NSBundle+ATKit.m */; };
+		DCB255F424765D8A00AE8255 /* ATFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255CE24765D8900AE8255 /* ATFileManager.m */; };
+		DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */; };
+		DCB255F624765D8A00AE8255 /* ATProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D424765D8900AE8255 /* ATProtocolManager.m */; };
+		DCB255F724765D8A00AE8255 /* ATModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D524765D8900AE8255 /* ATModuleManager.m */; };
+		DCB255F824765D8A00AE8255 /* ATGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DB24765D8900AE8255 /* ATGCDTimer.m */; };
+		DCB255F924765D8A00AE8255 /* ATWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DC24765D8900AE8255 /* ATWeakTimer.m */; };
+		DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DF24765D8900AE8255 /* ATRuntimeUtils.m */; };
+		DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255E224765D8900AE8255 /* ATComponentService.m */; };
+		DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255E624765D8900AE8255 /* ATApiStrategy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +64,49 @@
 		DCB255732476580D00AE8255 /* AppToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB255752476580D00AE8255 /* AppToolboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppToolboxTests.m; sourceTree = "<group>"; };
 		DCB255772476580D00AE8255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB255B324765D8900AE8255 /* ATTaskQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTaskQueue.m; sourceTree = "<group>"; };
+		DCB255B424765D8900AE8255 /* ATTaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTaskQueue.h; sourceTree = "<group>"; };
+		DCB255B624765D8900AE8255 /* ATWeakObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWeakObject.h; sourceTree = "<group>"; };
+		DCB255B724765D8900AE8255 /* ATWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWeakProxy.h; sourceTree = "<group>"; };
+		DCB255B824765D8900AE8255 /* ATWeakObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakObject.m; sourceTree = "<group>"; };
+		DCB255B924765D8900AE8255 /* ATWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakProxy.m; sourceTree = "<group>"; };
+		DCB255BB24765D8900AE8255 /* UIColor+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ATKit.h"; sourceTree = "<group>"; };
+		DCB255BC24765D8900AE8255 /* NSMutableAttributedString+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ATKit.h"; sourceTree = "<group>"; };
+		DCB255BD24765D8900AE8255 /* NSArray+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ATKit.h"; sourceTree = "<group>"; };
+		DCB255BE24765D8900AE8255 /* NSDictionary+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ATKit.m"; sourceTree = "<group>"; };
+		DCB255BF24765D8900AE8255 /* NSDateFormatter+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C024765D8900AE8255 /* UIFont+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C124765D8900AE8255 /* NSBundle+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+ATKit.h"; sourceTree = "<group>"; };
+		DCB255C224765D8900AE8255 /* NSString+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C324765D8900AE8255 /* NSObject+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATKit.h"; sourceTree = "<group>"; };
+		DCB255C424765D8900AE8255 /* UIColor+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C524765D8900AE8255 /* NSArray+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C624765D8900AE8255 /* NSMutableAttributedString+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ATKit.m"; sourceTree = "<group>"; };
+		DCB255C724765D8900AE8255 /* UIFont+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ATKit.h"; sourceTree = "<group>"; };
+		DCB255C824765D8900AE8255 /* NSDateFormatter+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ATKit.h"; sourceTree = "<group>"; };
+		DCB255C924765D8900AE8255 /* NSDictionary+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ATKit.h"; sourceTree = "<group>"; };
+		DCB255CA24765D8900AE8255 /* NSString+ATKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ATKit.h"; sourceTree = "<group>"; };
+		DCB255CB24765D8900AE8255 /* NSObject+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATKit.m"; sourceTree = "<group>"; };
+		DCB255CC24765D8900AE8255 /* NSBundle+ATKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ATKit.m"; sourceTree = "<group>"; };
+		DCB255CE24765D8900AE8255 /* ATFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATFileManager.m; sourceTree = "<group>"; };
+		DCB255CF24765D8900AE8255 /* ATFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATFileManager.h; sourceTree = "<group>"; };
+		DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBlockNotificationCenter.m; sourceTree = "<group>"; };
+		DCB255D224765D8900AE8255 /* ATBlockNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBlockNotificationCenter.h; sourceTree = "<group>"; };
+		DCB255D424765D8900AE8255 /* ATProtocolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATProtocolManager.m; sourceTree = "<group>"; };
+		DCB255D524765D8900AE8255 /* ATModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATModuleManager.m; sourceTree = "<group>"; };
+		DCB255D624765D8900AE8255 /* ATProtocolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATProtocolManager.h; sourceTree = "<group>"; };
+		DCB255D724765D8900AE8255 /* ATModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATModuleManager.h; sourceTree = "<group>"; };
+		DCB255D924765D8900AE8255 /* ATGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCDTimer.h; sourceTree = "<group>"; };
+		DCB255DA24765D8900AE8255 /* ATWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWeakTimer.h; sourceTree = "<group>"; };
+		DCB255DB24765D8900AE8255 /* ATGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCDTimer.m; sourceTree = "<group>"; };
+		DCB255DC24765D8900AE8255 /* ATWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakTimer.m; sourceTree = "<group>"; };
+		DCB255DE24765D8900AE8255 /* ATRuntimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRuntimeUtils.h; sourceTree = "<group>"; };
+		DCB255DF24765D8900AE8255 /* ATRuntimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeUtils.m; sourceTree = "<group>"; };
+		DCB255E124765D8900AE8255 /* ATComponentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATComponentService.h; sourceTree = "<group>"; };
+		DCB255E224765D8900AE8255 /* ATComponentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATComponentService.m; sourceTree = "<group>"; };
+		DCB255E424765D8900AE8255 /* ATGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGlobalMacro.h; sourceTree = "<group>"; };
+		DCB255E624765D8900AE8255 /* ATApiStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATApiStrategy.m; sourceTree = "<group>"; };
+		DCB255E724765D8900AE8255 /* ATApiStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATApiStrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +149,7 @@
 		DCB255652476564900AE8255 /* AppToolbox */ = {
 			isa = PBXGroup;
 			children = (
+				DCB255B124765D8900AE8255 /* Utility */,
 				DCB255662476564900AE8255 /* AppToolbox.h */,
 				DCB255672476564900AE8255 /* AppToolbox.m */,
 			);
@@ -98,6 +163,144 @@
 				DCB255772476580D00AE8255 /* Info.plist */,
 			);
 			path = AppToolboxTests;
+			sourceTree = "<group>";
+		};
+		DCB255B124765D8900AE8255 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255E524765D8900AE8255 /* ApiStrategy */,
+				DCB255BA24765D8900AE8255 /* Category */,
+				DCB255E024765D8900AE8255 /* Component */,
+				DCB255CD24765D8900AE8255 /* File */,
+				DCB255E324765D8900AE8255 /* Macro */,
+				DCB255D324765D8900AE8255 /* ModuleManager */,
+				DCB255D024765D8900AE8255 /* Notification */,
+				DCB255DD24765D8900AE8255 /* Runtime */,
+				DCB255B224765D8900AE8255 /* TaskQueue */,
+				DCB255D824765D8900AE8255 /* Timer */,
+				DCB255B524765D8900AE8255 /* WeakObject */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DCB255B224765D8900AE8255 /* TaskQueue */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255B424765D8900AE8255 /* ATTaskQueue.h */,
+				DCB255B324765D8900AE8255 /* ATTaskQueue.m */,
+			);
+			path = TaskQueue;
+			sourceTree = "<group>";
+		};
+		DCB255B524765D8900AE8255 /* WeakObject */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255B624765D8900AE8255 /* ATWeakObject.h */,
+				DCB255B824765D8900AE8255 /* ATWeakObject.m */,
+				DCB255B724765D8900AE8255 /* ATWeakProxy.h */,
+				DCB255B924765D8900AE8255 /* ATWeakProxy.m */,
+			);
+			path = WeakObject;
+			sourceTree = "<group>";
+		};
+		DCB255BA24765D8900AE8255 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255BD24765D8900AE8255 /* NSArray+ATKit.h */,
+				DCB255C524765D8900AE8255 /* NSArray+ATKit.m */,
+				DCB255C124765D8900AE8255 /* NSBundle+ATKit.h */,
+				DCB255CC24765D8900AE8255 /* NSBundle+ATKit.m */,
+				DCB255C824765D8900AE8255 /* NSDateFormatter+ATKit.h */,
+				DCB255BF24765D8900AE8255 /* NSDateFormatter+ATKit.m */,
+				DCB255C924765D8900AE8255 /* NSDictionary+ATKit.h */,
+				DCB255BE24765D8900AE8255 /* NSDictionary+ATKit.m */,
+				DCB255BC24765D8900AE8255 /* NSMutableAttributedString+ATKit.h */,
+				DCB255C624765D8900AE8255 /* NSMutableAttributedString+ATKit.m */,
+				DCB255C324765D8900AE8255 /* NSObject+ATKit.h */,
+				DCB255CB24765D8900AE8255 /* NSObject+ATKit.m */,
+				DCB255CA24765D8900AE8255 /* NSString+ATKit.h */,
+				DCB255C224765D8900AE8255 /* NSString+ATKit.m */,
+				DCB255BB24765D8900AE8255 /* UIColor+ATKit.h */,
+				DCB255C424765D8900AE8255 /* UIColor+ATKit.m */,
+				DCB255C724765D8900AE8255 /* UIFont+ATKit.h */,
+				DCB255C024765D8900AE8255 /* UIFont+ATKit.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DCB255CD24765D8900AE8255 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255CF24765D8900AE8255 /* ATFileManager.h */,
+				DCB255CE24765D8900AE8255 /* ATFileManager.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		DCB255D024765D8900AE8255 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255D224765D8900AE8255 /* ATBlockNotificationCenter.h */,
+				DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DCB255D324765D8900AE8255 /* ModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255D724765D8900AE8255 /* ATModuleManager.h */,
+				DCB255D524765D8900AE8255 /* ATModuleManager.m */,
+				DCB255D624765D8900AE8255 /* ATProtocolManager.h */,
+				DCB255D424765D8900AE8255 /* ATProtocolManager.m */,
+			);
+			path = ModuleManager;
+			sourceTree = "<group>";
+		};
+		DCB255D824765D8900AE8255 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255D924765D8900AE8255 /* ATGCDTimer.h */,
+				DCB255DB24765D8900AE8255 /* ATGCDTimer.m */,
+				DCB255DA24765D8900AE8255 /* ATWeakTimer.h */,
+				DCB255DC24765D8900AE8255 /* ATWeakTimer.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		DCB255DD24765D8900AE8255 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255DE24765D8900AE8255 /* ATRuntimeUtils.h */,
+				DCB255DF24765D8900AE8255 /* ATRuntimeUtils.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		DCB255E024765D8900AE8255 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255E124765D8900AE8255 /* ATComponentService.h */,
+				DCB255E224765D8900AE8255 /* ATComponentService.m */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		DCB255E324765D8900AE8255 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255E424765D8900AE8255 /* ATGlobalMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		DCB255E524765D8900AE8255 /* ApiStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				DCB255E724765D8900AE8255 /* ATApiStrategy.h */,
+				DCB255E624765D8900AE8255 /* ATApiStrategy.m */,
+			);
+			path = ApiStrategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +392,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB255F624765D8A00AE8255 /* ATProtocolManager.m in Sources */,
+				DCB255F124765D8A00AE8255 /* NSMutableAttributedString+ATKit.m in Sources */,
+				DCB255ED24765D8A00AE8255 /* UIFont+ATKit.m in Sources */,
+				DCB255F824765D8A00AE8255 /* ATGCDTimer.m in Sources */,
+				DCB255EB24765D8A00AE8255 /* NSDictionary+ATKit.m in Sources */,
 				DCB255682476564900AE8255 /* AppToolbox.m in Sources */,
+				DCB255F724765D8A00AE8255 /* ATModuleManager.m in Sources */,
+				DCB255F424765D8A00AE8255 /* ATFileManager.m in Sources */,
+				DCB255EF24765D8A00AE8255 /* UIColor+ATKit.m in Sources */,
+				DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */,
+				DCB255EE24765D8A00AE8255 /* NSString+ATKit.m in Sources */,
+				DCB255E924765D8A00AE8255 /* ATWeakObject.m in Sources */,
+				DCB255E824765D8A00AE8255 /* ATTaskQueue.m in Sources */,
+				DCB255F324765D8A00AE8255 /* NSBundle+ATKit.m in Sources */,
+				DCB255EA24765D8A00AE8255 /* ATWeakProxy.m in Sources */,
+				DCB255F024765D8A00AE8255 /* NSArray+ATKit.m in Sources */,
+				DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */,
+				DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */,
+				DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */,
+				DCB255EC24765D8A00AE8255 /* NSDateFormatter+ATKit.m in Sources */,
+				DCB255F224765D8A00AE8255 /* NSObject+ATKit.m in Sources */,
+				DCB255F924765D8A00AE8255 /* ATWeakTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,2245 @@
+# Path: /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/ATKitDemo.app/ATKitDemo
+# Arch: x86_64
+# Object files:
+[  0] linker synthesized
+[  1] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/ATKitDemo.app-Simulated.xcent
+[  2] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ATKitTransformViewController.o
+[  3] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ViewController.o
+[  4] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/main.o
+[  5] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ATKitModuleManagerDemo.o
+[  6] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ATKitComponentDemo.o
+[  7] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/AppDelegate.o
+[  8] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ATKitProtocolManagerDemo.o
+[  9] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Intermediates.noindex/ATKitDemo.build/Debug-iphonesimulator/ATKitDemo.build/Objects-normal/x86_64/ATKitNotificationDemo.o
+[ 10] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATBaseViewController.o)
+[ 11] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATProtocolManagerProtocol.o)
+[ 12] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATProtocolManager.o)
+[ 13] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATNotificationUtils.o)
+[ 14] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATModuleManager.o)
+[ 15] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATWeakObject.o)
+[ 16] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATBaseModule.o)
+[ 17] /Users/linzhiman/Library/Developer/Xcode/DerivedData/ATKitDemo-dzysmfggwilzqtgaupemunzbthvi/Build/Products/Debug-iphonesimulator/libATKit.a(ATComponentService.o)
+[ 18] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks//Foundation.framework/Foundation.tbd
+[ 19] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/lib/libobjc.tbd
+[ 20] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/usr/lib/libSystem.tbd
+[ 21] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks//CoreGraphics.framework/CoreGraphics.tbd
+[ 22] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.4.sdk/System/Library/Frameworks//UIKit.framework/UIKit.tbd
+# Sections:
+# Address	Size    	Segment	Section
+0x1000019D0	0x0000DC50	__TEXT	__text
+0x10000F620	0x000000CC	__TEXT	__stubs
+0x10000F6EC	0x00000164	__TEXT	__stub_helper
+0x10000F850	0x00000070	__TEXT	__const
+0x10000F8C0	0x00002389	__TEXT	__objc_methname
+0x100011C49	0x000009BC	__TEXT	__cstring
+0x100012605	0x0000032F	__TEXT	__objc_classname
+0x100012934	0x000011E1	__TEXT	__objc_methtype
+0x100013B18	0x000002D4	__TEXT	__gcc_except_tab
+0x100013DEC	0x00000178	__TEXT	__entitlements
+0x100013F64	0x0000009C	__TEXT	__unwind_info
+0x100014000	0x00000010	__DATA	__nl_symbol_ptr
+0x100014010	0x00000040	__DATA	__got
+0x100014050	0x00000110	__DATA	__la_symbol_ptr
+0x100014160	0x00000388	__DATA	__const
+0x1000144E8	0x00000740	__DATA	__cfstring
+0x100014C28	0x000000D0	__DATA	__objc_classlist
+0x100014CF8	0x00000010	__DATA	__objc_catlist
+0x100014D08	0x00000058	__DATA	__objc_protolist
+0x100014D60	0x00000008	__DATA	__objc_imageinfo
+0x100014D68	0x00004F78	__DATA	__objc_const
+0x100019CE0	0x000005D8	__DATA	__objc_selrefs
+0x10001A2B8	0x00000020	__DATA	__objc_protorefs
+0x10001A2D8	0x00000148	__DATA	__objc_classrefs
+0x10001A420	0x00000060	__DATA	__objc_superrefs
+0x10001A480	0x000000E8	__DATA	__objc_ivar
+0x10001A568	0x00000820	__DATA	__objc_data
+0x10001AD88	0x00000420	__DATA	__data
+0x10001B1A8	0x00000060	__DATA	__bss
+# Symbols:
+# Address	Size    	File  Name
+0x1000019D0	0x00000020	[  2] -[ATKitTransformViewController navigationBarHidden]
+0x1000019F0	0x00000AB0	[  2] -[ATKitTransformViewController viewDidLoad]
+0x1000024A0	0x00000050	[  2] _CGRectMake
+0x1000024F0	0x0000006C	[  2] -[ATKitTransformViewController onBack]
+0x100002560	0x00000020	[  3] -[ATKitDemoConfig title]
+0x100002580	0x00000040	[  3] -[ATKitDemoConfig setTitle:]
+0x1000025C0	0x00000020	[  3] -[ATKitDemoConfig type]
+0x1000025E0	0x00000030	[  3] -[ATKitDemoConfig setType:]
+0x100002610	0x00000020	[  3] -[ATKitDemoConfig sectionType]
+0x100002630	0x00000030	[  3] -[ATKitDemoConfig setSectionType:]
+0x100002660	0x00000030	[  3] -[ATKitDemoConfig isOn]
+0x100002690	0x00000030	[  3] -[ATKitDemoConfig setIsOn:]
+0x1000026C0	0x00000030	[  3] -[ATKitDemoConfig clickCallback]
+0x1000026F0	0x00000040	[  3] -[ATKitDemoConfig setClickCallback:]
+0x100002730	0x00000030	[  3] -[ATKitDemoConfig switchChangedCallback]
+0x100002760	0x00000040	[  3] -[ATKitDemoConfig setSwitchChangedCallback:]
+0x1000027A0	0x00000070	[  3] -[ATKitDemoConfig .cxx_destruct]
+0x100002810	0x000002A0	[  3] -[ATKitDemoCell initWithStyle:reuseIdentifier:]
+0x100002AB0	0x00000490	[  3] -[ATKitDemoCell layoutSubviews]
+0x100002F40	0x00000050	[  3] _CGRectMake
+0x100002F90	0x00000160	[  3] -[ATKitDemoCell setContent:]
+0x1000030F0	0x00000140	[  3] -[ATKitDemoCell onSwitchChanged:]
+0x100003230	0x00000020	[  3] -[ATKitDemoCell model]
+0x100003250	0x00000040	[  3] -[ATKitDemoCell setModel:]
+0x100003290	0x00000020	[  3] -[ATKitDemoCell label]
+0x1000032B0	0x00000040	[  3] -[ATKitDemoCell setLabel:]
+0x1000032F0	0x00000020	[  3] -[ATKitDemoCell switchView]
+0x100003310	0x00000040	[  3] -[ATKitDemoCell setSwitchView:]
+0x100003350	0x00000070	[  3] -[ATKitDemoCell .cxx_destruct]
+0x1000033C0	0x00000190	[  3] -[ViewController viewDidLoad]
+0x100003550	0x00000150	[  3] -[ViewController viewWillLayoutSubviews]
+0x1000036A0	0x000002C0	[  3] -[ViewController initData]
+0x100003960	0x000000D0	[  3] ___26-[ViewController initData]_block_invoke
+0x100003A30	0x00000030	[  3] ___copy_helper_block_e8_32w
+0x100003A60	0x00000020	[  3] ___destroy_helper_block_e8_32w
+0x100003A80	0x00000060	[  3] ___26-[ViewController initData]_block_invoke.134
+0x100003AE0	0x00000060	[  3] ___26-[ViewController initData]_block_invoke_2
+0x100003B40	0x00000060	[  3] ___26-[ViewController initData]_block_invoke_3
+0x100003BA0	0x00000060	[  3] ___26-[ViewController initData]_block_invoke_4
+0x100003C00	0x00000170	[  3] -[ViewController initViews]
+0x100003D70	0x00000140	[  3] -[ViewController addItem:inSectionType:clickCallback:]
+0x100003EB0	0x00000150	[  3] -[ViewController addItem:inSectionType:switchCallback:]
+0x100004000	0x000000B0	[  3] -[ViewController numberOfSectionsInTableView:]
+0x1000040B0	0x00000110	[  3] -[ViewController tableView:numberOfRowsInSection:]
+0x1000041C0	0x00000220	[  3] -[ViewController tableView:cellForRowAtIndexPath:]
+0x1000043E0	0x00000240	[  3] -[ViewController tableView:didSelectRowAtIndexPath:]
+0x100004620	0x000000A0	[  3] -[ViewController tableView:heightForHeaderInSection:]
+0x1000046C0	0x00000300	[  3] -[ViewController tableView:viewForHeaderInSection:]
+0x1000049C0	0x000001A0	[  3] -[ViewController makeSectionList]
+0x100004B60	0x000000C0	[  3] ___33-[ViewController makeSectionList]_block_invoke
+0x100004C20	0x00000040	[  3] ___copy_helper_block_e8_32s
+0x100004C60	0x00000030	[  3] ___destroy_helper_block_e8_32s
+0x100004C90	0x00000040	[  3] -[ViewController tableView]
+0x100004CD0	0x00000040	[  3] -[ViewController setTableView:]
+0x100004D10	0x00000020	[  3] -[ViewController sectionTitleArray]
+0x100004D30	0x00000040	[  3] -[ViewController setSectionTitleArray:]
+0x100004D70	0x00000020	[  3] -[ViewController sectionList]
+0x100004D90	0x00000040	[  3] -[ViewController setSectionList:]
+0x100004DD0	0x00000020	[  3] -[ViewController dataList]
+0x100004DF0	0x00000040	[  3] -[ViewController setDataList:]
+0x100004E30	0x00000084	[  3] -[ViewController .cxx_destruct]
+0x100004EC0	0x00000092	[  4] _main
+0x100004F60	0x00000030	[  5] -[ATKitModuleManagerClassA initModule]
+0x100004F90	0x00000030	[  5] -[ATKitModuleManagerClassA uninitModule]
+0x100004FC0	0x00000030	[  5] -[ATKitModuleManagerClassA methodA]
+0x100004FF0	0x00000030	[  5] -[ATKitModuleManagerClassB initModule]
+0x100005020	0x00000030	[  5] -[ATKitModuleManagerClassB uninitModule]
+0x100005050	0x00000030	[  5] -[ATKitModuleManagerClassB methodB]
+0x100005080	0x00000080	[  5] +[ATKitModuleManager sharedObject]
+0x100005100	0x00000060	[  5] ___34+[ATKitModuleManager sharedObject]_block_invoke
+0x100005160	0x000000A0	[  5] -[ATKitModuleManager init]
+0x100005200	0x00000060	[  5] -[ATKitModuleManager dealloc]
+0x100005260	0x00000240	[  5] -[ATKitModuleManager initModule]
+0x1000054A0	0x00000170	[  5] -[ATKitModuleManager uninitModule]
+0x100005610	0x00000020	[  5] -[ATKitModuleManager moduleManager]
+0x100005630	0x00000040	[  5] -[ATKitModuleManager setModuleManager:]
+0x100005670	0x00000040	[  5] -[ATKitModuleManager .cxx_destruct]
+0x1000056B0	0x00000178	[  5] -[ATKitModuleManagerDemo demo]
+0x100005830	0x00000170	[  6] -[ATKitComponentA version:callback:]
+0x1000059A0	0x00000220	[  6] +[ATComponentService(ComponentA) a_versionWithPrefix:callback:]
+0x100005BC0	0x000000B0	[  6] ___63+[ATComponentService(ComponentA) a_versionWithPrefix:callback:]_block_invoke
+0x100005C70	0x00000030	[  6] ___copy_helper_block_e8_32b
+0x100005CA0	0x000000E0	[  6] -[ATKitComponentDemo demo]
+0x100005D80	0x00000054	[  6] ___26-[ATKitComponentDemo demo]_block_invoke
+0x100005DE0	0x00000080	[  7] -[AppDelegate application:didFinishLaunchingWithOptions:]
+0x100005E60	0x00000040	[  7] -[AppDelegate applicationWillResignActive:]
+0x100005EA0	0x00000040	[  7] -[AppDelegate applicationDidEnterBackground:]
+0x100005EE0	0x00000040	[  7] -[AppDelegate applicationWillEnterForeground:]
+0x100005F20	0x00000040	[  7] -[AppDelegate applicationDidBecomeActive:]
+0x100005F60	0x00000040	[  7] -[AppDelegate applicationWillTerminate:]
+0x100005FA0	0x00000020	[  7] -[AppDelegate window]
+0x100005FC0	0x00000040	[  7] -[AppDelegate setWindow:]
+0x100006000	0x00000033	[  7] -[AppDelegate .cxx_destruct]
+0x100006040	0x000000A0	[  8] -[ATKitProtocolManagerClassA init]
+0x1000060E0	0x00000050	[  8] -[ATKitProtocolManagerClassA dealloc]
+0x100006130	0x00000030	[  8] -[ATKitProtocolManagerClassA methodA]
+0x100006160	0x000000A0	[  8] -[ATKitProtocolManagerClassB init]
+0x100006200	0x00000050	[  8] -[ATKitProtocolManagerClassB dealloc]
+0x100006250	0x00000030	[  8] -[ATKitProtocolManagerClassB methodB]
+0x100006280	0x000000A0	[  8] -[ATKitProtocolManagerClassC init]
+0x100006320	0x00000050	[  8] -[ATKitProtocolManagerClassC dealloc]
+0x100006370	0x00000030	[  8] -[ATKitProtocolManagerClassC methodC]
+0x1000063A0	0x000000A0	[  8] -[ATKitProtocolManagerClassD init]
+0x100006440	0x00000050	[  8] -[ATKitProtocolManagerClassD dealloc]
+0x100006490	0x00000030	[  8] -[ATKitProtocolManagerClassD methodD]
+0x1000064C0	0x00000080	[  8] +[ATKitProtocolManager sharedObject]
+0x100006540	0x00000060	[  8] ___36+[ATKitProtocolManager sharedObject]_block_invoke
+0x1000065A0	0x000000A0	[  8] -[ATKitProtocolManager init]
+0x100006640	0x00000060	[  8] -[ATKitProtocolManager dealloc]
+0x1000066A0	0x00000250	[  8] -[ATKitProtocolManager initModule]
+0x1000068F0	0x00000130	[  8] -[ATKitProtocolManager uninitModule]
+0x100006A20	0x000000A0	[  8] -[ATKitProtocolManager callModulesInGroup1]
+0x100006AC0	0x00000090	[  8] ___43-[ATKitProtocolManager callModulesInGroup1]_block_invoke
+0x100006B50	0x00000020	[  8] -[ATKitProtocolManager protocolManager]
+0x100006B70	0x00000040	[  8] -[ATKitProtocolManager setProtocolManager:]
+0x100006BB0	0x00000040	[  8] -[ATKitProtocolManager .cxx_destruct]
+0x100006BF0	0x00000461	[  8] -[ATKitProtocolManagerDemo demo]
+0x100007060	0x000000A0	[  9] -[ATKitNotificationDemo init]
+0x100007100	0x00000060	[  9] -[ATKitNotificationDemo dealloc]
+0x100007160	0x00000100	[  9] -[ATKitNotificationDemo initNotification]
+0x100007260	0x00000060	[  9] ___41-[ATKitNotificationDemo initNotification]_block_invoke
+0x1000072C0	0x00000060	[  9] ___41-[ATKitNotificationDemo initNotification]_block_invoke_2
+0x100007320	0x00000080	[  9] -[ATKitNotificationDemo removeNotification]
+0x1000073A0	0x000001F7	[  9] -[ATKitNotificationDemo demo]
+0x1000075A0	0x00000020	[ 10] -[ATBaseViewController navigationBarHidden]
+0x1000075C0	0x00000130	[ 10] -[ATBaseViewController viewWillAppear:]
+0x1000076F0	0x000002F0	[ 10] -[ATBaseViewController viewDidLoad]
+0x1000079E0	0x00000050	[ 10] _CGRectMake
+0x100007A30	0x00000510	[ 10] -[ATBaseViewController viewDidLayoutSubviews]
+0x100007F40	0x00000030	[ 10] _CGPointMake
+0x100007F70	0x000000A0	[ 10] -[ATBaseViewController transformViewWidth]
+0x100008010	0x00000400	[ 10] -[ATBaseViewController transformViewHeight]
+0x100008410	0x000004E0	[ 10] +[ATBaseViewController transformViewWidthFor:]
+0x1000088F0	0x00000020	[ 10] -[ATBaseViewController transformView]
+0x100008910	0x00000040	[ 10] -[ATBaseViewController setTransformView:]
+0x100008950	0x00000030	[ 10] -[ATBaseViewController usingTransformView]
+0x100008980	0x00000030	[ 10] -[ATBaseViewController setUsingTransformView:]
+0x1000089B0	0x00000033	[ 10] -[ATBaseViewController .cxx_destruct]
+0x1000089F0	0x00000020	[ 11] -[ATProtocolManagerMeta protocol]
+0x100008A10	0x00000040	[ 11] -[ATProtocolManagerMeta setProtocol:]
+0x100008A50	0x00000020	[ 11] -[ATProtocolManagerMeta aClass]
+0x100008A70	0x00000040	[ 11] -[ATProtocolManagerMeta setAClass:]
+0x100008AB0	0x00000020	[ 11] -[ATProtocolManagerMeta module]
+0x100008AD0	0x00000040	[ 11] -[ATProtocolManagerMeta setModule:]
+0x100008B10	0x0000006E	[ 11] -[ATProtocolManagerMeta .cxx_destruct]
+0x100008B80	0x000000A0	[ 12] -[ATProtocolManager moduleForProtocol:]
+0x100008C20	0x000000A0	[ 12] -[ATProtocolManager addModule:protocol:]
+0x100008CC0	0x00000160	[ 12] -[ATProtocolManager addModule:protocol:group:]
+0x100008E20	0x00000160	[ 12] -[ATProtocolManager removeModule:]
+0x100008F80	0x000000A0	[ 12] -[ATProtocolManager classForProtocol:]
+0x100009020	0x00000080	[ 12] -[ATProtocolManager registerClass:protocol:]
+0x1000090A0	0x00000140	[ 12] -[ATProtocolManager registerClass:protocol:group:]
+0x1000091E0	0x00000160	[ 12] -[ATProtocolManager unRegisterClass:]
+0x100009340	0x00000170	[ 12] -[ATProtocolManager module:]
+0x1000094B0	0x000000A0	[ 12] -[ATProtocolManager removeProtocol:]
+0x100009550	0x000004B0	[ 12] -[ATProtocolManager modulesInGroup:createIfNeed:]
+0x100009A00	0x00000670	[ 12] -[ATProtocolManager addMeta:group:]
+0x10000A070	0x00000640	[ 12] -[ATProtocolManager removeMeta:]
+0x10000A6B0	0x00000450	[ 12] -[ATProtocolManager groupForProtocol:]
+0x10000AB00	0x00000020	[ 12] -[ATProtocolManager groups]
+0x10000AB20	0x00000040	[ 12] -[ATProtocolManager setGroups:]
+0x10000AB60	0x00000040	[ 12] -[ATProtocolManager .cxx_destruct]
+0x10000ABA0	0x00000070	[ 12] _modulesMap
+0x10000AC10	0x00000050	[ 12] ___modulesMap_block_invoke
+0x10000AC60	0x00000070	[ 12] _moduleClassesMap
+0x10000ACD0	0x00000050	[ 12] ___moduleClassesMap_block_invoke
+0x10000AD20	0x00000080	[ 13] +[ATNotificationUtils sharedObject]
+0x10000ADA0	0x00000060	[ 13] ___35+[ATNotificationUtils sharedObject]_block_invoke
+0x10000AE00	0x000000F0	[ 13] -[ATNotificationUtils init]
+0x10000AEF0	0x000000A0	[ 13] -[ATNotificationUtils dealloc]
+0x10000AF90	0x00000730	[ 13] -[ATNotificationUtils addObserver:name:callback:]
+0x10000B6C0	0x000006A0	[ 13] -[ATNotificationUtils removeObserver:name:]
+0x10000BD60	0x00000230	[ 13] -[ATNotificationUtils removeObserver:]
+0x10000BF90	0x000000B0	[ 13] ___38-[ATNotificationUtils removeObserver:]_block_invoke
+0x10000C040	0x00000070	[ 13] ___copy_helper_block_e8_32s40s
+0x10000C0B0	0x00000040	[ 13] ___destroy_helper_block_e8_32s40s
+0x10000C0F0	0x00000B20	[ 13] -[ATNotificationUtils onNotification:]
+0x10000CC10	0x00000110	[ 13] ___38-[ATNotificationUtils onNotification:]_block_invoke
+0x10000CD20	0x000001A0	[ 13] +[ATNotificationUtils postNotificationName:object:]
+0x10000CEC0	0x00000070	[ 13] ___51+[ATNotificationUtils postNotificationName:object:]_block_invoke
+0x10000CF30	0x00000210	[ 13] +[ATNotificationUtils postNotificationName:object:userInfo:]
+0x10000D140	0x00000070	[ 13] ___60+[ATNotificationUtils postNotificationName:object:userInfo:]_block_invoke
+0x10000D1B0	0x000000A0	[ 13] ___copy_helper_block_e8_32s40s48s
+0x10000D250	0x00000060	[ 13] ___destroy_helper_block_e8_32s40s48s
+0x10000D2B0	0x00000020	[ 13] -[ATNotificationUtils observers]
+0x10000D2D0	0x00000040	[ 13] -[ATNotificationUtils setObservers:]
+0x10000D310	0x00000020	[ 13] -[ATNotificationUtils notifications]
+0x10000D330	0x00000040	[ 13] -[ATNotificationUtils setNotifications:]
+0x10000D370	0x00000054	[ 13] -[ATNotificationUtils .cxx_destruct]
+0x10000D3D0	0x000000B0	[ 14] -[ATModuleManager moduleWithIdentifier:]
+0x10000D480	0x000000A0	[ 14] -[ATModuleManager addModule:identifier:]
+0x10000D520	0x00000290	[ 14] -[ATModuleManager addModule:identifier:group:]
+0x10000D7B0	0x00000070	[ 14] -[ATModuleManager removeModuleWithIdentifier:]
+0x10000D820	0x00000150	[ 14] -[ATModuleManager removeModuleWithIdentifier:group:]
+0x10000D970	0x000000D0	[ 14] -[ATModuleManager initModuleWithGroup:]
+0x10000DA40	0x000000D0	[ 14] -[ATModuleManager uninitModuleWithGroup:]
+0x10000DB10	0x00000020	[ 14] -[ATModuleManager modules]
+0x10000DB30	0x00000040	[ 14] -[ATModuleManager setModules:]
+0x10000DB70	0x00000020	[ 14] -[ATModuleManager groups]
+0x10000DB90	0x00000040	[ 14] -[ATModuleManager setGroups:]
+0x10000DBD0	0x00000054	[ 14] -[ATModuleManager .cxx_destruct]
+0x10000DC30	0x00000160	[ 15] -[ATWeakObject isEqual:]
+0x10000DD90	0x00000110	[ 15] -[ATWeakObject setTarget:]
+0x10000DEA0	0x00000060	[ 15] -[ATWeakObject objectKey]
+0x10000DF00	0x000000C0	[ 15] +[ATWeakObject objectKey:]
+0x10000DFC0	0x00000060	[ 15] -[ATWeakObject hash]
+0x10000E020	0x00000040	[ 15] -[ATWeakObject target]
+0x10000E060	0x00000020	[ 15] -[ATWeakObject extension]
+0x10000E080	0x00000040	[ 15] -[ATWeakObject setExtension:]
+0x10000E0C0	0x0000006A	[ 15] -[ATWeakObject .cxx_destruct]
+0x10000E130	0x00000010	[ 16] -[ATBaseModule initModule]
+0x10000E140	0x0000000E	[ 16] -[ATBaseModule uninitModule]
+0x10000E150	0x00000150	[ 17] +[ATComponentService registerTarget:aClass:]
+0x10000E2A0	0x00000130	[ 17] +[ATComponentService unRegisterTarget:aClass:]
+0x10000E3D0	0x000000E0	[ 17] +[ATComponentService callTarget:action:params:]
+0x10000E4B0	0x000005B0	[ 17] +[ATComponentService callTarget:action:params:callback:]
+0x10000EA60	0x00000080	[ 17] +[ATComponentService callTargetUrl:]
+0x10000EAE0	0x00000150	[ 17] +[ATComponentService callTargetUrl:callback:]
+0x10000EC30	0x00000070	[ 17] +[ATComponentService nameFromUrl:]
+0x10000ECA0	0x000000B0	[ 17] +[ATComponentService actionFromUrl:]
+0x10000ED50	0x00000460	[ 17] +[ATComponentService paramsFromUrl:]
+0x10000F1B0	0x00000040	[ 17] -[NSDictionary(ATComponentService) atcs_success]
+0x10000F1F0	0x00000040	[ 17] -[NSDictionary(ATComponentService) atcs_error]
+0x10000F230	0x000000E0	[ 17] -[NSDictionary(ATComponentService) atcs_code]
+0x10000F310	0x00000040	[ 17] -[NSDictionary(ATComponentService) atcs_msg]
+0x10000F350	0x00000040	[ 17] +[NSDictionary(ATComponentService) atcs_resultDic]
+0x10000F390	0x00000160	[ 17] +[NSDictionary(ATComponentService) atcs_dicWithCode:msg:]
+0x10000F4F0	0x00000070	[ 17] +[NSMutableDictionary(ATComponentService) atcs_resultDic]
+0x10000F560	0x00000070	[ 17] _ComponentMap
+0x10000F5D0	0x00000050	[ 17] ___ComponentMap_block_invoke
+0x10000F620	0x00000006	[ 21] _CGAffineTransformMakeScale
+0x10000F626	0x00000006	[ 21] _CGRectGetHeight
+0x10000F62C	0x00000006	[ 21] _CGRectGetWidth
+0x10000F632	0x00000006	[ 18] _NSLog
+0x10000F638	0x00000006	[ 18] _NSSelectorFromString
+0x10000F63E	0x00000006	[ 18] _NSStringFromClass
+0x10000F644	0x00000006	[ 22] _UIApplicationMain
+0x10000F64A	0x00000006	[ 20] __Block_object_assign
+0x10000F650	0x00000006	[ 20] __Unwind_Resume
+0x10000F656	0x00000006	[ 20] ___stack_chk_fail
+0x10000F65C	0x00000006	[ 20] _dispatch_async
+0x10000F662	0x00000006	[ 20] _dispatch_once
+0x10000F668	0x00000006	[ 20] _memcpy
+0x10000F66E	0x00000006	[ 20] _memset
+0x10000F674	0x00000006	[ 19] _objc_autoreleasePoolPop
+0x10000F67A	0x00000006	[ 19] _objc_autoreleasePoolPush
+0x10000F680	0x00000006	[ 19] _objc_autoreleaseReturnValue
+0x10000F686	0x00000006	[ 19] _objc_copyWeak
+0x10000F68C	0x00000006	[ 19] _objc_destroyWeak
+0x10000F692	0x00000006	[ 19] _objc_enumerationMutation
+0x10000F698	0x00000006	[ 19] _objc_getProperty
+0x10000F69E	0x00000006	[ 19] _objc_initWeak
+0x10000F6A4	0x00000006	[ 19] _objc_loadWeakRetained
+0x10000F6AA	0x00000006	[ 19] _objc_msgSendSuper2
+0x10000F6B0	0x00000006	[ 19] _objc_msgSend_stret
+0x10000F6B6	0x00000006	[ 19] _objc_retainAutoreleaseReturnValue
+0x10000F6BC	0x00000006	[ 19] _objc_retainAutoreleasedReturnValue
+0x10000F6C2	0x00000006	[ 19] _objc_retainBlock
+0x10000F6C8	0x00000006	[ 19] _objc_setProperty_nonatomic_copy
+0x10000F6CE	0x00000006	[ 19] _objc_storeStrong
+0x10000F6D4	0x00000006	[ 19] _objc_storeWeak
+0x10000F6DA	0x00000006	[ 19] _objc_sync_enter
+0x10000F6E0	0x00000006	[ 19] _objc_sync_exit
+0x10000F6E6	0x00000006	[ 19] _objc_unsafeClaimAutoreleasedReturnValue
+0x10000F6EC	0x00000010	[  0] helper helper
+0x10000F6FC	0x0000000A	[ 18] _NSLog
+0x10000F706	0x0000000A	[ 18] _NSSelectorFromString
+0x10000F710	0x0000000A	[ 18] _NSStringFromClass
+0x10000F71A	0x0000000A	[ 19] _objc_autoreleasePoolPop
+0x10000F724	0x0000000A	[ 19] _objc_autoreleasePoolPush
+0x10000F72E	0x0000000A	[ 19] _objc_autoreleaseReturnValue
+0x10000F738	0x0000000A	[ 19] _objc_copyWeak
+0x10000F742	0x0000000A	[ 19] _objc_destroyWeak
+0x10000F74C	0x0000000A	[ 19] _objc_enumerationMutation
+0x10000F756	0x0000000A	[ 19] _objc_getProperty
+0x10000F760	0x0000000A	[ 19] _objc_initWeak
+0x10000F76A	0x0000000A	[ 19] _objc_loadWeakRetained
+0x10000F774	0x0000000A	[ 19] _objc_msgSendSuper2
+0x10000F77E	0x0000000A	[ 19] _objc_msgSend_stret
+0x10000F788	0x0000000A	[ 19] _objc_retainAutoreleaseReturnValue
+0x10000F792	0x0000000A	[ 19] _objc_retainAutoreleasedReturnValue
+0x10000F79C	0x0000000A	[ 19] _objc_retainBlock
+0x10000F7A6	0x0000000A	[ 19] _objc_setProperty_nonatomic_copy
+0x10000F7B0	0x0000000A	[ 19] _objc_storeStrong
+0x10000F7BA	0x0000000A	[ 19] _objc_storeWeak
+0x10000F7C4	0x0000000A	[ 19] _objc_sync_enter
+0x10000F7CE	0x0000000A	[ 19] _objc_sync_exit
+0x10000F7D8	0x0000000A	[ 19] _objc_unsafeClaimAutoreleasedReturnValue
+0x10000F7E2	0x0000000A	[ 20] __Block_object_assign
+0x10000F7EC	0x0000000A	[ 20] __Unwind_Resume
+0x10000F7F6	0x0000000A	[ 20] ___stack_chk_fail
+0x10000F800	0x0000000A	[ 20] _dispatch_async
+0x10000F80A	0x0000000A	[ 20] _dispatch_once
+0x10000F814	0x0000000A	[ 20] _memcpy
+0x10000F81E	0x0000000A	[ 20] _memset
+0x10000F828	0x0000000A	[ 21] _CGAffineTransformMakeScale
+0x10000F832	0x0000000A	[ 21] _CGRectGetHeight
+0x10000F83C	0x0000000A	[ 21] _CGRectGetWidth
+0x10000F846	0x0000000A	[ 22] _UIApplicationMain
+0x10000F850	0x00000008	[  2] 8-byte-literal
+0x10000F858	0x00000008	[  2] 8-byte-literal
+0x10000F860	0x00000008	[  2] 8-byte-literal
+0x10000F868	0x00000008	[  3] 8-byte-literal
+0x10000F870	0x00000008	[  3] 8-byte-literal
+0x10000F878	0x00000008	[  3] 8-byte-literal
+0x10000F880	0x00000008	[  3] 8-byte-literal
+0x10000F888	0x00000008	[  3] 8-byte-literal
+0x10000F890	0x00000008	[ 10] 8-byte-literal
+0x10000F898	0x00000008	[ 10] 8-byte-literal
+0x10000F8A0	0x00000008	[ 10] 8-byte-literal
+0x10000F8A8	0x00000004	[ 10] 4-byte-literal
+0x10000F8AC	0x00000004	[ 10] 4-byte-literal
+0x10000F8B0	0x00000008	[ 11] _kATProtocolManagerDefaultGroup
+0x10000F8B8	0x00000008	[ 14] _kATModuleDefaultGroup
+0x10000F8C0	0x00000017	[  2] literal string: setUsingTransformView:
+0x10000F8D7	0x0000000C	[  2] literal string: viewDidLoad
+0x10000F8E3	0x00000004	[  2] literal string: new
+0x10000F8E7	0x0000000A	[  2] literal string: blueColor
+0x10000F8F1	0x00000014	[  2] literal string: setBackgroundColor:
+0x10000F905	0x0000000A	[  2] literal string: setFrame:
+0x10000F90F	0x00000013	[  2] literal string: setTitle:forState:
+0x10000F922	0x0000000E	[  2] literal string: transformView
+0x10000F930	0x0000000C	[  2] literal string: addSubview:
+0x10000F93C	0x00000013	[  2] literal string: transformViewWidth
+0x10000F94F	0x00000014	[  2] literal string: transformViewHeight
+0x10000F963	0x0000000B	[  2] literal string: mainScreen
+0x10000F96E	0x00000007	[  2] literal string: bounds
+0x10000F975	0x00000007	[  2] literal string: onBack
+0x10000F97C	0x00000023	[  2] literal string: addTarget:action:forControlEvents:
+0x10000F99F	0x00000015	[  2] literal string: navigationController
+0x10000F9B4	0x0000001B	[  2] literal string: popViewControllerAnimated:
+0x10000F9CF	0x00000014	[  2] literal string: navigationBarHidden
+0x10000F9E3	0x0000000E	[  3] literal string: .cxx_destruct
+0x10000F9F1	0x00000006	[  3] literal string: title
+0x10000F9F7	0x0000000A	[  3] literal string: setTitle:
+0x10000FA01	0x00000005	[  3] literal string: type
+0x10000FA06	0x00000009	[  3] literal string: setType:
+0x10000FA0F	0x0000000C	[  3] literal string: sectionType
+0x10000FA1B	0x00000010	[  3] literal string: setSectionType:
+0x10000FA2B	0x00000005	[  3] literal string: isOn
+0x10000FA30	0x00000009	[  3] literal string: setIsOn:
+0x10000FA39	0x0000000E	[  3] literal string: clickCallback
+0x10000FA47	0x00000012	[  3] literal string: setClickCallback:
+0x10000FA59	0x00000016	[  3] literal string: switchChangedCallback
+0x10000FA6F	0x0000001A	[  3] literal string: setSwitchChangedCallback:
+0x10000FA89	0x00000006	[  3] literal string: _isOn
+0x10000FA8F	0x00000007	[  3] literal string: _title
+0x10000FA96	0x00000006	[  3] literal string: _type
+0x10000FA9C	0x0000000D	[  3] literal string: _sectionType
+0x10000FAA9	0x0000000F	[  3] literal string: _clickCallback
+0x10000FAB8	0x00000017	[  3] literal string: _switchChangedCallback
+0x10000FACF	0x0000001F	[  3] literal string: initWithStyle:reuseIdentifier:
+0x10000FAEE	0x00000006	[  3] literal string: alloc
+0x10000FAF4	0x0000000F	[  3] literal string: initWithFrame:
+0x10000FB03	0x00000011	[  3] literal string: onSwitchChanged:
+0x10000FB14	0x0000000C	[  3] literal string: contentView
+0x10000FB20	0x0000000F	[  3] literal string: layoutSubviews
+0x10000FB2F	0x00000009	[  3] literal string: setText:
+0x10000FB38	0x0000000B	[  3] literal string: setHidden:
+0x10000FB43	0x00000010	[  3] literal string: setOn:animated:
+0x10000FB53	0x00000006	[  3] literal string: model
+0x10000FB59	0x0000000C	[  3] literal string: setContent:
+0x10000FB65	0x0000000A	[  3] literal string: setModel:
+0x10000FB6F	0x00000006	[  3] literal string: label
+0x10000FB75	0x0000000A	[  3] literal string: setLabel:
+0x10000FB7F	0x0000000B	[  3] literal string: switchView
+0x10000FB8A	0x0000000F	[  3] literal string: setSwitchView:
+0x10000FB99	0x00000007	[  3] literal string: _model
+0x10000FBA0	0x00000007	[  3] literal string: _label
+0x10000FBA7	0x0000000C	[  3] literal string: _switchView
+0x10000FBB3	0x0000001B	[  3] literal string: numberWithUnsignedInteger:
+0x10000FBCE	0x00000025	[  3] literal string: dictionaryWithObjects:forKeys:count:
+0x10000FBF3	0x00000016	[  3] literal string: setSectionTitleArray:
+0x10000FC09	0x00000009	[  3] literal string: initData
+0x10000FC12	0x0000000A	[  3] literal string: initViews
+0x10000FC1C	0x00000017	[  3] literal string: viewWillLayoutSubviews
+0x10000FC33	0x00000005	[  3] literal string: view
+0x10000FC38	0x00000005	[  3] literal string: init
+0x10000FC3D	0x0000001D	[  3] literal string: pushViewController:animated:
+0x10000FC5A	0x00000025	[  3] literal string: addItem:inSectionType:clickCallback:
+0x10000FC7F	0x00000005	[  3] literal string: demo
+0x10000FC84	0x00000010	[  3] literal string: makeSectionList
+0x10000FC94	0x0000000D	[  3] literal string: setDelegate:
+0x10000FCA1	0x0000000F	[  3] literal string: setDataSource:
+0x10000FCB0	0x00000006	[  3] literal string: class
+0x10000FCB6	0x00000026	[  3] literal string: registerClass:forCellReuseIdentifier:
+0x10000FCDC	0x0000000E	[  3] literal string: setTableView:
+0x10000FCEA	0x0000000B	[  3] literal string: addObject:
+0x10000FCF5	0x00000006	[  3] literal string: count
+0x10000FCFB	0x0000001A	[  3] literal string: objectAtIndexedSubscript:
+0x10000FD15	0x00000008	[  3] literal string: section
+0x10000FD1D	0x00000004	[  3] literal string: row
+0x10000FD21	0x00000030	[  3] literal string: dequeueReusableCellWithIdentifier:forIndexPath:
+0x10000FD51	0x00000021	[  3] literal string: deselectRowAtIndexPath:animated:
+0x10000FD72	0x00000012	[  3] literal string: sectionTitleArray
+0x10000FD84	0x00000013	[  3] literal string: numberWithInteger:
+0x10000FD97	0x00000019	[  3] literal string: objectForKeyedSubscript:
+0x10000FDB0	0x0000001C	[  3] literal string: enumerateObjectsUsingBlock:
+0x10000FDCC	0x00000009	[  3] literal string: isEqual:
+0x10000FDD5	0x00000005	[  3] literal string: self
+0x10000FDDA	0x00000011	[  3] literal string: performSelector:
+0x10000FDEB	0x0000001C	[  3] literal string: performSelector:withObject:
+0x10000FE07	0x00000027	[  3] literal string: performSelector:withObject:withObject:
+0x10000FE2E	0x00000008	[  3] literal string: isProxy
+0x10000FE36	0x0000000F	[  3] literal string: isKindOfClass:
+0x10000FE45	0x00000011	[  3] literal string: isMemberOfClass:
+0x10000FE56	0x00000014	[  3] literal string: conformsToProtocol:
+0x10000FE6A	0x00000014	[  3] literal string: respondsToSelector:
+0x10000FE7E	0x00000007	[  3] literal string: retain
+0x10000FE85	0x00000008	[  3] literal string: release
+0x10000FE8D	0x0000000C	[  3] literal string: autorelease
+0x10000FE99	0x0000000C	[  3] literal string: retainCount
+0x10000FEA5	0x00000005	[  3] literal string: zone
+0x10000FEAA	0x00000005	[  3] literal string: hash
+0x10000FEAF	0x0000000B	[  3] literal string: superclass
+0x10000FEBA	0x0000000C	[  3] literal string: description
+0x10000FEC6	0x00000011	[  3] literal string: debugDescription
+0x10000FED7	0x00000021	[  3] literal string: tableView:numberOfRowsInSection:
+0x10000FEF8	0x00000021	[  3] literal string: tableView:cellForRowAtIndexPath:
+0x10000FF19	0x0000001D	[  3] literal string: numberOfSectionsInTableView:
+0x10000FF36	0x00000023	[  3] literal string: tableView:titleForHeaderInSection:
+0x10000FF59	0x00000023	[  3] literal string: tableView:titleForFooterInSection:
+0x10000FF7C	0x00000021	[  3] literal string: tableView:canEditRowAtIndexPath:
+0x10000FF9D	0x00000021	[  3] literal string: tableView:canMoveRowAtIndexPath:
+0x10000FFBE	0x00000020	[  3] literal string: sectionIndexTitlesForTableView:
+0x10000FFDE	0x0000002F	[  3] literal string: tableView:sectionForSectionIndexTitle:atIndex:
+0x10001000D	0x00000030	[  3] literal string: tableView:commitEditingStyle:forRowAtIndexPath:
+0x10001003D	0x0000002A	[  3] literal string: tableView:moveRowAtIndexPath:toIndexPath:
+0x100010067	0x00000015	[  3] literal string: scrollViewDidScroll:
+0x10001007C	0x00000013	[  3] literal string: scrollViewDidZoom:
+0x10001008F	0x0000001D	[  3] literal string: scrollViewWillBeginDragging:
+0x1000100AC	0x0000003C	[  3] literal string: scrollViewWillEndDragging:withVelocity:targetContentOffset:
+0x1000100E8	0x00000029	[  3] literal string: scrollViewDidEndDragging:willDecelerate:
+0x100010111	0x00000021	[  3] literal string: scrollViewWillBeginDecelerating:
+0x100010132	0x0000001E	[  3] literal string: scrollViewDidEndDecelerating:
+0x100010150	0x00000024	[  3] literal string: scrollViewDidEndScrollingAnimation:
+0x100010174	0x0000001C	[  3] literal string: viewForZoomingInScrollView:
+0x100010190	0x00000025	[  3] literal string: scrollViewWillBeginZooming:withView:
+0x1000101B5	0x0000002A	[  3] literal string: scrollViewDidEndZooming:withView:atScale:
+0x1000101DF	0x0000001D	[  3] literal string: scrollViewShouldScrollToTop:
+0x1000101FC	0x0000001A	[  3] literal string: scrollViewDidScrollToTop:
+0x100010216	0x00000029	[  3] literal string: scrollViewDidChangeAdjustedContentInset:
+0x10001023F	0x0000002D	[  3] literal string: tableView:willDisplayCell:forRowAtIndexPath:
+0x10001026C	0x0000002C	[  3] literal string: tableView:willDisplayHeaderView:forSection:
+0x100010298	0x0000002C	[  3] literal string: tableView:willDisplayFooterView:forSection:
+0x1000102C4	0x00000032	[  3] literal string: tableView:didEndDisplayingCell:forRowAtIndexPath:
+0x1000102F6	0x00000031	[  3] literal string: tableView:didEndDisplayingHeaderView:forSection:
+0x100010327	0x00000031	[  3] literal string: tableView:didEndDisplayingFooterView:forSection:
+0x100010358	0x00000023	[  3] literal string: tableView:heightForRowAtIndexPath:
+0x10001037B	0x00000024	[  3] literal string: tableView:heightForHeaderInSection:
+0x10001039F	0x00000024	[  3] literal string: tableView:heightForFooterInSection:
+0x1000103C3	0x0000002C	[  3] literal string: tableView:estimatedHeightForRowAtIndexPath:
+0x1000103EF	0x0000002D	[  3] literal string: tableView:estimatedHeightForHeaderInSection:
+0x10001041C	0x0000002D	[  3] literal string: tableView:estimatedHeightForFooterInSection:
+0x100010449	0x00000022	[  3] literal string: tableView:viewForHeaderInSection:
+0x10001046B	0x00000022	[  3] literal string: tableView:viewForFooterInSection:
+0x10001048D	0x0000002C	[  3] literal string: tableView:accessoryTypeForRowWithIndexPath:
+0x1000104B9	0x00000034	[  3] literal string: tableView:accessoryButtonTappedForRowWithIndexPath:
+0x1000104ED	0x00000029	[  3] literal string: tableView:shouldHighlightRowAtIndexPath:
+0x100010516	0x00000026	[  3] literal string: tableView:didHighlightRowAtIndexPath:
+0x10001053C	0x00000028	[  3] literal string: tableView:didUnhighlightRowAtIndexPath:
+0x100010564	0x00000024	[  3] literal string: tableView:willSelectRowAtIndexPath:
+0x100010588	0x00000026	[  3] literal string: tableView:willDeselectRowAtIndexPath:
+0x1000105AE	0x00000023	[  3] literal string: tableView:didSelectRowAtIndexPath:
+0x1000105D1	0x00000025	[  3] literal string: tableView:didDeselectRowAtIndexPath:
+0x1000105F6	0x00000029	[  3] literal string: tableView:editingStyleForRowAtIndexPath:
+0x10001061F	0x0000003D	[  3] literal string: tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:
+0x10001065C	0x00000028	[  3] literal string: tableView:editActionsForRowAtIndexPath:
+0x100010684	0x0000003D	[  3] literal string: tableView:leadingSwipeActionsConfigurationForRowAtIndexPath:
+0x1000106C1	0x0000003E	[  3] literal string: tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:
+0x1000106FF	0x00000032	[  3] literal string: tableView:shouldIndentWhileEditingRowAtIndexPath:
+0x100010731	0x0000002A	[  3] literal string: tableView:willBeginEditingRowAtIndexPath:
+0x10001075B	0x00000027	[  3] literal string: tableView:didEndEditingRowAtIndexPath:
+0x100010782	0x00000048	[  3] literal string: tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:
+0x1000107CA	0x0000002D	[  3] literal string: tableView:indentationLevelForRowAtIndexPath:
+0x1000107F7	0x0000002B	[  3] literal string: tableView:shouldShowMenuForRowAtIndexPath:
+0x100010822	0x00000039	[  3] literal string: tableView:canPerformAction:forRowAtIndexPath:withSender:
+0x10001085B	0x00000036	[  3] literal string: tableView:performAction:forRowAtIndexPath:withSender:
+0x100010891	0x00000022	[  3] literal string: tableView:canFocusRowAtIndexPath:
+0x1000108B3	0x00000026	[  3] literal string: tableView:shouldUpdateFocusInContext:
+0x1000108D9	0x0000003C	[  3] literal string: tableView:didUpdateFocusInContext:withAnimationCoordinator:
+0x100010915	0x0000002D	[  3] literal string: indexPathForPreferredFocusedViewInTableView:
+0x100010942	0x00000036	[  3] literal string: tableView:shouldSpringLoadRowAtIndexPath:withContext:
+0x100010978	0x00000026	[  3] literal string: addItem:inSectionType:switchCallback:
+0x10001099E	0x0000000A	[  3] literal string: tableView
+0x1000109A8	0x0000000C	[  3] literal string: sectionList
+0x1000109B4	0x00000010	[  3] literal string: setSectionList:
+0x1000109C4	0x00000009	[  3] literal string: dataList
+0x1000109CD	0x0000000D	[  3] literal string: setDataList:
+0x1000109DA	0x0000000B	[  3] literal string: _tableView
+0x1000109E5	0x00000013	[  3] literal string: _sectionTitleArray
+0x1000109F8	0x0000000D	[  3] literal string: _sectionList
+0x100010A05	0x0000000A	[  3] literal string: _dataList
+0x100010A0F	0x0000000B	[  5] literal string: initModule
+0x100010A1A	0x0000000D	[  5] literal string: uninitModule
+0x100010A27	0x00000008	[  5] literal string: methodA
+0x100010A2F	0x00000008	[  5] literal string: methodB
+0x100010A37	0x00000008	[  5] literal string: dealloc
+0x100010A3F	0x00000012	[  5] literal string: setModuleManager:
+0x100010A51	0x0000000E	[  5] literal string: moduleManager
+0x100010A5F	0x0000001C	[  5] literal string: addModule:identifier:group:
+0x100010A7B	0x00000015	[  5] literal string: initModuleWithGroup:
+0x100010A90	0x00000022	[  5] literal string: removeModuleWithIdentifier:group:
+0x100010AB2	0x00000017	[  5] literal string: uninitModuleWithGroup:
+0x100010AC9	0x0000000D	[  5] literal string: sharedObject
+0x100010AD6	0x0000000F	[  5] literal string: _moduleManager
+0x100010AE5	0x00000016	[  5] literal string: moduleWithIdentifier:
+0x100010AFB	0x00000019	[  6] literal string: stringByAppendingString:
+0x100010B14	0x0000000F	[  6] literal string: atcs_resultDic
+0x100010B23	0x00000012	[  6] literal string: setObject:forKey:
+0x100010B35	0x00000012	[  6] literal string: version:callback:
+0x100010B47	0x00000023	[  6] literal string: callTarget:action:params:callback:
+0x100010B6A	0x0000001E	[  6] literal string: a_versionWithPrefix:callback:
+0x100010B88	0x00000017	[  6] literal string: registerTarget:aClass:
+0x100010B9F	0x0000001F	[  7] literal string: applicationDidFinishLaunching:
+0x100010BBE	0x0000002C	[  7] literal string: application:willFinishLaunchingWithOptions:
+0x100010BEA	0x0000002B	[  7] literal string: application:didFinishLaunchingWithOptions:
+0x100010C15	0x0000001C	[  7] literal string: applicationDidBecomeActive:
+0x100010C31	0x0000001D	[  7] literal string: applicationWillResignActive:
+0x100010C4E	0x0000001B	[  7] literal string: application:handleOpenURL:
+0x100010C69	0x00000032	[  7] literal string: application:openURL:sourceApplication:annotation:
+0x100010C9B	0x0000001D	[  7] literal string: application:openURL:options:
+0x100010CB8	0x00000024	[  7] literal string: applicationDidReceiveMemoryWarning:
+0x100010CDC	0x0000001A	[  7] literal string: applicationWillTerminate:
+0x100010CF6	0x00000022	[  7] literal string: applicationSignificantTimeChange:
+0x100010D18	0x00000035	[  7] literal string: application:willChangeStatusBarOrientation:duration:
+0x100010D4D	0x0000002B	[  7] literal string: application:didChangeStatusBarOrientation:
+0x100010D78	0x00000026	[  7] literal string: application:willChangeStatusBarFrame:
+0x100010D9E	0x00000025	[  7] literal string: application:didChangeStatusBarFrame:
+0x100010DC3	0x00000031	[  7] literal string: application:didRegisterUserNotificationSettings:
+0x100010DF4	0x0000003E	[  7] literal string: application:didRegisterForRemoteNotificationsWithDeviceToken:
+0x100010E32	0x0000003E	[  7] literal string: application:didFailToRegisterForRemoteNotificationsWithError:
+0x100010E70	0x0000002A	[  7] literal string: application:didReceiveRemoteNotification:
+0x100010E9A	0x00000029	[  7] literal string: application:didReceiveLocalNotification:
+0x100010EC3	0x0000004F	[  7] literal string: application:handleActionWithIdentifier:forLocalNotification:completionHandler:
+0x100010F12	0x00000061	[  7] literal string: application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:
+0x100010F73	0x00000050	[  7] literal string: application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
+0x100010FC3	0x00000060	[  7] literal string: application:handleActionWithIdentifier:forLocalNotification:withResponseInfo:completionHandler:
+0x100011023	0x00000041	[  7] literal string: application:didReceiveRemoteNotification:fetchCompletionHandler:
+0x100011064	0x0000002F	[  7] literal string: application:performFetchWithCompletionHandler:
+0x100011093	0x0000003C	[  7] literal string: application:performActionForShortcutItem:completionHandler:
+0x1000110CF	0x00000043	[  7] literal string: application:handleEventsForBackgroundURLSession:completionHandler:
+0x100011112	0x00000032	[  7] literal string: application:handleWatchKitExtensionRequest:reply:
+0x100011144	0x0000002D	[  7] literal string: applicationShouldRequestHealthAuthorization:
+0x100011171	0x0000002C	[  7] literal string: application:handleIntent:completionHandler:
+0x10001119D	0x0000001F	[  7] literal string: applicationDidEnterBackground:
+0x1000111BC	0x00000020	[  7] literal string: applicationWillEnterForeground:
+0x1000111DC	0x0000002F	[  7] literal string: applicationProtectedDataWillBecomeUnavailable:
+0x10001120B	0x0000002C	[  7] literal string: applicationProtectedDataDidBecomeAvailable:
+0x100011237	0x00000035	[  7] literal string: application:supportedInterfaceOrientationsForWindow:
+0x10001126C	0x00000031	[  7] literal string: application:shouldAllowExtensionPointIdentifier:
+0x10001129D	0x0000003F	[  7] literal string: application:viewControllerWithRestorationIdentifierPath:coder:
+0x1000112DC	0x00000028	[  7] literal string: application:shouldSaveApplicationState:
+0x100011304	0x0000002B	[  7] literal string: application:shouldRestoreApplicationState:
+0x10001132F	0x00000030	[  7] literal string: application:willEncodeRestorableStateWithCoder:
+0x10001135F	0x0000002F	[  7] literal string: application:didDecodeRestorableStateWithCoder:
+0x10001138E	0x0000002E	[  7] literal string: application:willContinueUserActivityWithType:
+0x1000113BC	0x00000035	[  7] literal string: application:continueUserActivity:restorationHandler:
+0x1000113F1	0x00000039	[  7] literal string: application:didFailToContinueUserActivityWithType:error:
+0x10001142A	0x00000023	[  7] literal string: application:didUpdateUserActivity:
+0x10001144D	0x00000034	[  7] literal string: application:userDidAcceptCloudKitShareWithMetadata:
+0x100011481	0x00000007	[  7] literal string: window
+0x100011488	0x0000000B	[  7] literal string: setWindow:
+0x100011493	0x00000008	[  7] literal string: _window
+0x10001149B	0x00000008	[  8] literal string: methodC
+0x1000114A3	0x00000008	[  8] literal string: methodD
+0x1000114AB	0x00000014	[  8] literal string: setProtocolManager:
+0x1000114BF	0x00000010	[  8] literal string: protocolManager
+0x1000114CF	0x00000014	[  8] literal string: addModule:protocol:
+0x1000114E3	0x0000001A	[  8] literal string: addModule:protocol:group:
+0x1000114FD	0x00000018	[  8] literal string: registerClass:protocol:
+0x100011515	0x0000001E	[  8] literal string: registerClass:protocol:group:
+0x100011533	0x00000010	[  8] literal string: removeProtocol:
+0x100011543	0x0000001D	[  8] literal string: modulesInGroup:createIfNeed:
+0x100011560	0x00000014	[  8] literal string: callModulesInGroup1
+0x100011574	0x00000011	[  8] literal string: _protocolManager
+0x100011585	0x00000008	[  8] literal string: module:
+0x10001158D	0x00000011	[  9] literal string: initNotification
+0x10001159E	0x00000013	[  9] literal string: removeNotification
+0x1000115B1	0x0000001B	[  9] literal string: addObserver:name:callback:
+0x1000115CC	0x00000010	[  9] literal string: removeObserver:
+0x1000115DC	0x0000000F	[  9] literal string: numberWithInt:
+0x1000115EB	0x00000026	[  9] literal string: postNotificationName:object:userInfo:
+0x100011611	0x00000010	[ 10] literal string: viewWillAppear:
+0x100011621	0x00000021	[ 10] literal string: setNavigationBarHidden:animated:
+0x100011642	0x0000000B	[ 10] literal string: whiteColor
+0x10001164D	0x00000013	[ 10] literal string: usingTransformView
+0x100011660	0x00000012	[ 10] literal string: setTransformView:
+0x100011672	0x0000000B	[ 10] literal string: setBounds:
+0x10001167D	0x00000016	[ 10] literal string: viewDidLayoutSubviews
+0x100011693	0x00000006	[ 10] literal string: frame
+0x100011699	0x0000000B	[ 10] literal string: setCenter:
+0x1000116A4	0x0000000E	[ 10] literal string: setTransform:
+0x1000116B2	0x00000017	[ 10] literal string: transformViewWidthFor:
+0x1000116C9	0x00000014	[ 10] literal string: _usingTransformView
+0x1000116DD	0x0000000F	[ 10] literal string: _transformView
+0x1000116EC	0x0000000A	[ 11] literal string: _protocol
+0x1000116F6	0x00000008	[ 11] literal string: _aClass
+0x1000116FE	0x00000008	[ 11] literal string: _module
+0x100011706	0x0000000D	[ 12] literal string: setProtocol:
+0x100011713	0x0000000B	[ 12] literal string: setModule:
+0x10001171E	0x0000000F	[ 12] literal string: addMeta:group:
+0x10001172D	0x0000000C	[ 12] literal string: removeMeta:
+0x100011739	0x0000000B	[ 12] literal string: setAClass:
+0x100011744	0x00000013	[ 12] literal string: moduleForProtocol:
+0x100011757	0x00000012	[ 12] literal string: classForProtocol:
+0x100011769	0x00000012	[ 12] literal string: groupForProtocol:
+0x10001177B	0x0000000E	[ 12] literal string: removeModule:
+0x100011789	0x00000011	[ 12] literal string: unRegisterClass:
+0x10001179A	0x00000009	[ 12] literal string: protocol
+0x1000117A3	0x00000007	[ 12] literal string: aClass
+0x1000117AA	0x00000007	[ 12] literal string: module
+0x1000117B1	0x0000000A	[ 12] literal string: allValues
+0x1000117BB	0x0000000E	[ 13] literal string: defaultCenter
+0x1000117C9	0x0000000A	[ 13] literal string: observers
+0x1000117D3	0x00000010	[ 13] literal string: onNotification:
+0x1000117E3	0x00000022	[ 13] literal string: addObserver:selector:name:object:
+0x100011805	0x0000000B	[ 13] literal string: setTarget:
+0x100011810	0x00000005	[ 13] literal string: copy
+0x100011815	0x0000000E	[ 13] literal string: setExtension:
+0x100011823	0x00000010	[ 13] literal string: containsObject:
+0x100011833	0x00000016	[ 13] literal string: stringWithUTF8String:
+0x100011849	0x0000000F	[ 13] literal string: currentHandler
+0x100011858	0x0000003A	[ 13] literal string: handleFailureInMethod:object:file:lineNumber:description:
+0x100011892	0x0000000E	[ 13] literal string: notifications
+0x1000118A0	0x0000000A	[ 13] literal string: objectKey
+0x1000118AA	0x00000007	[ 13] literal string: target
+0x1000118B1	0x0000000B	[ 13] literal string: objectKey:
+0x1000118BC	0x00000011	[ 13] literal string: isEqualToString:
+0x1000118CD	0x00000015	[ 13] literal string: removeObjectAtIndex:
+0x1000118E2	0x0000001C	[ 13] literal string: removeObserver:name:object:
+0x1000118FE	0x00000015	[ 13] literal string: removeObserver:name:
+0x100011913	0x00000005	[ 13] literal string: name
+0x100011918	0x0000000A	[ 13] literal string: extension
+0x100011922	0x00000009	[ 13] literal string: userInfo
+0x10001192B	0x0000000D	[ 13] literal string: isMainThread
+0x100011938	0x0000001D	[ 13] literal string: postNotificationName:object:
+0x100011955	0x0000000E	[ 13] literal string: setObservers:
+0x100011963	0x00000012	[ 13] literal string: setNotifications:
+0x100011975	0x0000000B	[ 13] literal string: _observers
+0x100011980	0x0000000F	[ 13] literal string: _notifications
+0x10001198F	0x0000000E	[ 14] literal string: removeObject:
+0x10001199D	0x0000001C	[ 14] literal string: makeObjectsPerformSelector:
+0x1000119B9	0x00000016	[ 14] literal string: addModule:identifier:
+0x1000119CF	0x0000001C	[ 14] literal string: removeModuleWithIdentifier:
+0x1000119EB	0x00000008	[ 14] literal string: modules
+0x1000119F3	0x0000000C	[ 14] literal string: setModules:
+0x1000119FF	0x00000007	[ 14] literal string: groups
+0x100011A06	0x0000000B	[ 14] literal string: setGroups:
+0x100011A11	0x00000009	[ 14] literal string: _modules
+0x100011A1A	0x00000008	[ 14] literal string: _groups
+0x100011A22	0x00000010	[ 15] literal string: initWithFormat:
+0x100011A32	0x0000000B	[ 15] literal string: _objectKey
+0x100011A3D	0x00000008	[ 15] literal string: _target
+0x100011A45	0x0000000B	[ 15] literal string: _extension
+0x100011A50	0x0000000E	[ 17] literal string: objectForKey:
+0x100011A5E	0x00000014	[ 17] literal string: removeObjectForKey:
+0x100011A72	0x00000007	[ 17] literal string: length
+0x100011A79	0x00000016	[ 17] literal string: atcs_dicWithCode:msg:
+0x100011A8F	0x00000012	[ 17] literal string: stringWithFormat:
+0x100011AA1	0x00000018	[ 17] literal string: callTargetUrl:callback:
+0x100011AB9	0x0000000D	[ 17] literal string: nameFromUrl:
+0x100011AC6	0x0000000F	[ 17] literal string: actionFromUrl:
+0x100011AD5	0x0000000F	[ 17] literal string: paramsFromUrl:
+0x100011AE4	0x00000005	[ 17] literal string: host
+0x100011AE9	0x00000005	[ 17] literal string: path
+0x100011AEE	0x00000031	[ 17] literal string: stringByReplacingOccurrencesOfString:withString:
+0x100011B1F	0x00000006	[ 17] literal string: query
+0x100011B25	0x0000001D	[ 17] literal string: componentsSeparatedByString:
+0x100011B42	0x0000002B	[ 17] literal string: countByEnumeratingWithState:objects:count:
+0x100011B6D	0x0000000B	[ 17] literal string: lastObject
+0x100011B78	0x0000000C	[ 17] literal string: firstObject
+0x100011B84	0x0000001A	[ 17] literal string: dictionaryWithDictionary:
+0x100011B9E	0x00000019	[ 17] literal string: unRegisterTarget:aClass:
+0x100011BB7	0x0000001A	[ 17] literal string: callTarget:action:params:
+0x100011BD1	0x0000000F	[ 17] literal string: callTargetUrl:
+0x100011BE0	0x0000000A	[ 17] literal string: atcs_code
+0x100011BEA	0x0000000D	[ 17] literal string: integerValue
+0x100011BF7	0x0000000D	[ 17] literal string: atcs_success
+0x100011C04	0x0000000B	[ 17] literal string: atcs_error
+0x100011C0F	0x00000009	[ 17] literal string: atcs_msg
+0x100011C18	0x0000000C	[ 17] literal string: mutableCopy
+0x100011C24	0x00000025	[ 17] literal string: mapTableWithKeyOptions:valueOptions:
+0x100011C49	0x00000009	[  2] literal string: left top
+0x100011C52	0x0000000A	[  2] literal string: right top
+0x100011C5C	0x0000000C	[  2] literal string: left bottom
+0x100011C68	0x0000000D	[  2] literal string: right bottom
+0x100011C75	0x00000005	[  2] literal string: back
+0x100011C7A	0x00000006	[  3] literal string: title
+0x100011C80	0x00000019	[  3] literal string: T@"NSString",&,N,V_title
+0x100011C99	0x00000005	[  3] literal string: type
+0x100011C9E	0x0000000C	[  3] literal string: TQ,N,V_type
+0x100011CAA	0x0000000C	[  3] literal string: sectionType
+0x100011CB6	0x00000013	[  3] literal string: TQ,N,V_sectionType
+0x100011CC9	0x00000005	[  3] literal string: isOn
+0x100011CCE	0x0000000C	[  3] literal string: TB,N,V_isOn
+0x100011CDA	0x0000000E	[  3] literal string: clickCallback
+0x100011CE8	0x00000018	[  3] literal string: T@?,C,N,V_clickCallback
+0x100011D00	0x00000016	[  3] literal string: switchChangedCallback
+0x100011D16	0x00000020	[  3] literal string: T@?,C,N,V_switchChangedCallback
+0x100011D36	0x00000006	[  3] literal string: model
+0x100011D3C	0x00000020	[  3] literal string: T@"ATKitDemoConfig",&,N,V_model
+0x100011D5C	0x00000006	[  3] literal string: label
+0x100011D62	0x00000018	[  3] literal string: T@"UILabel",&,N,V_label
+0x100011D7A	0x0000000B	[  3] literal string: switchView
+0x100011D85	0x0000001E	[  3] literal string: T@"UISwitch",&,N,V_switchView
+0x100011DA3	0x00000018	[  3] literal string: ATKitDemoCellIdentifier
+0x100011DBB	0x00000006	[  3] literal string: Utils
+0x100011DC1	0x00000003	[  3] literal string: UI
+0x100011DC4	0x00000006	[  3] literal string: v8@?0
+0x100011DCA	0x0000000D	[  3] literal string: Notification
+0x100011DD7	0x0000000E	[  3] literal string: ModuleManager
+0x100011DE5	0x00000010	[  3] literal string: ProtocolManager
+0x100011DF5	0x0000000A	[  3] literal string: Component
+0x100011DFF	0x00000010	[  3] literal string: v32@?0@8Q16^B24
+0x100011E0F	0x00000005	[  3] literal string: hash
+0x100011E14	0x00000005	[  3] literal string: TQ,R
+0x100011E19	0x0000000B	[  3] literal string: superclass
+0x100011E24	0x00000005	[  3] literal string: T#,R
+0x100011E29	0x0000000C	[  3] literal string: description
+0x100011E35	0x00000011	[  3] literal string: T@"NSString",R,C
+0x100011E46	0x00000011	[  3] literal string: debugDescription
+0x100011E57	0x0000000A	[  3] literal string: tableView
+0x100011E61	0x00000020	[  3] literal string: T@"UITableView",W,N,V_tableView
+0x100011E81	0x00000012	[  3] literal string: sectionTitleArray
+0x100011E93	0x00000029	[  3] literal string: T@"NSDictionary",&,N,V_sectionTitleArray
+0x100011EBC	0x0000000C	[  3] literal string: sectionList
+0x100011EC8	0x00000025	[  3] literal string: T@"NSMutableArray",&,N,V_sectionList
+0x100011EED	0x00000009	[  3] literal string: dataList
+0x100011EF6	0x00000022	[  3] literal string: T@"NSMutableArray",&,N,V_dataList
+0x100011F18	0x00000024	[  5] literal string: ATKitModuleManagerClassA initModule
+0x100011F3C	0x00000026	[  5] literal string: ATKitModuleManagerClassA uninitModule
+0x100011F62	0x00000021	[  5] literal string: ATKitModuleManagerClassA methodA
+0x100011F83	0x00000024	[  5] literal string: ATKitModuleManagerClassB initModule
+0x100011FA7	0x00000026	[  5] literal string: ATKitModuleManagerClassB uninitModule
+0x100011FCD	0x00000021	[  5] literal string: ATKitModuleManagerClassB methodB
+0x100011FEE	0x00000019	[  5] literal string: ATKitModuleManagerClassA
+0x100012007	0x00000019	[  5] literal string: ATKitModuleManagerClassB
+0x100012020	0x0000000E	[  5] literal string: moduleManager
+0x10001202E	0x00000028	[  5] literal string: T@"ATModuleManager",&,N,V_moduleManager
+0x100012056	0x00000007	[  6] literal string: prefix
+0x10001205D	0x00000004	[  6] literal string: 123
+0x100012061	0x00000008	[  6] literal string: version
+0x100012069	0x00000002	[  6] literal string: A
+0x10001206B	0x00000017	[  6] literal string: v16@?0@"NSDictionary"8
+0x100012082	0x00000004	[  6] literal string: abc
+0x100012086	0x00000013	[  6] literal string: v16@?0@"NSString"8
+0x100012099	0x0000001F	[  6] literal string: ATKitComponentDemo callback %@
+0x1000120B8	0x0000001D	[  6] literal string: ATKitComponentDemo retrun %@
+0x1000120D5	0x00000007	[  7] literal string: window
+0x1000120DC	0x00000011	[  7] literal string: T@"UIWindow",&,N
+0x1000120ED	0x0000001A	[  7] literal string: T@"UIWindow",&,N,V_window
+0x100012107	0x00000020	[  8] literal string: ATKitProtocolManagerClassA init
+0x100012127	0x00000023	[  8] literal string: ATKitProtocolManagerClassA dealloc
+0x10001214A	0x00000023	[  8] literal string: ATKitProtocolManagerClassA methodA
+0x10001216D	0x00000020	[  8] literal string: ATKitProtocolManagerClassB init
+0x10001218D	0x00000023	[  8] literal string: ATKitProtocolManagerClassB dealloc
+0x1000121B0	0x00000023	[  8] literal string: ATKitProtocolManagerClassB methodB
+0x1000121D3	0x00000020	[  8] literal string: ATKitProtocolManagerClassC init
+0x1000121F3	0x00000023	[  8] literal string: ATKitProtocolManagerClassC dealloc
+0x100012216	0x00000023	[  8] literal string: ATKitProtocolManagerClassC methodC
+0x100012239	0x00000020	[  8] literal string: ATKitProtocolManagerClassD init
+0x100012259	0x00000023	[  8] literal string: ATKitProtocolManagerClassD dealloc
+0x10001227C	0x00000023	[  8] literal string: ATKitProtocolManagerClassD methodD
+0x10001229F	0x00000010	[  8] literal string: protocolManager
+0x1000122AF	0x00000036	[  8] literal string: T@"<ATProtocolManagerProtocol>",&,N,V_protocolManager
+0x1000122E5	0x00000011	[  9] literal string: kNotificationKey
+0x1000122F6	0x0000000F	[  9] literal string: kNotification1
+0x100012305	0x0000000F	[  9] literal string: kNotification2
+0x100012314	0x00000012	[  9] literal string: kNotification1 %@
+0x100012326	0x00000012	[  9] literal string: kNotification2 %@
+0x100012338	0x0000000E	[ 10] literal string: transformView
+0x100012346	0x0000001F	[ 10] literal string: T@"UIView",&,N,V_transformView
+0x100012365	0x00000013	[ 10] literal string: usingTransformView
+0x100012378	0x0000001A	[ 10] literal string: TB,N,V_usingTransformView
+0x100012392	0x00000013	[ 10] literal string: transformViewWidth
+0x1000123A5	0x00000007	[ 10] literal string: Td,R,N
+0x1000123AC	0x00000014	[ 10] literal string: transformViewHeight
+0x1000123C0	0x00000009	[ 11] literal string: protocol
+0x1000123C9	0x0000001C	[ 11] literal string: T@"Protocol",&,N,V_protocol
+0x1000123E5	0x00000007	[ 11] literal string: aClass
+0x1000123EC	0x00000010	[ 11] literal string: T#,&,N,V_aClass
+0x1000123FC	0x00000007	[ 11] literal string: module
+0x100012403	0x00000010	[ 11] literal string: T@,&,N,V_module
+0x100012413	0x00000048	[ 13] literal string: /Users/linzhiman/ATKit/ATKit/Utility/Notification/ATNotificationUtils.m
+0x10001245B	0x0000000F	[ 13] literal string: <Unknown File>
+0x10001246A	0x00000015	[ 13] literal string: addObserver %@ twice
+0x10001247F	0x0000000D	[ 13] literal string: v24@?0@8^B16
+0x10001248C	0x0000000A	[ 13] literal string: observers
+0x100012496	0x00000028	[ 13] literal string: T@"NSMutableDictionary",&,N,V_observers
+0x1000124BE	0x0000000E	[ 13] literal string: notifications
+0x1000124CC	0x0000002C	[ 13] literal string: T@"NSMutableDictionary",&,N,V_notifications
+0x1000124F8	0x00000008	[ 14] literal string: modules
+0x100012500	0x00000026	[ 14] literal string: T@"NSMutableDictionary",&,N,V_modules
+0x100012526	0x00000007	[ 14] literal string: groups
+0x10001252D	0x00000025	[ 14] literal string: T@"NSMutableDictionary",&,N,V_groups
+0x100012552	0x00000003	[ 15] literal string: %p
+0x100012555	0x00000007	[ 15] literal string: target
+0x10001255C	0x00000010	[ 15] literal string: T@,W,N,V_target
+0x10001256C	0x0000000A	[ 15] literal string: extension
+0x100012576	0x00000013	[ 15] literal string: T@,&,N,V_extension
+0x100012589	0x00000007	[ 17] literal string: ATCode
+0x100012590	0x00000006	[ 17] literal string: ATMsg
+0x100012596	0x0000000F	[ 17] literal string: Argument error
+0x1000125A5	0x00000013	[ 17] literal string: No target named %@
+0x1000125B8	0x0000000D	[ 17] literal string: %@:callback:
+0x1000125C5	0x0000001D	[ 17] literal string: Result error action %@ in %@
+0x1000125E2	0x0000001C	[ 17] literal string: Unsupported action %@ in %@
+0x1000125FE	0x00000002	[ 17] literal string: /
+0x100012600	0x00000001	[ 17] literal string: 
+0x100012601	0x00000002	[ 17] literal string: &
+0x100012603	0x00000002	[ 17] literal string: =
+0x100012605	0x0000001D	[  2] literal string: ATKitTransformViewController
+0x100012622	0x00000010	[  3] literal string: ATKitDemoConfig
+0x100012632	0x00000003	[  3] literal string: "
+0x100012635	0x0000000E	[  3] literal string: ATKitDemoCell
+0x100012643	0x00000002	[  3] literal string: 
+0x100012645	0x0000000F	[  3] literal string: ViewController
+0x100012654	0x00000016	[  3] literal string: UITableViewDataSource
+0x10001266A	0x00000009	[  3] literal string: NSObject
+0x100012673	0x00000014	[  3] literal string: UITableViewDelegate
+0x100012687	0x00000015	[  3] literal string: UIScrollViewDelegate
+0x10001269C	0x00000002	[  3] literal string: 
+0x10001269E	0x00000002	[  3] literal string: 
+0x1000126A0	0x00000019	[  5] literal string: ATKitModuleManagerClassA
+0x1000126B9	0x00000011	[  5] literal string: ATModuleProtocol
+0x1000126CA	0x00000019	[  5] literal string: ATKitModuleManagerClassB
+0x1000126E3	0x00000013	[  5] literal string: ATKitModuleManager
+0x1000126F6	0x00000017	[  5] literal string: ATKitModuleManagerDemo
+0x10001270D	0x00000010	[  6] literal string: ATKitComponentA
+0x10001271D	0x0000000B	[  6] literal string: ComponentA
+0x100012728	0x00000013	[  6] literal string: ATKitComponentDemo
+0x10001273B	0x0000000C	[  7] literal string: AppDelegate
+0x100012747	0x00000016	[  7] literal string: UIApplicationDelegate
+0x10001275D	0x0000001B	[  8] literal string: ATKitProtocolManagerClassA
+0x100012778	0x0000001E	[  8] literal string: ATKitProtocolManagerProtocolA
+0x100012796	0x0000001B	[  8] literal string: ATKitProtocolManagerClassB
+0x1000127B1	0x0000001E	[  8] literal string: ATKitProtocolManagerProtocolB
+0x1000127CF	0x0000001B	[  8] literal string: ATKitProtocolManagerClassC
+0x1000127EA	0x0000001E	[  8] literal string: ATKitProtocolManagerProtocolC
+0x100012808	0x0000001B	[  8] literal string: ATKitProtocolManagerClassD
+0x100012823	0x0000001E	[  8] literal string: ATKitProtocolManagerProtocolD
+0x100012841	0x00000015	[  8] literal string: ATKitProtocolManager
+0x100012856	0x00000019	[  8] literal string: ATKitProtocolManagerDemo
+0x10001286F	0x00000016	[  9] literal string: ATKitNotificationDemo
+0x100012885	0x00000015	[ 10] literal string: ATBaseViewController
+0x10001289A	0x00000002	[ 10] literal string: 
+0x10001289C	0x00000016	[ 11] literal string: ATProtocolManagerMeta
+0x1000128B2	0x00000012	[ 12] literal string: ATProtocolManager
+0x1000128C4	0x0000001A	[ 12] literal string: ATProtocolManagerProtocol
+0x1000128DE	0x00000014	[ 13] literal string: ATNotificationUtils
+0x1000128F2	0x00000010	[ 14] literal string: ATModuleManager
+0x100012902	0x00000002	[ 14] literal string: 
+0x100012904	0x0000000D	[ 15] literal string: ATWeakObject
+0x100012911	0x00000003	[ 15] literal string: 
+0x100012914	0x0000000D	[ 16] literal string: ATBaseModule
+0x100012921	0x00000013	[ 17] literal string: ATComponentService
+0x100012934	0x00000008	[  2] literal string: q16@0:8
+0x10001293C	0x00000008	[  2] literal string: v16@0:8
+0x100012944	0x00000008	[  3] literal string: @16@0:8
+0x10001294C	0x0000000B	[  3] literal string: v24@0:8@16
+0x100012957	0x00000008	[  3] literal string: Q16@0:8
+0x10001295F	0x0000000B	[  3] literal string: v24@0:8Q16
+0x10001296A	0x00000008	[  3] literal string: B16@0:8
+0x100012972	0x0000000B	[  3] literal string: v20@0:8B16
+0x10001297D	0x00000009	[  3] literal string: @?16@0:8
+0x100012986	0x0000000C	[  3] literal string: v24@0:8@?16
+0x100012992	0x00000002	[  3] literal string: B
+0x100012994	0x0000000C	[  3] literal string: @"NSString"
+0x1000129A0	0x00000002	[  3] literal string: Q
+0x1000129A2	0x00000003	[  3] literal string: @?
+0x1000129A5	0x0000000E	[  3] literal string: @32@0:8q16@24
+0x1000129B3	0x00000013	[  3] literal string: @"ATKitDemoConfig"
+0x1000129C6	0x0000000B	[  3] literal string: @"UILabel"
+0x1000129D1	0x0000000C	[  3] literal string: @"UISwitch"
+0x1000129DD	0x0000000B	[  3] literal string: B24@0:8@16
+0x1000129E8	0x00000008	[  3] literal string: #16@0:8
+0x1000129F0	0x0000000B	[  3] literal string: @24@0:8:16
+0x1000129FB	0x0000000E	[  3] literal string: @32@0:8:16@24
+0x100012A09	0x00000011	[  3] literal string: @40@0:8:16@24@32
+0x100012A1A	0x0000000B	[  3] literal string: B24@0:8#16
+0x100012A25	0x0000000B	[  3] literal string: B24@0:8:16
+0x100012A30	0x00000009	[  3] literal string: Vv16@0:8
+0x100012A39	0x00000012	[  3] literal string: ^{_NSZone=}16@0:8
+0x100012A4B	0x00000015	[  3] literal string: B24@0:8@"Protocol"16
+0x100012A60	0x00000012	[  3] literal string: @"NSString"16@0:8
+0x100012A72	0x0000000E	[  3] literal string: q32@0:8@16q24
+0x100012A80	0x0000000E	[  3] literal string: @32@0:8@16@24
+0x100012A8E	0x0000000B	[  3] literal string: q24@0:8@16
+0x100012A99	0x0000000E	[  3] literal string: @32@0:8@16q24
+0x100012AA7	0x0000000E	[  3] literal string: B32@0:8@16@24
+0x100012AB5	0x0000000B	[  3] literal string: @24@0:8@16
+0x100012AC0	0x00000011	[  3] literal string: q40@0:8@16@24q32
+0x100012AD1	0x00000011	[  3] literal string: v40@0:8@16q24@32
+0x100012AE2	0x00000011	[  3] literal string: v40@0:8@16@24@32
+0x100012AF3	0x0000001B	[  3] literal string: q32@0:8@"UITableView"16q24
+0x100012B0E	0x00000039	[  3] literal string: @"UITableViewCell"32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012B47	0x00000018	[  3] literal string: q24@0:8@"UITableView"16
+0x100012B5F	0x00000025	[  3] literal string: @"NSString"32@0:8@"UITableView"16q24
+0x100012B84	0x00000028	[  3] literal string: B32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012BAC	0x00000021	[  3] literal string: @"NSArray"24@0:8@"UITableView"16
+0x100012BCD	0x00000028	[  3] literal string: q40@0:8@"UITableView"16@"NSString"24q32
+0x100012BF5	0x0000002B	[  3] literal string: v40@0:8@"UITableView"16q24@"NSIndexPath"32
+0x100012C20	0x00000038	[  3] literal string: v40@0:8@"UITableView"16@"NSIndexPath"24@"NSIndexPath"32
+0x100012C58	0x00000029	[  3] literal string: v48@0:8@16{CGPoint=dd}24N^{CGPoint=dd}40
+0x100012C81	0x0000000E	[  3] literal string: v28@0:8@16B24
+0x100012C8F	0x0000000E	[  3] literal string: v32@0:8@16@24
+0x100012C9D	0x00000011	[  3] literal string: v40@0:8@16@24d32
+0x100012CAE	0x00000019	[  3] literal string: v24@0:8@"UIScrollView"16
+0x100012CC7	0x00000037	[  3] literal string: v48@0:8@"UIScrollView"16{CGPoint=dd}24N^{CGPoint=dd}40
+0x100012CFE	0x0000001C	[  3] literal string: v28@0:8@"UIScrollView"16B24
+0x100012D1A	0x00000021	[  3] literal string: @"UIView"24@0:8@"UIScrollView"16
+0x100012D3B	0x00000024	[  3] literal string: v32@0:8@"UIScrollView"16@"UIView"24
+0x100012D5F	0x00000027	[  3] literal string: v40@0:8@"UIScrollView"16@"UIView"24d32
+0x100012D86	0x00000019	[  3] literal string: B24@0:8@"UIScrollView"16
+0x100012D9F	0x00000011	[  3] literal string: v40@0:8@16@24q32
+0x100012DB0	0x0000000E	[  3] literal string: d32@0:8@16@24
+0x100012DBE	0x0000000E	[  3] literal string: d32@0:8@16q24
+0x100012DCC	0x0000000E	[  3] literal string: q32@0:8@16@24
+0x100012DDA	0x00000011	[  3] literal string: @40@0:8@16@24@32
+0x100012DEB	0x00000014	[  3] literal string: B48@0:8@16:24@32@40
+0x100012DFF	0x00000014	[  3] literal string: v48@0:8@16:24@32@40
+0x100012E13	0x00000011	[  3] literal string: B40@0:8@16@24@32
+0x100012E24	0x0000003C	[  3] literal string: v40@0:8@"UITableView"16@"UITableViewCell"24@"NSIndexPath"32
+0x100012E60	0x00000026	[  3] literal string: v40@0:8@"UITableView"16@"UIView"24q32
+0x100012E86	0x00000028	[  3] literal string: d32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012EAE	0x0000001B	[  3] literal string: d32@0:8@"UITableView"16q24
+0x100012EC9	0x00000023	[  3] literal string: @"UIView"32@0:8@"UITableView"16q24
+0x100012EEC	0x00000028	[  3] literal string: q32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012F14	0x00000028	[  3] literal string: v32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012F3C	0x00000035	[  3] literal string: @"NSIndexPath"32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012F71	0x00000032	[  3] literal string: @"NSString"32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012FA3	0x00000031	[  3] literal string: @"NSArray"32@0:8@"UITableView"16@"NSIndexPath"24
+0x100012FD4	0x00000045	[  3] literal string: @"UISwipeActionsConfiguration"32@0:8@"UITableView"16@"NSIndexPath"24
+0x100013019	0x00000045	[  3] literal string: @"NSIndexPath"40@0:8@"UITableView"16@"NSIndexPath"24@"NSIndexPath"32
+0x10001305E	0x0000002E	[  3] literal string: B48@0:8@"UITableView"16:24@"NSIndexPath"32@40
+0x10001308C	0x0000002E	[  3] literal string: v48@0:8@"UITableView"16:24@"NSIndexPath"32@40
+0x1000130BA	0x0000003A	[  3] literal string: B32@0:8@"UITableView"16@"UITableViewFocusUpdateContext"24
+0x1000130F4	0x0000005A	[  3] literal string: v40@0:8@"UITableView"16@"UITableViewFocusUpdateContext"24@"UIFocusAnimationCoordinator"32
+0x10001314E	0x00000025	[  3] literal string: @"NSIndexPath"24@0:8@"UITableView"16
+0x100013173	0x0000004F	[  3] literal string: B40@0:8@"UITableView"16@"NSIndexPath"24@"<UISpringLoadedInteractionContext>"32
+0x1000131C2	0x00000012	[  3] literal string: @40@0:8@16Q24@?32
+0x1000131D4	0x0000000F	[  3] literal string: @"UITableView"
+0x1000131E3	0x00000010	[  3] literal string: @"NSDictionary"
+0x1000131F3	0x00000012	[  3] literal string: @"NSMutableArray"
+0x100013205	0x00000013	[  5] literal string: @"ATModuleManager"
+0x100013218	0x0000000F	[  6] literal string: @32@0:8@16@?24
+0x100013227	0x00000014	[  7] literal string: B48@0:8@16@24@32@40
+0x10001323B	0x00000011	[  7] literal string: v40@0:8@16q24d32
+0x10001324C	0x0000000E	[  7] literal string: v32@0:8@16q24
+0x10001325A	0x0000002D	[  7] literal string: v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24
+0x100013287	0x00000015	[  7] literal string: v48@0:8@16@24@32@?40
+0x10001329C	0x00000018	[  7] literal string: v56@0:8@16@24@32@40@?48
+0x1000132B4	0x00000012	[  7] literal string: v40@0:8@16@24@?32
+0x1000132C6	0x0000000F	[  7] literal string: v32@0:8@16@?24
+0x1000132D5	0x0000000E	[  7] literal string: Q32@0:8@16@24
+0x1000132E3	0x00000012	[  7] literal string: B40@0:8@16@24@?32
+0x1000132F5	0x0000001A	[  7] literal string: v24@0:8@"UIApplication"16
+0x10001330F	0x0000002B	[  7] literal string: B32@0:8@"UIApplication"16@"NSDictionary"24
+0x10001333A	0x00000024	[  7] literal string: B32@0:8@"UIApplication"16@"NSURL"24
+0x10001335E	0x00000034	[  7] literal string: B48@0:8@"UIApplication"16@"NSURL"24@"NSString"32@40
+0x100013392	0x00000035	[  7] literal string: B40@0:8@"UIApplication"16@"NSURL"24@"NSDictionary"32
+0x1000133C7	0x00000020	[  7] literal string: v40@0:8@"UIApplication"16q24d32
+0x1000133E7	0x0000001D	[  7] literal string: v32@0:8@"UIApplication"16q24
+0x100013404	0x0000003C	[  7] literal string: v56@0:8@"UIApplication"16{CGRect={CGPoint=dd}{CGSize=dd}}24
+0x100013440	0x00000039	[  7] literal string: v32@0:8@"UIApplication"16@"UIUserNotificationSettings"24
+0x100013479	0x00000025	[  7] literal string: v32@0:8@"UIApplication"16@"NSData"24
+0x10001349E	0x00000026	[  7] literal string: v32@0:8@"UIApplication"16@"NSError"24
+0x1000134C4	0x0000002B	[  7] literal string: v32@0:8@"UIApplication"16@"NSDictionary"24
+0x1000134EF	0x00000032	[  7] literal string: v32@0:8@"UIApplication"16@"UILocalNotification"24
+0x100013521	0x00000048	[  7] literal string: v48@0:8@"UIApplication"16@"NSString"24@"UILocalNotification"32@?<v@?>40
+0x100013569	0x00000052	[  7] literal string: v56@0:8@"UIApplication"16@"NSString"24@"NSDictionary"32@"NSDictionary"40@?<v@?>48
+0x1000135BB	0x00000041	[  7] literal string: v48@0:8@"UIApplication"16@"NSString"24@"NSDictionary"32@?<v@?>40
+0x1000135FC	0x00000059	[  7] literal string: v56@0:8@"UIApplication"16@"NSString"24@"UILocalNotification"32@"NSDictionary"40@?<v@?>48
+0x100013655	0x00000035	[  7] literal string: v40@0:8@"UIApplication"16@"NSDictionary"24@?<v@?Q>32
+0x10001368A	0x00000024	[  7] literal string: v32@0:8@"UIApplication"16@?<v@?Q>24
+0x1000136AE	0x00000042	[  7] literal string: v40@0:8@"UIApplication"16@"UIApplicationShortcutItem"24@?<v@?B>32
+0x1000136F0	0x00000030	[  7] literal string: v40@0:8@"UIApplication"16@"NSString"24@?<v@?>32
+0x100013720	0x00000043	[  7] literal string: v40@0:8@"UIApplication"16@"NSDictionary"24@?<v@?@"NSDictionary">32
+0x100013763	0x00000043	[  7] literal string: v40@0:8@"UIApplication"16@"INIntent"24@?<v@?@"INIntentResponse">32
+0x1000137A6	0x00000027	[  7] literal string: Q32@0:8@"UIApplication"16@"UIWindow"24
+0x1000137CD	0x00000027	[  7] literal string: B32@0:8@"UIApplication"16@"NSString"24
+0x1000137F4	0x00000044	[  7] literal string: @"UIViewController"40@0:8@"UIApplication"16@"NSArray"24@"NSCoder"32
+0x100013838	0x00000026	[  7] literal string: B32@0:8@"UIApplication"16@"NSCoder"24
+0x10001385E	0x00000026	[  7] literal string: v32@0:8@"UIApplication"16@"NSCoder"24
+0x100013884	0x00000040	[  7] literal string: B40@0:8@"UIApplication"16@"NSUserActivity"24@?<v@?@"NSArray">32
+0x1000138C4	0x00000033	[  7] literal string: v40@0:8@"UIApplication"16@"NSString"24@"NSError"32
+0x1000138F7	0x0000002D	[  7] literal string: v32@0:8@"UIApplication"16@"NSUserActivity"24
+0x100013924	0x0000002E	[  7] literal string: v32@0:8@"UIApplication"16@"CKShareMetadata"24
+0x100013952	0x00000012	[  7] literal string: @"UIWindow"16@0:8
+0x100013964	0x00000015	[  7] literal string: v24@0:8@"UIWindow"16
+0x100013979	0x0000000C	[  7] literal string: @"UIWindow"
+0x100013985	0x0000001F	[  8] literal string: @"<ATProtocolManagerProtocol>"
+0x1000139A4	0x0000000B	[ 10] literal string: d24@0:8q16
+0x1000139AF	0x00000008	[ 10] literal string: d16@0:8
+0x1000139B7	0x0000000A	[ 10] literal string: @"UIView"
+0x1000139C1	0x0000000B	[ 11] literal string: v24@0:8#16
+0x1000139CC	0x0000000C	[ 11] literal string: @"Protocol"
+0x1000139D8	0x00000002	[ 11] literal string: #
+0x1000139DA	0x00000002	[ 11] literal string: @
+0x1000139DC	0x0000000B	[ 12] literal string: #24@0:8@16
+0x1000139E7	0x0000000E	[ 12] literal string: v32@0:8#16@24
+0x1000139F5	0x00000011	[ 12] literal string: v40@0:8#16@24q32
+0x100013A06	0x0000000E	[ 12] literal string: @28@0:8q16B24
+0x100013A14	0x00000015	[ 12] literal string: @24@0:8@"Protocol"16
+0x100013A29	0x00000018	[ 12] literal string: v32@0:8@16@"Protocol"24
+0x100013A41	0x0000001B	[ 12] literal string: v40@0:8@16@"Protocol"24q32
+0x100013A5C	0x00000015	[ 12] literal string: v24@0:8@"Protocol"16
+0x100013A71	0x00000015	[ 12] literal string: #24@0:8@"Protocol"16
+0x100013A86	0x00000018	[ 12] literal string: v32@0:8#16@"Protocol"24
+0x100013A9E	0x0000001B	[ 12] literal string: v40@0:8#16@"Protocol"24q32
+0x100013AB9	0x00000017	[ 12] literal string: @"NSArray"28@0:8q16B24
+0x100013AD0	0x0000000B	[ 14] literal string: v24@0:8q16
+0x100013ADB	0x00000017	[ 14] literal string: @"NSMutableDictionary"
+0x100013AF2	0x0000000E	[ 17] literal string: B32@0:8@16#24
+0x100013B00	0x00000015	[ 17] literal string: @48@0:8@16@24@32@?40
+0x100013B18	0x0000004C	[  3] GCC_except_table27
+0x100013B64	0x000000E0	[ 13] GCC_except_table4
+0x100013C44	0x000000C8	[ 13] GCC_except_table5
+0x100013D0C	0x00000034	[ 13] GCC_except_table6
+0x100013D40	0x000000AC	[ 13] GCC_except_table10
+0x100013DEC	0x00000178	[  1] opaque_section
+0x100013F64	0x0000009C	[  0] compact unwind info
+0x100014000	0x00000008	[  0] non-lazy-pointer-to-local: dyld_stub_binder
+0x100014008	0x00000008	[  0] non-lazy-pointer
+0x100014010	0x00000008	[  0] non-lazy-pointer-to-local: _CGRectZero
+0x100014018	0x00000008	[  0] non-lazy-pointer-to-local: __NSConcreteStackBlock
+0x100014020	0x00000008	[  0] non-lazy-pointer-to-local: ___objc_personality_v0
+0x100014028	0x00000008	[  0] non-lazy-pointer-to-local: ___stack_chk_guard
+0x100014030	0x00000008	[  0] non-lazy-pointer-to-local: __dispatch_main_q
+0x100014038	0x00000008	[  0] non-lazy-pointer-to-local: _objc_msgSend
+0x100014040	0x00000008	[  0] non-lazy-pointer-to-local: _objc_release
+0x100014048	0x00000008	[  0] non-lazy-pointer-to-local: _objc_retain
+0x100014050	0x00000008	[ 21] _CGAffineTransformMakeScale
+0x100014058	0x00000008	[ 21] _CGRectGetHeight
+0x100014060	0x00000008	[ 21] _CGRectGetWidth
+0x100014068	0x00000008	[ 18] _NSLog
+0x100014070	0x00000008	[ 18] _NSSelectorFromString
+0x100014078	0x00000008	[ 18] _NSStringFromClass
+0x100014080	0x00000008	[ 22] _UIApplicationMain
+0x100014088	0x00000008	[ 20] __Block_object_assign
+0x100014090	0x00000008	[ 20] __Unwind_Resume
+0x100014098	0x00000008	[ 20] ___stack_chk_fail
+0x1000140A0	0x00000008	[ 20] _dispatch_async
+0x1000140A8	0x00000008	[ 20] _dispatch_once
+0x1000140B0	0x00000008	[ 20] _memcpy
+0x1000140B8	0x00000008	[ 20] _memset
+0x1000140C0	0x00000008	[ 19] _objc_autoreleasePoolPop
+0x1000140C8	0x00000008	[ 19] _objc_autoreleasePoolPush
+0x1000140D0	0x00000008	[ 19] _objc_autoreleaseReturnValue
+0x1000140D8	0x00000008	[ 19] _objc_copyWeak
+0x1000140E0	0x00000008	[ 19] _objc_destroyWeak
+0x1000140E8	0x00000008	[ 19] _objc_enumerationMutation
+0x1000140F0	0x00000008	[ 19] _objc_getProperty
+0x1000140F8	0x00000008	[ 19] _objc_initWeak
+0x100014100	0x00000008	[ 19] _objc_loadWeakRetained
+0x100014108	0x00000008	[ 19] _objc_msgSendSuper2
+0x100014110	0x00000008	[ 19] _objc_msgSend_stret
+0x100014118	0x00000008	[ 19] _objc_retainAutoreleaseReturnValue
+0x100014120	0x00000008	[ 19] _objc_retainAutoreleasedReturnValue
+0x100014128	0x00000008	[ 19] _objc_retainBlock
+0x100014130	0x00000008	[ 19] _objc_setProperty_nonatomic_copy
+0x100014138	0x00000008	[ 19] _objc_storeStrong
+0x100014140	0x00000008	[ 19] _objc_storeWeak
+0x100014148	0x00000008	[ 19] _objc_sync_enter
+0x100014150	0x00000008	[ 19] _objc_sync_exit
+0x100014158	0x00000008	[ 19] _objc_unsafeClaimAutoreleasedReturnValue
+0x100014160	0x00000030	[  3] ___block_descriptor_40_e8_32w_e5_v8@?0l
+0x100014190	0x00000020	[  3] ___block_descriptor_32_e5_v8@?0l
+0x1000141B0	0x00000020	[  3] ___block_literal_global
+0x1000141D0	0x00000020	[  3] ___block_literal_global.140
+0x1000141F0	0x00000020	[  3] ___block_literal_global.144
+0x100014210	0x00000020	[  3] ___block_literal_global.148
+0x100014230	0x00000030	[  3] ___block_descriptor_48_e8_32s_e15_v32@?0@8Q16^B24l
+0x100014260	0x00000020	[  5] ___block_literal_global
+0x100014280	0x00000030	[  6] ___block_descriptor_40_e8_32bs_e22_v16@?0@"NSDictionary"8l
+0x1000142B0	0x00000020	[  6] ___block_descriptor_32_e18_v16@?0@"NSString"8l
+0x1000142D0	0x00000020	[  6] ___block_literal_global
+0x1000142F0	0x00000020	[  8] ___block_literal_global
+0x100014310	0x00000020	[  8] ___block_descriptor_32_e15_v32@?0@8Q16^B24l
+0x100014330	0x00000020	[  8] ___block_literal_global.111
+0x100014350	0x00000008	[  9] _kNotificationKey
+0x100014358	0x00000008	[  9] _kNotification1
+0x100014360	0x00000008	[  9] _kNotification2
+0x100014368	0x00000020	[  9] ___block_descriptor_32_e22_v16@?0@"NSDictionary"8l
+0x100014388	0x00000020	[  9] ___block_literal_global
+0x1000143A8	0x00000020	[  9] ___block_literal_global.18
+0x1000143C8	0x00000020	[ 12] ___block_literal_global
+0x1000143E8	0x00000020	[ 12] ___block_literal_global.138
+0x100014408	0x00000020	[ 13] ___block_literal_global
+0x100014428	0x00000030	[ 13] ___block_descriptor_48_e8_32s40s_e12_v24@?0@8^B16l
+0x100014458	0x00000030	[ 13] ___block_descriptor_48_e8_32s40s_e5_v8@?0l
+0x100014488	0x00000030	[ 13] ___block_descriptor_56_e8_32s40s48s_e5_v8@?0l
+0x1000144B8	0x00000008	[ 17] _kATComponentServiceCode
+0x1000144C0	0x00000008	[ 17] _kATComponentServiceMsg
+0x1000144C8	0x00000020	[ 17] ___block_literal_global
+0x1000144E8	0x00000020	[  2] CFString
+0x100014508	0x00000020	[  2] CFString
+0x100014528	0x00000020	[  2] CFString
+0x100014548	0x00000020	[  2] CFString
+0x100014568	0x00000020	[  2] CFString
+0x100014588	0x00000020	[  3] CFString
+0x1000145A8	0x00000020	[  3] CFString
+0x1000145C8	0x00000020	[  3] CFString
+0x1000145E8	0x00000020	[  3] CFString
+0x100014608	0x00000020	[  3] CFString
+0x100014628	0x00000020	[  3] CFString
+0x100014648	0x00000020	[  3] CFString
+0x100014668	0x00000020	[  5] CFString
+0x100014688	0x00000020	[  5] CFString
+0x1000146A8	0x00000020	[  5] CFString
+0x1000146C8	0x00000020	[  5] CFString
+0x1000146E8	0x00000020	[  5] CFString
+0x100014708	0x00000020	[  5] CFString
+0x100014728	0x00000020	[  5] CFString
+0x100014748	0x00000020	[  5] CFString
+0x100014768	0x00000020	[  6] CFString
+0x100014788	0x00000020	[  6] CFString
+0x1000147A8	0x00000020	[  6] CFString
+0x1000147C8	0x00000020	[  6] CFString
+0x1000147E8	0x00000020	[  6] CFString
+0x100014808	0x00000020	[  6] CFString
+0x100014828	0x00000020	[  6] CFString
+0x100014848	0x00000020	[  8] CFString
+0x100014868	0x00000020	[  8] CFString
+0x100014888	0x00000020	[  8] CFString
+0x1000148A8	0x00000020	[  8] CFString
+0x1000148C8	0x00000020	[  8] CFString
+0x1000148E8	0x00000020	[  8] CFString
+0x100014908	0x00000020	[  8] CFString
+0x100014928	0x00000020	[  8] CFString
+0x100014948	0x00000020	[  8] CFString
+0x100014968	0x00000020	[  8] CFString
+0x100014988	0x00000020	[  8] CFString
+0x1000149A8	0x00000020	[  8] CFString
+0x1000149C8	0x00000020	[  9] CFString
+0x1000149E8	0x00000020	[  9] CFString
+0x100014A08	0x00000020	[  9] CFString
+0x100014A28	0x00000020	[  9] CFString
+0x100014A48	0x00000020	[  9] CFString
+0x100014A68	0x00000020	[ 13] CFString
+0x100014A88	0x00000020	[ 13] CFString
+0x100014AA8	0x00000020	[ 15] CFString
+0x100014AC8	0x00000020	[ 17] CFString
+0x100014AE8	0x00000020	[ 17] CFString
+0x100014B08	0x00000020	[ 17] CFString
+0x100014B28	0x00000020	[ 17] CFString
+0x100014B48	0x00000020	[ 17] CFString
+0x100014B68	0x00000020	[ 17] CFString
+0x100014B88	0x00000020	[ 17] CFString
+0x100014BA8	0x00000020	[ 17] CFString
+0x100014BC8	0x00000020	[ 17] CFString
+0x100014BE8	0x00000020	[ 17] CFString
+0x100014C08	0x00000020	[ 17] CFString
+0x100014C28	0x00000008	[  2] anon
+0x100014C30	0x00000018	[  3] anon
+0x100014C48	0x00000020	[  5] anon
+0x100014C68	0x00000010	[  6] anon
+0x100014C78	0x00000008	[  7] anon
+0x100014C80	0x00000030	[  8] anon
+0x100014CB0	0x00000008	[  9] anon
+0x100014CB8	0x00000008	[ 10] anon
+0x100014CC0	0x00000008	[ 11] anon
+0x100014CC8	0x00000008	[ 12] anon
+0x100014CD0	0x00000008	[ 13] anon
+0x100014CD8	0x00000008	[ 14] anon
+0x100014CE0	0x00000008	[ 15] anon
+0x100014CE8	0x00000008	[ 16] anon
+0x100014CF0	0x00000008	[ 17] anon
+0x100014CF8	0x00000008	[ 17] objc-cat-list
+0x100014D00	0x00000008	[ 17] objc-cat-list
+0x100014D08	0x00000008	[  3] l_OBJC_LABEL_PROTOCOL_$_NSObject
+0x100014D10	0x00000008	[  3] l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+0x100014D18	0x00000008	[  3] l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+0x100014D20	0x00000008	[  3] l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+0x100014D28	0x00000008	[  5] l_OBJC_LABEL_PROTOCOL_$_ATModuleProtocol
+0x100014D30	0x00000008	[  7] l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+0x100014D38	0x00000008	[  8] l_OBJC_LABEL_PROTOCOL_$_ATKitProtocolManagerProtocolA
+0x100014D40	0x00000008	[  8] l_OBJC_LABEL_PROTOCOL_$_ATKitProtocolManagerProtocolB
+0x100014D48	0x00000008	[  8] l_OBJC_LABEL_PROTOCOL_$_ATKitProtocolManagerProtocolC
+0x100014D50	0x00000008	[  8] l_OBJC_LABEL_PROTOCOL_$_ATKitProtocolManagerProtocolD
+0x100014D58	0x00000008	[ 12] l_OBJC_LABEL_PROTOCOL_$_ATProtocolManagerProtocol
+0x100014D60	0x00000008	[  0] objc image info
+0x100014D68	0x00000048	[  2] l_OBJC_METACLASS_RO_$_ATKitTransformViewController
+0x100014DB0	0x00000050	[  2] l_OBJC_$_INSTANCE_METHODS_ATKitTransformViewController
+0x100014E00	0x00000048	[  2] l_OBJC_CLASS_RO_$_ATKitTransformViewController
+0x100014E48	0x00000048	[  3] l_OBJC_METACLASS_RO_$_ATKitDemoConfig
+0x100014E90	0x00000140	[  3] l_OBJC_$_INSTANCE_METHODS_ATKitDemoConfig
+0x100014FD0	0x000000C8	[  3] l_OBJC_$_INSTANCE_VARIABLES_ATKitDemoConfig
+0x100015098	0x00000068	[  3] l_OBJC_$_PROP_LIST_ATKitDemoConfig
+0x100015100	0x00000048	[  3] l_OBJC_CLASS_RO_$_ATKitDemoConfig
+0x100015148	0x00000048	[  3] l_OBJC_METACLASS_RO_$_ATKitDemoCell
+0x100015190	0x00000110	[  3] l_OBJC_$_INSTANCE_METHODS_ATKitDemoCell
+0x1000152A0	0x00000068	[  3] l_OBJC_$_INSTANCE_VARIABLES_ATKitDemoCell
+0x100015308	0x00000038	[  3] l_OBJC_$_PROP_LIST_ATKitDemoCell
+0x100015340	0x00000048	[  3] l_OBJC_CLASS_RO_$_ATKitDemoCell
+0x100015388	0x000001D0	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x100015558	0x00000020	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x100015578	0x00000048	[  3] l_OBJC_$_PROP_LIST_NSObject
+0x1000155C0	0x000000A0	[  3] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x100015660	0x00000018	[  3] l_OBJC_$_PROTOCOL_REFS_UITableViewDataSource
+0x100015678	0x00000038	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_UITableViewDataSource
+0x1000156B0	0x000000E0	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UITableViewDataSource
+0x100015790	0x00000058	[  3] l_OBJC_$_PROTOCOL_METHOD_TYPES_UITableViewDataSource
+0x1000157E8	0x00000018	[  3] l_OBJC_$_PROTOCOL_REFS_UIScrollViewDelegate
+0x100015800	0x00000158	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIScrollViewDelegate
+0x100015958	0x00000070	[  3] l_OBJC_$_PROTOCOL_METHOD_TYPES_UIScrollViewDelegate
+0x1000159C8	0x00000020	[  3] l_OBJC_$_PROTOCOL_REFS_UITableViewDelegate
+0x1000159E8	0x000003E0	[  3] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UITableViewDelegate
+0x100015DC8	0x00000148	[  3] l_OBJC_$_PROTOCOL_METHOD_TYPES_UITableViewDelegate
+0x100015F10	0x00000020	[  3] l_OBJC_CLASS_PROTOCOLS_$_ViewController
+0x100015F30	0x00000048	[  3] l_OBJC_METACLASS_RO_$_ViewController
+0x100015F78	0x00000218	[  3] l_OBJC_$_INSTANCE_METHODS_ViewController
+0x100016190	0x00000088	[  3] l_OBJC_$_INSTANCE_VARIABLES_ViewController
+0x100016218	0x00000088	[  3] l_OBJC_$_PROP_LIST_ViewController
+0x1000162A0	0x00000048	[  3] l_OBJC_CLASS_RO_$_ViewController
+0x1000162E8	0x000001D0	[  5] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x1000164B8	0x00000020	[  5] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x1000164D8	0x00000048	[  5] l_OBJC_$_PROP_LIST_NSObject
+0x100016520	0x000000A0	[  5] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x1000165C0	0x00000018	[  5] l_OBJC_$_PROTOCOL_REFS_ATModuleProtocol
+0x1000165D8	0x00000038	[  5] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATModuleProtocol
+0x100016610	0x00000010	[  5] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATModuleProtocol
+0x100016620	0x00000018	[  5] l_OBJC_CLASS_PROTOCOLS_$_ATKitModuleManagerClassA
+0x100016638	0x00000048	[  5] l_OBJC_METACLASS_RO_$_ATKitModuleManagerClassA
+0x100016680	0x00000050	[  5] l_OBJC_$_INSTANCE_METHODS_ATKitModuleManagerClassA
+0x1000166D0	0x00000048	[  5] l_OBJC_$_PROP_LIST_ATKitModuleManagerClassA
+0x100016718	0x00000048	[  5] l_OBJC_CLASS_RO_$_ATKitModuleManagerClassA
+0x100016760	0x00000018	[  5] l_OBJC_CLASS_PROTOCOLS_$_ATKitModuleManagerClassB
+0x100016778	0x00000048	[  5] l_OBJC_METACLASS_RO_$_ATKitModuleManagerClassB
+0x1000167C0	0x00000050	[  5] l_OBJC_$_INSTANCE_METHODS_ATKitModuleManagerClassB
+0x100016810	0x00000048	[  5] l_OBJC_$_PROP_LIST_ATKitModuleManagerClassB
+0x100016858	0x00000048	[  5] l_OBJC_CLASS_RO_$_ATKitModuleManagerClassB
+0x1000168A0	0x00000020	[  5] l_OBJC_$_CLASS_METHODS_ATKitModuleManager
+0x1000168C0	0x00000048	[  5] l_OBJC_METACLASS_RO_$_ATKitModuleManager
+0x100016908	0x000000B0	[  5] l_OBJC_$_INSTANCE_METHODS_ATKitModuleManager
+0x1000169B8	0x00000028	[  5] l_OBJC_$_INSTANCE_VARIABLES_ATKitModuleManager
+0x1000169E0	0x00000018	[  5] l_OBJC_$_PROP_LIST_ATKitModuleManager
+0x1000169F8	0x00000048	[  5] l_OBJC_CLASS_RO_$_ATKitModuleManager
+0x100016A40	0x00000048	[  5] l_OBJC_METACLASS_RO_$_ATKitModuleManagerDemo
+0x100016A88	0x00000020	[  5] l_OBJC_$_INSTANCE_METHODS_ATKitModuleManagerDemo
+0x100016AA8	0x00000048	[  5] l_OBJC_CLASS_RO_$_ATKitModuleManagerDemo
+0x100016AF0	0x00000048	[  6] l_OBJC_METACLASS_RO_$_ATKitComponentA
+0x100016B38	0x00000020	[  6] l_OBJC_$_INSTANCE_METHODS_ATKitComponentA
+0x100016B58	0x00000048	[  6] l_OBJC_CLASS_RO_$_ATKitComponentA
+0x100016BA0	0x00000048	[  6] l_OBJC_METACLASS_RO_$_ATKitComponentDemo
+0x100016BE8	0x00000020	[  6] l_OBJC_$_INSTANCE_METHODS_ATKitComponentDemo
+0x100016C08	0x00000048	[  6] l_OBJC_CLASS_RO_$_ATKitComponentDemo
+0x100016C50	0x000001D0	[  7] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x100016E20	0x00000020	[  7] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x100016E40	0x00000048	[  7] l_OBJC_$_PROP_LIST_NSObject
+0x100016E88	0x000000A0	[  7] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x100016F28	0x00000018	[  7] l_OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+0x100016F40	0x000004A0	[  7] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+0x1000173E0	0x00000018	[  7] l_OBJC_$_PROP_LIST_UIApplicationDelegate
+0x1000173F8	0x00000188	[  7] l_OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+0x100017580	0x00000018	[  7] l_OBJC_CLASS_PROTOCOLS_$_AppDelegate
+0x100017598	0x00000048	[  7] l_OBJC_METACLASS_RO_$_AppDelegate
+0x1000175E0	0x000000E0	[  7] l_OBJC_$_INSTANCE_METHODS_AppDelegate
+0x1000176C0	0x00000028	[  7] l_OBJC_$_INSTANCE_VARIABLES_AppDelegate
+0x1000176E8	0x00000058	[  7] l_OBJC_$_PROP_LIST_AppDelegate
+0x100017740	0x00000048	[  7] l_OBJC_CLASS_RO_$_AppDelegate
+0x100017788	0x000001D0	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x100017958	0x00000020	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x100017978	0x00000048	[  8] l_OBJC_$_PROP_LIST_NSObject
+0x1000179C0	0x000000A0	[  8] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x100017A60	0x00000018	[  8] l_OBJC_$_PROTOCOL_REFS_ATKitProtocolManagerProtocolA
+0x100017A78	0x00000020	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATKitProtocolManagerProtocolA
+0x100017A98	0x00000008	[  8] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATKitProtocolManagerProtocolA
+0x100017AA0	0x00000018	[  8] l_OBJC_CLASS_PROTOCOLS_$_ATKitProtocolManagerClassA
+0x100017AB8	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManagerClassA
+0x100017B00	0x00000050	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManagerClassA
+0x100017B50	0x00000048	[  8] l_OBJC_$_PROP_LIST_ATKitProtocolManagerClassA
+0x100017B98	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManagerClassA
+0x100017BE0	0x00000018	[  8] l_OBJC_$_PROTOCOL_REFS_ATKitProtocolManagerProtocolB
+0x100017BF8	0x00000020	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATKitProtocolManagerProtocolB
+0x100017C18	0x00000008	[  8] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATKitProtocolManagerProtocolB
+0x100017C20	0x00000018	[  8] l_OBJC_CLASS_PROTOCOLS_$_ATKitProtocolManagerClassB
+0x100017C38	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManagerClassB
+0x100017C80	0x00000050	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManagerClassB
+0x100017CD0	0x00000048	[  8] l_OBJC_$_PROP_LIST_ATKitProtocolManagerClassB
+0x100017D18	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManagerClassB
+0x100017D60	0x00000018	[  8] l_OBJC_$_PROTOCOL_REFS_ATKitProtocolManagerProtocolC
+0x100017D78	0x00000020	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATKitProtocolManagerProtocolC
+0x100017D98	0x00000008	[  8] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATKitProtocolManagerProtocolC
+0x100017DA0	0x00000018	[  8] l_OBJC_CLASS_PROTOCOLS_$_ATKitProtocolManagerClassC
+0x100017DB8	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManagerClassC
+0x100017E00	0x00000050	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManagerClassC
+0x100017E50	0x00000048	[  8] l_OBJC_$_PROP_LIST_ATKitProtocolManagerClassC
+0x100017E98	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManagerClassC
+0x100017EE0	0x00000018	[  8] l_OBJC_$_PROTOCOL_REFS_ATKitProtocolManagerProtocolD
+0x100017EF8	0x00000020	[  8] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATKitProtocolManagerProtocolD
+0x100017F18	0x00000008	[  8] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATKitProtocolManagerProtocolD
+0x100017F20	0x00000018	[  8] l_OBJC_CLASS_PROTOCOLS_$_ATKitProtocolManagerClassD
+0x100017F38	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManagerClassD
+0x100017F80	0x00000050	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManagerClassD
+0x100017FD0	0x00000048	[  8] l_OBJC_$_PROP_LIST_ATKitProtocolManagerClassD
+0x100018018	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManagerClassD
+0x100018060	0x00000020	[  8] l_OBJC_$_CLASS_METHODS_ATKitProtocolManager
+0x100018080	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManager
+0x1000180C8	0x000000C8	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManager
+0x100018190	0x00000028	[  8] l_OBJC_$_INSTANCE_VARIABLES_ATKitProtocolManager
+0x1000181B8	0x00000018	[  8] l_OBJC_$_PROP_LIST_ATKitProtocolManager
+0x1000181D0	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManager
+0x100018218	0x00000048	[  8] l_OBJC_METACLASS_RO_$_ATKitProtocolManagerDemo
+0x100018260	0x00000020	[  8] l_OBJC_$_INSTANCE_METHODS_ATKitProtocolManagerDemo
+0x100018280	0x00000048	[  8] l_OBJC_CLASS_RO_$_ATKitProtocolManagerDemo
+0x1000182C8	0x00000048	[  9] l_OBJC_METACLASS_RO_$_ATKitNotificationDemo
+0x100018310	0x00000080	[  9] l_OBJC_$_INSTANCE_METHODS_ATKitNotificationDemo
+0x100018390	0x00000048	[  9] l_OBJC_CLASS_RO_$_ATKitNotificationDemo
+0x1000183D8	0x00000020	[ 10] l_OBJC_$_CLASS_METHODS_ATBaseViewController
+0x1000183F8	0x00000048	[ 10] l_OBJC_METACLASS_RO_$_ATBaseViewController
+0x100018440	0x00000110	[ 10] l_OBJC_$_INSTANCE_METHODS_ATBaseViewController
+0x100018550	0x00000048	[ 10] l_OBJC_$_INSTANCE_VARIABLES_ATBaseViewController
+0x100018598	0x00000048	[ 10] l_OBJC_$_PROP_LIST_ATBaseViewController
+0x1000185E0	0x00000048	[ 10] l_OBJC_CLASS_RO_$_ATBaseViewController
+0x100018628	0x00000048	[ 11] l_OBJC_METACLASS_RO_$_ATProtocolManagerMeta
+0x100018670	0x000000B0	[ 11] l_OBJC_$_INSTANCE_METHODS_ATProtocolManagerMeta
+0x100018720	0x00000068	[ 11] l_OBJC_$_INSTANCE_VARIABLES_ATProtocolManagerMeta
+0x100018788	0x00000038	[ 11] l_OBJC_$_PROP_LIST_ATProtocolManagerMeta
+0x1000187C0	0x00000048	[ 11] l_OBJC_CLASS_RO_$_ATProtocolManagerMeta
+0x100018808	0x000001D0	[ 12] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x1000189D8	0x00000020	[ 12] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x1000189F8	0x00000048	[ 12] l_OBJC_$_PROP_LIST_NSObject
+0x100018A40	0x000000A0	[ 12] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x100018AE0	0x00000018	[ 12] l_OBJC_$_PROTOCOL_REFS_ATProtocolManagerProtocol
+0x100018AF8	0x00000110	[ 12] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATProtocolManagerProtocol
+0x100018C08	0x00000058	[ 12] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATProtocolManagerProtocol
+0x100018C60	0x00000018	[ 12] l_OBJC_CLASS_PROTOCOLS_$_ATProtocolManager
+0x100018C78	0x00000048	[ 12] l_OBJC_METACLASS_RO_$_ATProtocolManager
+0x100018CC0	0x000001A0	[ 12] l_OBJC_$_INSTANCE_METHODS_ATProtocolManager
+0x100018E60	0x00000028	[ 12] l_OBJC_$_INSTANCE_VARIABLES_ATProtocolManager
+0x100018E88	0x00000058	[ 12] l_OBJC_$_PROP_LIST_ATProtocolManager
+0x100018EE0	0x00000048	[ 12] l_OBJC_CLASS_RO_$_ATProtocolManager
+0x100018F28	0x00000050	[ 13] l_OBJC_$_CLASS_METHODS_ATNotificationUtils
+0x100018F78	0x00000048	[ 13] l_OBJC_METACLASS_RO_$_ATNotificationUtils
+0x100018FC0	0x00000110	[ 13] l_OBJC_$_INSTANCE_METHODS_ATNotificationUtils
+0x1000190D0	0x00000048	[ 13] l_OBJC_$_INSTANCE_VARIABLES_ATNotificationUtils
+0x100019118	0x00000028	[ 13] l_OBJC_$_PROP_LIST_ATNotificationUtils
+0x100019140	0x00000048	[ 13] l_OBJC_CLASS_RO_$_ATNotificationUtils
+0x100019188	0x00000048	[ 14] l_OBJC_METACLASS_RO_$_ATModuleManager
+0x1000191D0	0x00000128	[ 14] l_OBJC_$_INSTANCE_METHODS_ATModuleManager
+0x1000192F8	0x00000048	[ 14] l_OBJC_$_INSTANCE_VARIABLES_ATModuleManager
+0x100019340	0x00000028	[ 14] l_OBJC_$_PROP_LIST_ATModuleManager
+0x100019368	0x00000048	[ 14] l_OBJC_CLASS_RO_$_ATModuleManager
+0x1000193B0	0x00000020	[ 15] l_OBJC_$_CLASS_METHODS_ATWeakObject
+0x1000193D0	0x00000048	[ 15] l_OBJC_METACLASS_RO_$_ATWeakObject
+0x100019418	0x000000C8	[ 15] l_OBJC_$_INSTANCE_METHODS_ATWeakObject
+0x1000194E0	0x00000068	[ 15] l_OBJC_$_INSTANCE_VARIABLES_ATWeakObject
+0x100019548	0x00000028	[ 15] l_OBJC_$_PROP_LIST_ATWeakObject
+0x100019570	0x00000048	[ 15] l_OBJC_CLASS_RO_$_ATWeakObject
+0x1000195B8	0x000001D0	[ 16] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+0x100019788	0x00000020	[ 16] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+0x1000197A8	0x00000048	[ 16] l_OBJC_$_PROP_LIST_NSObject
+0x1000197F0	0x000000A0	[ 16] l_OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+0x100019890	0x00000018	[ 16] l_OBJC_$_PROTOCOL_REFS_ATModuleProtocol
+0x1000198A8	0x00000038	[ 16] l_OBJC_$_PROTOCOL_INSTANCE_METHODS_ATModuleProtocol
+0x1000198E0	0x00000010	[ 16] l_OBJC_$_PROTOCOL_METHOD_TYPES_ATModuleProtocol
+0x1000198F0	0x00000018	[ 16] l_OBJC_CLASS_PROTOCOLS_$_ATBaseModule
+0x100019908	0x00000048	[ 16] l_OBJC_METACLASS_RO_$_ATBaseModule
+0x100019950	0x00000038	[ 16] l_OBJC_$_INSTANCE_METHODS_ATBaseModule
+0x100019988	0x00000048	[ 16] l_OBJC_$_PROP_LIST_ATBaseModule
+0x1000199D0	0x00000048	[ 16] l_OBJC_CLASS_RO_$_ATBaseModule
+0x100019A18	0x000000F8	[ 17] objc merged method list
+0x100019B10	0x00000048	[ 17] l_OBJC_METACLASS_RO_$_ATComponentService
+0x100019B58	0x00000048	[ 17] l_OBJC_CLASS_RO_$_ATComponentService
+0x100019BA0	0x00000068	[ 17] l_OBJC_$_CATEGORY_INSTANCE_METHODS_NSDictionary_$_ATComponentService
+0x100019C08	0x00000038	[ 17] l_OBJC_$_CATEGORY_CLASS_METHODS_NSDictionary_$_ATComponentService
+0x100019C40	0x00000040	[ 17] l_OBJC_$_CATEGORY_NSDictionary_$_ATComponentService
+0x100019C80	0x00000020	[ 17] l_OBJC_$_CATEGORY_CLASS_METHODS_NSMutableDictionary_$_ATComponentService
+0x100019CA0	0x00000040	[ 17] l_OBJC_$_CATEGORY_NSMutableDictionary_$_ATComponentService
+0x100019CE0	0x00000008	[  2] pointer-to-literal-cstring
+0x100019CE8	0x00000008	[  2] pointer-to-literal-cstring
+0x100019CF0	0x00000008	[  2] pointer-to-literal-cstring
+0x100019CF8	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D00	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D08	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D10	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D18	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D20	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D28	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D30	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D38	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D40	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D48	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D50	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D58	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D60	0x00000008	[  2] pointer-to-literal-cstring
+0x100019D68	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D70	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D78	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D80	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D88	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D90	0x00000008	[  3] pointer-to-literal-cstring
+0x100019D98	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DA0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DA8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DB0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DB8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DC0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DC8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DD0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DD8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DE0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DE8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DF0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019DF8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E00	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E08	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E10	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E18	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E20	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E28	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E30	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E38	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E40	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E48	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E50	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E58	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E60	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E68	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E70	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E78	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E80	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E88	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E90	0x00000008	[  3] pointer-to-literal-cstring
+0x100019E98	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EA0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EA8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EB0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EB8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EC0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EC8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019ED0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019ED8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EE0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EE8	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EF0	0x00000008	[  3] pointer-to-literal-cstring
+0x100019EF8	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F00	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F08	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F10	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F18	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F20	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F28	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F30	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F38	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F40	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F48	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F50	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F58	0x00000008	[  5] pointer-to-literal-cstring
+0x100019F60	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F68	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F70	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F78	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F80	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F88	0x00000008	[  6] pointer-to-literal-cstring
+0x100019F90	0x00000008	[  8] pointer-to-literal-cstring
+0x100019F98	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FA0	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FA8	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FB0	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FB8	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FC0	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FC8	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FD0	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FD8	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FE0	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FE8	0x00000008	[  8] pointer-to-literal-cstring
+0x100019FF0	0x00000008	[  9] pointer-to-literal-cstring
+0x100019FF8	0x00000008	[  9] pointer-to-literal-cstring
+0x10001A000	0x00000008	[  9] pointer-to-literal-cstring
+0x10001A008	0x00000008	[  9] pointer-to-literal-cstring
+0x10001A010	0x00000008	[  9] pointer-to-literal-cstring
+0x10001A018	0x00000008	[  9] pointer-to-literal-cstring
+0x10001A020	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A028	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A030	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A038	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A040	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A048	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A050	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A058	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A060	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A068	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A070	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A078	0x00000008	[ 10] pointer-to-literal-cstring
+0x10001A080	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A088	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A090	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A098	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0A0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0A8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0B0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0B8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0C0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0C8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0D0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0D8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0E0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0E8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0F0	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A0F8	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A100	0x00000008	[ 12] pointer-to-literal-cstring
+0x10001A108	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A110	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A118	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A120	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A128	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A130	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A138	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A140	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A148	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A150	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A158	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A160	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A168	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A170	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A178	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A180	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A188	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A190	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A198	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1A0	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1A8	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1B0	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1B8	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1C0	0x00000008	[ 13] pointer-to-literal-cstring
+0x10001A1C8	0x00000008	[ 14] pointer-to-literal-cstring
+0x10001A1D0	0x00000008	[ 14] pointer-to-literal-cstring
+0x10001A1D8	0x00000008	[ 15] pointer-to-literal-cstring
+0x10001A1E0	0x00000008	[ 15] pointer-to-literal-cstring
+0x10001A1E8	0x00000008	[ 15] pointer-to-literal-cstring
+0x10001A1F0	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A1F8	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A200	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A208	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A210	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A218	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A220	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A228	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A230	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A238	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A240	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A248	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A250	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A258	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A260	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A268	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A270	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A278	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A280	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A288	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A290	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A298	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A2A0	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A2A8	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A2B0	0x00000008	[ 17] pointer-to-literal-cstring
+0x10001A2B8	0x00000008	[  8] l_OBJC_PROTOCOL_REFERENCE_$_ATKitProtocolManagerProtocolA
+0x10001A2C0	0x00000008	[  8] l_OBJC_PROTOCOL_REFERENCE_$_ATKitProtocolManagerProtocolB
+0x10001A2C8	0x00000008	[  8] l_OBJC_PROTOCOL_REFERENCE_$_ATKitProtocolManagerProtocolC
+0x10001A2D0	0x00000008	[  8] l_OBJC_PROTOCOL_REFERENCE_$_ATKitProtocolManagerProtocolD
+0x10001A2D8	0x00000008	[  2] objc-class-ref
+0x10001A2E0	0x00000008	[  2] objc-class-ref
+0x10001A2E8	0x00000008	[  2] objc-class-ref
+0x10001A2F0	0x00000008	[  3] objc-class-ref
+0x10001A2F8	0x00000008	[  3] objc-class-ref
+0x10001A300	0x00000008	[  3] objc-class-ref
+0x10001A308	0x00000008	[  3] objc-class-ref
+0x10001A310	0x00000008	[  3] objc-class-ref
+0x10001A318	0x00000008	[  3] objc-class-ref
+0x10001A320	0x00000008	[  3] objc-class-ref
+0x10001A328	0x00000008	[  3] objc-class-ref
+0x10001A330	0x00000008	[  3] objc-class-ref
+0x10001A338	0x00000008	[  3] objc-class-ref
+0x10001A340	0x00000008	[  3] objc-class-ref
+0x10001A348	0x00000008	[  3] objc-class-ref
+0x10001A350	0x00000008	[  3] objc-class-ref
+0x10001A358	0x00000008	[  3] objc-class-ref
+0x10001A360	0x00000008	[  4] objc-class-ref
+0x10001A368	0x00000008	[  5] objc-class-ref
+0x10001A370	0x00000008	[  5] objc-class-ref
+0x10001A378	0x00000008	[  5] objc-class-ref
+0x10001A380	0x00000008	[  5] objc-class-ref
+0x10001A388	0x00000008	[  6] objc-class-ref
+0x10001A390	0x00000008	[  6] objc-class-ref
+0x10001A398	0x00000008	[  6] objc-class-ref
+0x10001A3A0	0x00000008	[  8] objc-class-ref
+0x10001A3A8	0x00000008	[  8] objc-class-ref
+0x10001A3B0	0x00000008	[  8] objc-class-ref
+0x10001A3B8	0x00000008	[  8] objc-class-ref
+0x10001A3C0	0x00000008	[  8] objc-class-ref
+0x10001A3C8	0x00000008	[  8] objc-class-ref
+0x10001A3D0	0x00000008	[  9] objc-class-ref
+0x10001A3D8	0x00000008	[ 10] objc-class-ref
+0x10001A3E0	0x00000008	[ 12] objc-class-ref
+0x10001A3E8	0x00000008	[ 13] objc-class-ref
+0x10001A3F0	0x00000008	[ 13] objc-class-ref
+0x10001A3F8	0x00000008	[ 13] objc-class-ref
+0x10001A400	0x00000008	[ 13] objc-class-ref
+0x10001A408	0x00000008	[ 13] objc-class-ref
+0x10001A410	0x00000008	[ 17] objc-class-ref
+0x10001A418	0x00000008	[ 17] objc-class-ref
+0x10001A420	0x00000008	[  2] anon
+0x10001A428	0x00000010	[  3] anon
+0x10001A438	0x00000008	[  5] anon
+0x10001A440	0x00000028	[  8] anon
+0x10001A468	0x00000008	[  9] anon
+0x10001A470	0x00000008	[ 10] anon
+0x10001A478	0x00000008	[ 13] anon
+0x10001A480	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._title
+0x10001A488	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._type
+0x10001A490	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._sectionType
+0x10001A498	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._isOn
+0x10001A4A0	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._clickCallback
+0x10001A4A8	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoConfig._switchChangedCallback
+0x10001A4B0	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoCell._label
+0x10001A4B8	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoCell._switchView
+0x10001A4C0	0x00000008	[  3] _OBJC_IVAR_$_ATKitDemoCell._model
+0x10001A4C8	0x00000008	[  3] _OBJC_IVAR_$_ViewController._tableView
+0x10001A4D0	0x00000008	[  3] _OBJC_IVAR_$_ViewController._dataList
+0x10001A4D8	0x00000008	[  3] _OBJC_IVAR_$_ViewController._sectionList
+0x10001A4E0	0x00000008	[  3] _OBJC_IVAR_$_ViewController._sectionTitleArray
+0x10001A4E8	0x00000008	[  5] _OBJC_IVAR_$_ATKitModuleManager._moduleManager
+0x10001A4F0	0x00000008	[  7] _OBJC_IVAR_$_AppDelegate._window
+0x10001A4F8	0x00000008	[  8] _OBJC_IVAR_$_ATKitProtocolManager._protocolManager
+0x10001A500	0x00000008	[ 10] _OBJC_IVAR_$_ATBaseViewController._transformView
+0x10001A508	0x00000008	[ 10] _OBJC_IVAR_$_ATBaseViewController._usingTransformView
+0x10001A510	0x00000008	[ 11] _OBJC_IVAR_$_ATProtocolManagerMeta._protocol
+0x10001A518	0x00000008	[ 11] _OBJC_IVAR_$_ATProtocolManagerMeta._aClass
+0x10001A520	0x00000008	[ 11] _OBJC_IVAR_$_ATProtocolManagerMeta._module
+0x10001A528	0x00000008	[ 12] _OBJC_IVAR_$_ATProtocolManager._groups
+0x10001A530	0x00000008	[ 13] _OBJC_IVAR_$_ATNotificationUtils._observers
+0x10001A538	0x00000008	[ 13] _OBJC_IVAR_$_ATNotificationUtils._notifications
+0x10001A540	0x00000008	[ 14] _OBJC_IVAR_$_ATModuleManager._modules
+0x10001A548	0x00000008	[ 14] _OBJC_IVAR_$_ATModuleManager._groups
+0x10001A550	0x00000008	[ 15] _OBJC_IVAR_$_ATWeakObject._target
+0x10001A558	0x00000008	[ 15] _OBJC_IVAR_$_ATWeakObject._objectKey
+0x10001A560	0x00000008	[ 15] _OBJC_IVAR_$_ATWeakObject._extension
+0x10001A568	0x00000028	[  2] _OBJC_CLASS_$_ATKitTransformViewController
+0x10001A590	0x00000028	[  2] _OBJC_METACLASS_$_ATKitTransformViewController
+0x10001A5B8	0x00000028	[  3] _OBJC_METACLASS_$_ATKitDemoConfig
+0x10001A5E0	0x00000028	[  3] _OBJC_CLASS_$_ATKitDemoConfig
+0x10001A608	0x00000028	[  3] _OBJC_CLASS_$_ATKitDemoCell
+0x10001A630	0x00000028	[  3] _OBJC_METACLASS_$_ATKitDemoCell
+0x10001A658	0x00000028	[  3] _OBJC_CLASS_$_ViewController
+0x10001A680	0x00000028	[  3] _OBJC_METACLASS_$_ViewController
+0x10001A6A8	0x00000028	[  5] _OBJC_METACLASS_$_ATKitModuleManagerClassA
+0x10001A6D0	0x00000028	[  5] _OBJC_CLASS_$_ATKitModuleManagerClassA
+0x10001A6F8	0x00000028	[  5] _OBJC_METACLASS_$_ATKitModuleManagerClassB
+0x10001A720	0x00000028	[  5] _OBJC_CLASS_$_ATKitModuleManagerClassB
+0x10001A748	0x00000028	[  5] _OBJC_CLASS_$_ATKitModuleManager
+0x10001A770	0x00000028	[  5] _OBJC_METACLASS_$_ATKitModuleManager
+0x10001A798	0x00000028	[  5] _OBJC_METACLASS_$_ATKitModuleManagerDemo
+0x10001A7C0	0x00000028	[  5] _OBJC_CLASS_$_ATKitModuleManagerDemo
+0x10001A7E8	0x00000028	[  6] _OBJC_METACLASS_$_ATKitComponentA
+0x10001A810	0x00000028	[  6] _OBJC_CLASS_$_ATKitComponentA
+0x10001A838	0x00000028	[  6] _OBJC_METACLASS_$_ATKitComponentDemo
+0x10001A860	0x00000028	[  6] _OBJC_CLASS_$_ATKitComponentDemo
+0x10001A888	0x00000028	[  7] _OBJC_METACLASS_$_AppDelegate
+0x10001A8B0	0x00000028	[  7] _OBJC_CLASS_$_AppDelegate
+0x10001A8D8	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManagerClassA
+0x10001A900	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManagerClassA
+0x10001A928	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManagerClassB
+0x10001A950	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManagerClassB
+0x10001A978	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManagerClassC
+0x10001A9A0	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManagerClassC
+0x10001A9C8	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManagerClassD
+0x10001A9F0	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManagerClassD
+0x10001AA18	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManager
+0x10001AA40	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManager
+0x10001AA68	0x00000028	[  8] _OBJC_METACLASS_$_ATKitProtocolManagerDemo
+0x10001AA90	0x00000028	[  8] _OBJC_CLASS_$_ATKitProtocolManagerDemo
+0x10001AAB8	0x00000028	[  9] _OBJC_CLASS_$_ATKitNotificationDemo
+0x10001AAE0	0x00000028	[  9] _OBJC_METACLASS_$_ATKitNotificationDemo
+0x10001AB08	0x00000028	[ 10] _OBJC_CLASS_$_ATBaseViewController
+0x10001AB30	0x00000028	[ 10] _OBJC_METACLASS_$_ATBaseViewController
+0x10001AB58	0x00000028	[ 11] _OBJC_METACLASS_$_ATProtocolManagerMeta
+0x10001AB80	0x00000028	[ 11] _OBJC_CLASS_$_ATProtocolManagerMeta
+0x10001ABA8	0x00000028	[ 12] _OBJC_METACLASS_$_ATProtocolManager
+0x10001ABD0	0x00000028	[ 12] _OBJC_CLASS_$_ATProtocolManager
+0x10001ABF8	0x00000028	[ 13] _OBJC_CLASS_$_ATNotificationUtils
+0x10001AC20	0x00000028	[ 13] _OBJC_METACLASS_$_ATNotificationUtils
+0x10001AC48	0x00000028	[ 14] _OBJC_METACLASS_$_ATModuleManager
+0x10001AC70	0x00000028	[ 14] _OBJC_CLASS_$_ATModuleManager
+0x10001AC98	0x00000028	[ 15] _OBJC_METACLASS_$_ATWeakObject
+0x10001ACC0	0x00000028	[ 15] _OBJC_CLASS_$_ATWeakObject
+0x10001ACE8	0x00000028	[ 16] _OBJC_METACLASS_$_ATBaseModule
+0x10001AD10	0x00000028	[ 16] _OBJC_CLASS_$_ATBaseModule
+0x10001AD38	0x00000028	[ 17] _OBJC_CLASS_$_ATComponentService
+0x10001AD60	0x00000028	[ 17] _OBJC_METACLASS_$_ATComponentService
+0x10001AD88	0x00000060	[  3] l_OBJC_PROTOCOL_$_NSObject
+0x10001ADE8	0x00000060	[  3] l_OBJC_PROTOCOL_$_UITableViewDataSource
+0x10001AE48	0x00000060	[  3] l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+0x10001AEA8	0x00000060	[  3] l_OBJC_PROTOCOL_$_UITableViewDelegate
+0x10001AF08	0x00000060	[  5] l_OBJC_PROTOCOL_$_ATModuleProtocol
+0x10001AF68	0x00000060	[  7] l_OBJC_PROTOCOL_$_UIApplicationDelegate
+0x10001AFC8	0x00000060	[  8] l_OBJC_PROTOCOL_$_ATKitProtocolManagerProtocolA
+0x10001B028	0x00000060	[  8] l_OBJC_PROTOCOL_$_ATKitProtocolManagerProtocolB
+0x10001B088	0x00000060	[  8] l_OBJC_PROTOCOL_$_ATKitProtocolManagerProtocolC
+0x10001B0E8	0x00000060	[  8] l_OBJC_PROTOCOL_$_ATKitProtocolManagerProtocolD
+0x10001B148	0x00000060	[ 12] l_OBJC_PROTOCOL_$_ATProtocolManagerProtocol
+0x10001B1A8	0x00000008	[  5] _sharedObject.__once
+0x10001B1B0	0x00000008	[  5] _sharedObject.__instance
+0x10001B1B8	0x00000008	[  8] _sharedObject.__once
+0x10001B1C0	0x00000008	[  8] _sharedObject.__instance
+0x10001B1C8	0x00000008	[ 12] _modulesMap.map
+0x10001B1D0	0x00000008	[ 12] _modulesMap.once
+0x10001B1D8	0x00000008	[ 12] _moduleClassesMap.map
+0x10001B1E0	0x00000008	[ 12] _moduleClassesMap.once
+0x10001B1E8	0x00000008	[ 13] _sharedObject.__once
+0x10001B1F0	0x00000008	[ 13] _sharedObject.__instance
+0x10001B1F8	0x00000008	[ 17] _ComponentMap.map
+0x10001B200	0x00000008	[ 17] _ComponentMap.once
+
+# Dead Stripped Symbols:
+#        	Size    	File  Name
+<<dead>> 	0x00000018	[  2] CIE
+<<dead>> 	0x00000008	[  3] 8-byte-literal
+<<dead>> 	0x00000008	[  3] 8-byte-literal
+<<dead>> 	0x00000008	[  3] 8-byte-literal
+<<dead>> 	0x00000008	[  3] 8-byte-literal
+<<dead>> 	0x00000023	[  3] literal string: addTarget:action:forControlEvents:
+<<dead>> 	0x0000000C	[  3] literal string: addSubview:
+<<dead>> 	0x00000007	[  3] literal string: bounds
+<<dead>> 	0x0000000A	[  3] literal string: setFrame:
+<<dead>> 	0x0000000C	[  3] literal string: viewDidLoad
+<<dead>> 	0x00000004	[  3] literal string: new
+<<dead>> 	0x00000015	[  3] literal string: navigationController
+<<dead>> 	0x0000000A	[  3] literal string: blueColor
+<<dead>> 	0x00000014	[  3] literal string: setBackgroundColor:
+<<dead>> 	0x00000008	[  3] literal string: v16@0:8
+<<dead>> 	0x00000008	[  3] _ATKitDemoCellIdentifier
+<<dead>> 	0x00000018	[  3] CIE
+<<dead>> 	0x00000020	[  3] CIE
+<<dead>> 	0x00000006	[  4] literal string: class
+<<dead>> 	0x00000018	[  4] CIE
+<<dead>> 	0x00000005	[  5] literal string: hash
+<<dead>> 	0x00000005	[  5] literal string: TQ,R
+<<dead>> 	0x0000000B	[  5] literal string: superclass
+<<dead>> 	0x00000005	[  5] literal string: T#,R
+<<dead>> 	0x0000000C	[  5] literal string: description
+<<dead>> 	0x00000011	[  5] literal string: T@"NSString",R,C
+<<dead>> 	0x00000011	[  5] literal string: debugDescription
+<<dead>> 	0x00000006	[  5] literal string: v8@?0
+<<dead>> 	0x00000009	[  5] literal string: NSObject
+<<dead>> 	0x00000002	[  5] literal string: 
+<<dead>> 	0x00000009	[  5] literal string: isEqual:
+<<dead>> 	0x00000006	[  5] literal string: class
+<<dead>> 	0x00000005	[  5] literal string: self
+<<dead>> 	0x00000011	[  5] literal string: performSelector:
+<<dead>> 	0x0000001C	[  5] literal string: performSelector:withObject:
+<<dead>> 	0x00000027	[  5] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000008	[  5] literal string: isProxy
+<<dead>> 	0x0000000F	[  5] literal string: isKindOfClass:
+<<dead>> 	0x00000011	[  5] literal string: isMemberOfClass:
+<<dead>> 	0x00000014	[  5] literal string: conformsToProtocol:
+<<dead>> 	0x00000014	[  5] literal string: respondsToSelector:
+<<dead>> 	0x00000007	[  5] literal string: retain
+<<dead>> 	0x00000008	[  5] literal string: release
+<<dead>> 	0x0000000C	[  5] literal string: autorelease
+<<dead>> 	0x0000000C	[  5] literal string: retainCount
+<<dead>> 	0x00000005	[  5] literal string: zone
+<<dead>> 	0x00000005	[  5] literal string: hash
+<<dead>> 	0x0000000B	[  5] literal string: superclass
+<<dead>> 	0x0000000C	[  5] literal string: description
+<<dead>> 	0x00000011	[  5] literal string: debugDescription
+<<dead>> 	0x00000006	[  5] literal string: alloc
+<<dead>> 	0x00000005	[  5] literal string: init
+<<dead>> 	0x0000000E	[  5] literal string: .cxx_destruct
+<<dead>> 	0x00000005	[  5] literal string: demo
+<<dead>> 	0x0000000B	[  5] literal string: B24@0:8@16
+<<dead>> 	0x00000008	[  5] literal string: #16@0:8
+<<dead>> 	0x00000008	[  5] literal string: @16@0:8
+<<dead>> 	0x0000000B	[  5] literal string: @24@0:8:16
+<<dead>> 	0x0000000E	[  5] literal string: @32@0:8:16@24
+<<dead>> 	0x00000011	[  5] literal string: @40@0:8:16@24@32
+<<dead>> 	0x00000008	[  5] literal string: B16@0:8
+<<dead>> 	0x0000000B	[  5] literal string: B24@0:8#16
+<<dead>> 	0x0000000B	[  5] literal string: B24@0:8:16
+<<dead>> 	0x00000009	[  5] literal string: Vv16@0:8
+<<dead>> 	0x00000008	[  5] literal string: Q16@0:8
+<<dead>> 	0x00000012	[  5] literal string: ^{_NSZone=}16@0:8
+<<dead>> 	0x00000015	[  5] literal string: B24@0:8@"Protocol"16
+<<dead>> 	0x00000012	[  5] literal string: @"NSString"16@0:8
+<<dead>> 	0x00000008	[  5] literal string: v16@0:8
+<<dead>> 	0x0000000B	[  5] literal string: v24@0:8@16
+<<dead>> 	0x00000020	[  5] ___block_descriptor_32_e5_v8@?0l
+<<dead>> 	0x00000018	[  5] CIE
+<<dead>> 	0x00000030	[  6] ___destroy_helper_block_e8_32s
+<<dead>> 	0x00000019	[  6] literal string: objectForKeyedSubscript:
+<<dead>> 	0x00000025	[  6] literal string: dictionaryWithObjects:forKeys:count:
+<<dead>> 	0x00000006	[  6] literal string: class
+<<dead>> 	0x00000005	[  6] literal string: demo
+<<dead>> 	0x00000008	[  6] literal string: v16@0:8
+<<dead>> 	0x00000018	[  6] CIE
+<<dead>> 	0x00000009	[  7] literal string: NSObject
+<<dead>> 	0x00000002	[  7] literal string: 
+<<dead>> 	0x00000009	[  7] literal string: isEqual:
+<<dead>> 	0x00000006	[  7] literal string: class
+<<dead>> 	0x00000005	[  7] literal string: self
+<<dead>> 	0x00000011	[  7] literal string: performSelector:
+<<dead>> 	0x0000001C	[  7] literal string: performSelector:withObject:
+<<dead>> 	0x00000027	[  7] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000008	[  7] literal string: isProxy
+<<dead>> 	0x0000000F	[  7] literal string: isKindOfClass:
+<<dead>> 	0x00000011	[  7] literal string: isMemberOfClass:
+<<dead>> 	0x00000014	[  7] literal string: conformsToProtocol:
+<<dead>> 	0x00000014	[  7] literal string: respondsToSelector:
+<<dead>> 	0x00000007	[  7] literal string: retain
+<<dead>> 	0x00000008	[  7] literal string: release
+<<dead>> 	0x0000000C	[  7] literal string: autorelease
+<<dead>> 	0x0000000C	[  7] literal string: retainCount
+<<dead>> 	0x00000005	[  7] literal string: zone
+<<dead>> 	0x00000005	[  7] literal string: hash
+<<dead>> 	0x0000000B	[  7] literal string: superclass
+<<dead>> 	0x0000000C	[  7] literal string: description
+<<dead>> 	0x00000011	[  7] literal string: debugDescription
+<<dead>> 	0x0000000E	[  7] literal string: .cxx_destruct
+<<dead>> 	0x0000000B	[  7] literal string: B24@0:8@16
+<<dead>> 	0x00000008	[  7] literal string: #16@0:8
+<<dead>> 	0x00000008	[  7] literal string: @16@0:8
+<<dead>> 	0x0000000B	[  7] literal string: @24@0:8:16
+<<dead>> 	0x0000000E	[  7] literal string: @32@0:8:16@24
+<<dead>> 	0x00000011	[  7] literal string: @40@0:8:16@24@32
+<<dead>> 	0x00000008	[  7] literal string: B16@0:8
+<<dead>> 	0x0000000B	[  7] literal string: B24@0:8#16
+<<dead>> 	0x0000000B	[  7] literal string: B24@0:8:16
+<<dead>> 	0x00000009	[  7] literal string: Vv16@0:8
+<<dead>> 	0x00000008	[  7] literal string: Q16@0:8
+<<dead>> 	0x00000012	[  7] literal string: ^{_NSZone=}16@0:8
+<<dead>> 	0x00000015	[  7] literal string: B24@0:8@"Protocol"16
+<<dead>> 	0x00000012	[  7] literal string: @"NSString"16@0:8
+<<dead>> 	0x0000000B	[  7] literal string: v24@0:8@16
+<<dead>> 	0x0000000E	[  7] literal string: B32@0:8@16@24
+<<dead>> 	0x00000011	[  7] literal string: B40@0:8@16@24@32
+<<dead>> 	0x0000000E	[  7] literal string: v32@0:8@16@24
+<<dead>> 	0x00000011	[  7] literal string: @40@0:8@16@24@32
+<<dead>> 	0x00000011	[  7] literal string: v40@0:8@16@24@32
+<<dead>> 	0x00000008	[  7] literal string: v16@0:8
+<<dead>> 	0x00000005	[  7] literal string: hash
+<<dead>> 	0x00000005	[  7] literal string: TQ,R
+<<dead>> 	0x0000000B	[  7] literal string: superclass
+<<dead>> 	0x00000005	[  7] literal string: T#,R
+<<dead>> 	0x0000000C	[  7] literal string: description
+<<dead>> 	0x00000011	[  7] literal string: T@"NSString",R,C
+<<dead>> 	0x00000011	[  7] literal string: debugDescription
+<<dead>> 	0x00000018	[  7] CIE
+<<dead>> 	0x00000005	[  8] literal string: init
+<<dead>> 	0x00000008	[  8] literal string: dealloc
+<<dead>> 	0x00000009	[  8] literal string: isEqual:
+<<dead>> 	0x00000006	[  8] literal string: class
+<<dead>> 	0x00000005	[  8] literal string: self
+<<dead>> 	0x00000011	[  8] literal string: performSelector:
+<<dead>> 	0x0000001C	[  8] literal string: performSelector:withObject:
+<<dead>> 	0x00000027	[  8] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000008	[  8] literal string: isProxy
+<<dead>> 	0x0000000F	[  8] literal string: isKindOfClass:
+<<dead>> 	0x00000011	[  8] literal string: isMemberOfClass:
+<<dead>> 	0x00000014	[  8] literal string: conformsToProtocol:
+<<dead>> 	0x00000014	[  8] literal string: respondsToSelector:
+<<dead>> 	0x00000007	[  8] literal string: retain
+<<dead>> 	0x00000008	[  8] literal string: release
+<<dead>> 	0x0000000C	[  8] literal string: autorelease
+<<dead>> 	0x0000000C	[  8] literal string: retainCount
+<<dead>> 	0x00000005	[  8] literal string: zone
+<<dead>> 	0x00000005	[  8] literal string: hash
+<<dead>> 	0x0000000B	[  8] literal string: superclass
+<<dead>> 	0x0000000C	[  8] literal string: description
+<<dead>> 	0x00000011	[  8] literal string: debugDescription
+<<dead>> 	0x00000008	[  8] literal string: methodA
+<<dead>> 	0x00000008	[  8] literal string: methodB
+<<dead>> 	0x00000006	[  8] literal string: alloc
+<<dead>> 	0x0000000B	[  8] literal string: initModule
+<<dead>> 	0x0000000D	[  8] literal string: uninitModule
+<<dead>> 	0x0000001C	[  8] literal string: enumerateObjectsUsingBlock:
+<<dead>> 	0x0000000D	[  8] literal string: sharedObject
+<<dead>> 	0x0000000E	[  8] literal string: .cxx_destruct
+<<dead>> 	0x00000005	[  8] literal string: demo
+<<dead>> 	0x00000005	[  8] literal string: hash
+<<dead>> 	0x00000005	[  8] literal string: TQ,R
+<<dead>> 	0x0000000B	[  8] literal string: superclass
+<<dead>> 	0x00000005	[  8] literal string: T#,R
+<<dead>> 	0x0000000C	[  8] literal string: description
+<<dead>> 	0x00000011	[  8] literal string: T@"NSString",R,C
+<<dead>> 	0x00000011	[  8] literal string: debugDescription
+<<dead>> 	0x00000006	[  8] literal string: v8@?0
+<<dead>> 	0x00000010	[  8] literal string: v32@?0@8Q16^B24
+<<dead>> 	0x00000009	[  8] literal string: NSObject
+<<dead>> 	0x00000002	[  8] literal string: 
+<<dead>> 	0x0000000B	[  8] literal string: B24@0:8@16
+<<dead>> 	0x00000008	[  8] literal string: #16@0:8
+<<dead>> 	0x00000008	[  8] literal string: @16@0:8
+<<dead>> 	0x0000000B	[  8] literal string: @24@0:8:16
+<<dead>> 	0x0000000E	[  8] literal string: @32@0:8:16@24
+<<dead>> 	0x00000011	[  8] literal string: @40@0:8:16@24@32
+<<dead>> 	0x00000008	[  8] literal string: B16@0:8
+<<dead>> 	0x0000000B	[  8] literal string: B24@0:8#16
+<<dead>> 	0x0000000B	[  8] literal string: B24@0:8:16
+<<dead>> 	0x00000009	[  8] literal string: Vv16@0:8
+<<dead>> 	0x00000008	[  8] literal string: Q16@0:8
+<<dead>> 	0x00000012	[  8] literal string: ^{_NSZone=}16@0:8
+<<dead>> 	0x00000015	[  8] literal string: B24@0:8@"Protocol"16
+<<dead>> 	0x00000012	[  8] literal string: @"NSString"16@0:8
+<<dead>> 	0x00000008	[  8] literal string: v16@0:8
+<<dead>> 	0x0000000B	[  8] literal string: v24@0:8@16
+<<dead>> 	0x00000020	[  8] ___block_descriptor_32_e5_v8@?0l
+<<dead>> 	0x00000018	[  8] CIE
+<<dead>> 	0x00000017	[  9] literal string: v16@?0@"NSDictionary"8
+<<dead>> 	0x00000005	[  9] literal string: init
+<<dead>> 	0x00000008	[  9] literal string: dealloc
+<<dead>> 	0x0000000D	[  9] literal string: sharedObject
+<<dead>> 	0x00000025	[  9] literal string: dictionaryWithObjects:forKeys:count:
+<<dead>> 	0x00000005	[  9] literal string: demo
+<<dead>> 	0x00000008	[  9] literal string: @16@0:8
+<<dead>> 	0x00000008	[  9] literal string: v16@0:8
+<<dead>> 	0x00000018	[  9] CIE
+<<dead>> 	0x00000011	[ 16] literal string: ATModuleProtocol
+<<dead>> 	0x00000009	[ 16] literal string: NSObject
+<<dead>> 	0x00000009	[ 16] literal string: isEqual:
+<<dead>> 	0x00000006	[ 16] literal string: class
+<<dead>> 	0x00000005	[ 16] literal string: self
+<<dead>> 	0x00000011	[ 16] literal string: performSelector:
+<<dead>> 	0x0000001C	[ 16] literal string: performSelector:withObject:
+<<dead>> 	0x00000027	[ 16] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000008	[ 16] literal string: isProxy
+<<dead>> 	0x0000000F	[ 16] literal string: isKindOfClass:
+<<dead>> 	0x00000011	[ 16] literal string: isMemberOfClass:
+<<dead>> 	0x00000014	[ 16] literal string: conformsToProtocol:
+<<dead>> 	0x00000014	[ 16] literal string: respondsToSelector:
+<<dead>> 	0x00000007	[ 16] literal string: retain
+<<dead>> 	0x00000008	[ 16] literal string: release
+<<dead>> 	0x0000000C	[ 16] literal string: autorelease
+<<dead>> 	0x0000000C	[ 16] literal string: retainCount
+<<dead>> 	0x00000005	[ 16] literal string: zone
+<<dead>> 	0x00000005	[ 16] literal string: hash
+<<dead>> 	0x0000000B	[ 16] literal string: superclass
+<<dead>> 	0x0000000C	[ 16] literal string: description
+<<dead>> 	0x00000011	[ 16] literal string: debugDescription
+<<dead>> 	0x0000000B	[ 16] literal string: initModule
+<<dead>> 	0x0000000D	[ 16] literal string: uninitModule
+<<dead>> 	0x0000000B	[ 16] literal string: B24@0:8@16
+<<dead>> 	0x00000008	[ 16] literal string: #16@0:8
+<<dead>> 	0x00000008	[ 16] literal string: @16@0:8
+<<dead>> 	0x0000000B	[ 16] literal string: @24@0:8:16
+<<dead>> 	0x0000000E	[ 16] literal string: @32@0:8:16@24
+<<dead>> 	0x00000011	[ 16] literal string: @40@0:8:16@24@32
+<<dead>> 	0x00000008	[ 16] literal string: B16@0:8
+<<dead>> 	0x0000000B	[ 16] literal string: B24@0:8#16
+<<dead>> 	0x0000000B	[ 16] literal string: B24@0:8:16
+<<dead>> 	0x00000009	[ 16] literal string: Vv16@0:8
+<<dead>> 	0x00000008	[ 16] literal string: Q16@0:8
+<<dead>> 	0x00000012	[ 16] literal string: ^{_NSZone=}16@0:8
+<<dead>> 	0x00000015	[ 16] literal string: B24@0:8@"Protocol"16
+<<dead>> 	0x00000012	[ 16] literal string: @"NSString"16@0:8
+<<dead>> 	0x00000008	[ 16] literal string: v16@0:8
+<<dead>> 	0x00000005	[ 16] literal string: hash
+<<dead>> 	0x00000005	[ 16] literal string: TQ,R
+<<dead>> 	0x0000000B	[ 16] literal string: superclass
+<<dead>> 	0x00000005	[ 16] literal string: T#,R
+<<dead>> 	0x0000000C	[ 16] literal string: description
+<<dead>> 	0x00000011	[ 16] literal string: T@"NSString",R,C
+<<dead>> 	0x00000011	[ 16] literal string: debugDescription
+<<dead>> 	0x00000018	[ 16] CIE
+<<dead>> 	0x00000008	[ 10] 8-byte-literal
+<<dead>> 	0x00000008	[ 10] 8-byte-literal
+<<dead>> 	0x00000008	[ 10] 8-byte-literal
+<<dead>> 	0x00000008	[ 10] 8-byte-literal
+<<dead>> 	0x00000008	[ 10] 8-byte-literal
+<<dead>> 	0x00000004	[ 10] 4-byte-literal
+<<dead>> 	0x00000004	[ 10] 4-byte-literal
+<<dead>> 	0x00000014	[ 10] literal string: navigationBarHidden
+<<dead>> 	0x00000015	[ 10] literal string: navigationController
+<<dead>> 	0x0000000C	[ 10] literal string: viewDidLoad
+<<dead>> 	0x00000005	[ 10] literal string: view
+<<dead>> 	0x00000014	[ 10] literal string: setBackgroundColor:
+<<dead>> 	0x00000006	[ 10] literal string: alloc
+<<dead>> 	0x0000000F	[ 10] literal string: initWithFrame:
+<<dead>> 	0x00000013	[ 10] literal string: transformViewWidth
+<<dead>> 	0x00000014	[ 10] literal string: transformViewHeight
+<<dead>> 	0x0000000E	[ 10] literal string: transformView
+<<dead>> 	0x0000000C	[ 10] literal string: addSubview:
+<<dead>> 	0x0000000B	[ 10] literal string: mainScreen
+<<dead>> 	0x00000007	[ 10] literal string: bounds
+<<dead>> 	0x0000000E	[ 10] literal string: .cxx_destruct
+<<dead>> 	0x00000017	[ 10] literal string: setUsingTransformView:
+<<dead>> 	0x00000008	[ 10] literal string: q16@0:8
+<<dead>> 	0x0000000B	[ 10] literal string: v20@0:8B16
+<<dead>> 	0x00000008	[ 10] literal string: v16@0:8
+<<dead>> 	0x00000008	[ 10] literal string: @16@0:8
+<<dead>> 	0x0000000B	[ 10] literal string: v24@0:8@16
+<<dead>> 	0x00000008	[ 10] literal string: B16@0:8
+<<dead>> 	0x00000002	[ 10] literal string: B
+<<dead>> 	0x00000018	[ 10] CIE
+<<dead>> 	0x00000006	[ 17] literal string: v8@?0
+<<dead>> 	0x00000020	[ 17] ___block_descriptor_32_e5_v8@?0l
+<<dead>> 	0x00000006	[ 17] literal string: alloc
+<<dead>> 	0x00000005	[ 17] literal string: init
+<<dead>> 	0x00000012	[ 17] literal string: setObject:forKey:
+<<dead>> 	0x0000000F	[ 17] literal string: isKindOfClass:
+<<dead>> 	0x00000023	[ 17] literal string: callTarget:action:params:callback:
+<<dead>> 	0x00000014	[ 17] literal string: respondsToSelector:
+<<dead>> 	0x00000027	[ 17] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000006	[ 17] literal string: class
+<<dead>> 	0x00000006	[ 17] literal string: count
+<<dead>> 	0x00000017	[ 17] literal string: registerTarget:aClass:
+<<dead>> 	0x00000019	[ 17] literal string: objectForKeyedSubscript:
+<<dead>> 	0x00000013	[ 17] literal string: numberWithInteger:
+<<dead>> 	0x00000025	[ 17] literal string: dictionaryWithObjects:forKeys:count:
+<<dead>> 	0x0000000F	[ 17] literal string: atcs_resultDic
+<<dead>> 	0x00000011	[ 17] literal string: @40@0:8@16@24@32
+<<dead>> 	0x0000000B	[ 17] literal string: @24@0:8@16
+<<dead>> 	0x0000000F	[ 17] literal string: @32@0:8@16@?24
+<<dead>> 	0x00000008	[ 17] literal string: B16@0:8
+<<dead>> 	0x00000008	[ 17] literal string: q16@0:8
+<<dead>> 	0x00000008	[ 17] literal string: @16@0:8
+<<dead>> 	0x0000000E	[ 17] literal string: @32@0:8q16@24
+<<dead>> 	0x00000018	[ 17] CIE
+<<dead>> 	0x0000000E	[ 14] literal string: objectForKey:
+<<dead>> 	0x0000001C	[ 14] literal string: addModule:identifier:group:
+<<dead>> 	0x00000006	[ 14] literal string: alloc
+<<dead>> 	0x00000005	[ 14] literal string: init
+<<dead>> 	0x00000012	[ 14] literal string: setObject:forKey:
+<<dead>> 	0x00000013	[ 14] literal string: numberWithInteger:
+<<dead>> 	0x0000000B	[ 14] literal string: addObject:
+<<dead>> 	0x00000022	[ 14] literal string: removeModuleWithIdentifier:group:
+<<dead>> 	0x00000016	[ 14] literal string: moduleWithIdentifier:
+<<dead>> 	0x00000014	[ 14] literal string: removeObjectForKey:
+<<dead>> 	0x0000000B	[ 14] literal string: initModule
+<<dead>> 	0x0000000D	[ 14] literal string: uninitModule
+<<dead>> 	0x00000015	[ 14] literal string: initModuleWithGroup:
+<<dead>> 	0x00000017	[ 14] literal string: uninitModuleWithGroup:
+<<dead>> 	0x0000000E	[ 14] literal string: .cxx_destruct
+<<dead>> 	0x0000000B	[ 14] literal string: @24@0:8@16
+<<dead>> 	0x0000000E	[ 14] literal string: v32@0:8@16@24
+<<dead>> 	0x00000011	[ 14] literal string: v40@0:8@16@24q32
+<<dead>> 	0x0000000B	[ 14] literal string: v24@0:8@16
+<<dead>> 	0x0000000E	[ 14] literal string: v32@0:8@16q24
+<<dead>> 	0x00000008	[ 14] literal string: v16@0:8
+<<dead>> 	0x00000008	[ 14] literal string: @16@0:8
+<<dead>> 	0x00000018	[ 14] CIE
+<<dead>> 	0x00000006	[ 13] literal string: v8@?0
+<<dead>> 	0x00000020	[ 13] ___block_descriptor_32_e5_v8@?0l
+<<dead>> 	0x00000006	[ 13] literal string: alloc
+<<dead>> 	0x00000005	[ 13] literal string: init
+<<dead>> 	0x00000004	[ 13] literal string: new
+<<dead>> 	0x00000010	[ 13] literal string: removeObserver:
+<<dead>> 	0x00000008	[ 13] literal string: dealloc
+<<dead>> 	0x0000000E	[ 13] literal string: objectForKey:
+<<dead>> 	0x00000012	[ 13] literal string: setObject:forKey:
+<<dead>> 	0x0000000B	[ 13] literal string: addObject:
+<<dead>> 	0x00000006	[ 13] literal string: count
+<<dead>> 	0x0000001A	[ 13] literal string: objectAtIndexedSubscript:
+<<dead>> 	0x00000014	[ 13] literal string: removeObjectForKey:
+<<dead>> 	0x0000000E	[ 13] literal string: removeObject:
+<<dead>> 	0x0000001C	[ 13] literal string: enumerateObjectsUsingBlock:
+<<dead>> 	0x0000002B	[ 13] literal string: countByEnumeratingWithState:objects:count:
+<<dead>> 	0x00000026	[ 13] literal string: postNotificationName:object:userInfo:
+<<dead>> 	0x0000000D	[ 13] literal string: sharedObject
+<<dead>> 	0x0000001B	[ 13] literal string: addObserver:name:callback:
+<<dead>> 	0x0000000E	[ 13] literal string: .cxx_destruct
+<<dead>> 	0x00000002	[ 13] literal string: 
+<<dead>> 	0x00000008	[ 13] literal string: @16@0:8
+<<dead>> 	0x0000000E	[ 13] literal string: v32@0:8@16@24
+<<dead>> 	0x00000011	[ 13] literal string: v40@0:8@16@24@32
+<<dead>> 	0x00000008	[ 13] literal string: v16@0:8
+<<dead>> 	0x00000012	[ 13] literal string: v40@0:8@16@24@?32
+<<dead>> 	0x0000000B	[ 13] literal string: v24@0:8@16
+<<dead>> 	0x00000017	[ 13] literal string: @"NSMutableDictionary"
+<<dead>> 	0x00000018	[ 13] CIE
+<<dead>> 	0x00000020	[ 13] CIE
+<<dead>> 	0x0000000E	[ 12] literal string: objectForKey:
+<<dead>> 	0x0000001A	[ 12] literal string: addModule:protocol:group:
+<<dead>> 	0x00000014	[ 12] literal string: conformsToProtocol:
+<<dead>> 	0x00000012	[ 12] literal string: setObject:forKey:
+<<dead>> 	0x00000006	[ 12] literal string: alloc
+<<dead>> 	0x00000005	[ 12] literal string: init
+<<dead>> 	0x00000014	[ 12] literal string: removeObjectForKey:
+<<dead>> 	0x0000001E	[ 12] literal string: registerClass:protocol:group:
+<<dead>> 	0x00000007	[ 12] literal string: groups
+<<dead>> 	0x00000013	[ 12] literal string: numberWithInteger:
+<<dead>> 	0x00000005	[ 12] literal string: copy
+<<dead>> 	0x0000002B	[ 12] literal string: countByEnumeratingWithState:objects:count:
+<<dead>> 	0x00000008	[ 12] literal string: module:
+<<dead>> 	0x0000000B	[ 12] literal string: addObject:
+<<dead>> 	0x0000000B	[ 12] literal string: setGroups:
+<<dead>> 	0x0000000E	[ 12] literal string: removeObject:
+<<dead>> 	0x00000006	[ 12] literal string: count
+<<dead>> 	0x0000001A	[ 12] literal string: objectAtIndexedSubscript:
+<<dead>> 	0x00000009	[ 12] literal string: isEqual:
+<<dead>> 	0x00000006	[ 12] literal string: class
+<<dead>> 	0x00000005	[ 12] literal string: self
+<<dead>> 	0x00000011	[ 12] literal string: performSelector:
+<<dead>> 	0x0000001C	[ 12] literal string: performSelector:withObject:
+<<dead>> 	0x00000027	[ 12] literal string: performSelector:withObject:withObject:
+<<dead>> 	0x00000008	[ 12] literal string: isProxy
+<<dead>> 	0x0000000F	[ 12] literal string: isKindOfClass:
+<<dead>> 	0x00000011	[ 12] literal string: isMemberOfClass:
+<<dead>> 	0x00000014	[ 12] literal string: respondsToSelector:
+<<dead>> 	0x00000007	[ 12] literal string: retain
+<<dead>> 	0x00000008	[ 12] literal string: release
+<<dead>> 	0x0000000C	[ 12] literal string: autorelease
+<<dead>> 	0x0000000C	[ 12] literal string: retainCount
+<<dead>> 	0x00000005	[ 12] literal string: zone
+<<dead>> 	0x00000005	[ 12] literal string: hash
+<<dead>> 	0x0000000B	[ 12] literal string: superclass
+<<dead>> 	0x0000000C	[ 12] literal string: description
+<<dead>> 	0x00000011	[ 12] literal string: debugDescription
+<<dead>> 	0x00000014	[ 12] literal string: addModule:protocol:
+<<dead>> 	0x00000018	[ 12] literal string: registerClass:protocol:
+<<dead>> 	0x00000010	[ 12] literal string: removeProtocol:
+<<dead>> 	0x0000001D	[ 12] literal string: modulesInGroup:createIfNeed:
+<<dead>> 	0x0000000E	[ 12] literal string: .cxx_destruct
+<<dead>> 	0x00000008	[ 12] literal string: _groups
+<<dead>> 	0x00000025	[ 12] literal string: mapTableWithKeyOptions:valueOptions:
+<<dead>> 	0x00000009	[ 12] literal string: NSObject
+<<dead>> 	0x00000002	[ 12] literal string: 
+<<dead>> 	0x0000000B	[ 12] literal string: B24@0:8@16
+<<dead>> 	0x00000008	[ 12] literal string: #16@0:8
+<<dead>> 	0x00000008	[ 12] literal string: @16@0:8
+<<dead>> 	0x0000000B	[ 12] literal string: @24@0:8:16
+<<dead>> 	0x0000000E	[ 12] literal string: @32@0:8:16@24
+<<dead>> 	0x00000011	[ 12] literal string: @40@0:8:16@24@32
+<<dead>> 	0x00000008	[ 12] literal string: B16@0:8
+<<dead>> 	0x0000000B	[ 12] literal string: B24@0:8#16
+<<dead>> 	0x0000000B	[ 12] literal string: B24@0:8:16
+<<dead>> 	0x00000009	[ 12] literal string: Vv16@0:8
+<<dead>> 	0x00000008	[ 12] literal string: Q16@0:8
+<<dead>> 	0x00000012	[ 12] literal string: ^{_NSZone=}16@0:8
+<<dead>> 	0x00000015	[ 12] literal string: B24@0:8@"Protocol"16
+<<dead>> 	0x00000012	[ 12] literal string: @"NSString"16@0:8
+<<dead>> 	0x0000000B	[ 12] literal string: @24@0:8@16
+<<dead>> 	0x0000000E	[ 12] literal string: v32@0:8@16@24
+<<dead>> 	0x00000011	[ 12] literal string: v40@0:8@16@24q32
+<<dead>> 	0x0000000B	[ 12] literal string: v24@0:8@16
+<<dead>> 	0x0000000E	[ 12] literal string: v32@0:8@16q24
+<<dead>> 	0x0000000B	[ 12] literal string: q24@0:8@16
+<<dead>> 	0x00000008	[ 12] literal string: v16@0:8
+<<dead>> 	0x00000017	[ 12] literal string: @"NSMutableDictionary"
+<<dead>> 	0x00000005	[ 12] literal string: hash
+<<dead>> 	0x00000005	[ 12] literal string: TQ,R
+<<dead>> 	0x0000000B	[ 12] literal string: superclass
+<<dead>> 	0x00000005	[ 12] literal string: T#,R
+<<dead>> 	0x0000000C	[ 12] literal string: description
+<<dead>> 	0x00000011	[ 12] literal string: T@"NSString",R,C
+<<dead>> 	0x00000011	[ 12] literal string: debugDescription
+<<dead>> 	0x00000007	[ 12] literal string: groups
+<<dead>> 	0x00000025	[ 12] literal string: T@"NSMutableDictionary",&,N,V_groups
+<<dead>> 	0x00000006	[ 12] literal string: v8@?0
+<<dead>> 	0x00000020	[ 12] ___block_descriptor_32_e5_v8@?0l
+<<dead>> 	0x00000018	[ 12] CIE
+<<dead>> 	0x00000002	[ 11] literal string: 
+<<dead>> 	0x0000000E	[ 11] literal string: .cxx_destruct
+<<dead>> 	0x00000009	[ 11] literal string: protocol
+<<dead>> 	0x0000000D	[ 11] literal string: setProtocol:
+<<dead>> 	0x00000007	[ 11] literal string: aClass
+<<dead>> 	0x0000000B	[ 11] literal string: setAClass:
+<<dead>> 	0x00000007	[ 11] literal string: module
+<<dead>> 	0x0000000B	[ 11] literal string: setModule:
+<<dead>> 	0x00000008	[ 11] literal string: v16@0:8
+<<dead>> 	0x00000008	[ 11] literal string: @16@0:8
+<<dead>> 	0x0000000B	[ 11] literal string: v24@0:8@16
+<<dead>> 	0x00000008	[ 11] literal string: #16@0:8
+<<dead>> 	0x00000018	[ 11] CIE
+<<dead>> 	0x0000000A	[ 15] literal string: objectKey
+<<dead>> 	0x00000009	[ 15] literal string: isEqual:
+<<dead>> 	0x00000007	[ 15] literal string: target
+<<dead>> 	0x00000006	[ 15] literal string: alloc
+<<dead>> 	0x00000005	[ 15] literal string: hash
+<<dead>> 	0x0000000B	[ 15] literal string: objectKey:
+<<dead>> 	0x0000000B	[ 15] literal string: setTarget:
+<<dead>> 	0x0000000E	[ 15] literal string: .cxx_destruct
+<<dead>> 	0x0000000A	[ 15] literal string: extension
+<<dead>> 	0x0000000E	[ 15] literal string: setExtension:
+<<dead>> 	0x00000001	[ 15] literal string: 
+<<dead>> 	0x00000020	[ 15] CFString
+<<dead>> 	0x00000002	[ 15] literal string: 
+<<dead>> 	0x0000000B	[ 15] literal string: @24@0:8@16
+<<dead>> 	0x0000000B	[ 15] literal string: B24@0:8@16
+<<dead>> 	0x0000000B	[ 15] literal string: v24@0:8@16
+<<dead>> 	0x00000008	[ 15] literal string: @16@0:8
+<<dead>> 	0x00000008	[ 15] literal string: Q16@0:8
+<<dead>> 	0x00000008	[ 15] literal string: v16@0:8
+<<dead>> 	0x0000000C	[ 15] literal string: @"NSString"
+<<dead>> 	0x00000002	[ 15] literal string: @
+<<dead>> 	0x00000018	[ 15] CIE
