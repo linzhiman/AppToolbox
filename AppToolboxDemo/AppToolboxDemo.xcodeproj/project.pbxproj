@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */; };
+		DC92FC562476679400DCF84F /* ATNotificationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */; };
+		DC92FC572476679400DCF84F /* ATModuleManagerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4E2476679400DCF84F /* ATModuleManagerDemo.m */; };
+		DC92FC582476679400DCF84F /* ATProtocolManagerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */; };
+		DC92FC592476679400DCF84F /* ATComponentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC512476679400DCF84F /* ATComponentDemo.m */; };
 		DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2558B2476585900AE8255 /* AppDelegate.m */; };
 		DCB255922476585900AE8255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255912476585900AE8255 /* ViewController.m */; };
 		DCB255952476585900AE8255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB255932476585900AE8255 /* Main.storyboard */; };
@@ -41,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC92FC4B2476679400DCF84F /* ATComponentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATComponentDemo.h; sourceTree = "<group>"; };
+		DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATApiStrategyDemo.m; sourceTree = "<group>"; };
+		DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNotificationDemo.m; sourceTree = "<group>"; };
+		DC92FC4E2476679400DCF84F /* ATModuleManagerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATModuleManagerDemo.m; sourceTree = "<group>"; };
+		DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATProtocolManagerDemo.m; sourceTree = "<group>"; };
+		DC92FC502476679400DCF84F /* ATNotificationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNotificationDemo.h; sourceTree = "<group>"; };
+		DC92FC512476679400DCF84F /* ATComponentDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATComponentDemo.m; sourceTree = "<group>"; };
+		DC92FC522476679400DCF84F /* ATApiStrategyDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATApiStrategyDemo.h; sourceTree = "<group>"; };
+		DC92FC532476679400DCF84F /* ATProtocolManagerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATProtocolManagerDemo.h; sourceTree = "<group>"; };
+		DC92FC542476679400DCF84F /* ATModuleManagerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATModuleManagerDemo.h; sourceTree = "<group>"; };
 		DCB255872476585900AE8255 /* AppToolboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppToolboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB2558A2476585900AE8255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCB2558B2476585900AE8255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC92FC4A2476679400DCF84F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DC92FC522476679400DCF84F /* ATApiStrategyDemo.h */,
+				DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */,
+				DC92FC4B2476679400DCF84F /* ATComponentDemo.h */,
+				DC92FC512476679400DCF84F /* ATComponentDemo.m */,
+				DC92FC542476679400DCF84F /* ATModuleManagerDemo.h */,
+				DC92FC4E2476679400DCF84F /* ATModuleManagerDemo.m */,
+				DC92FC502476679400DCF84F /* ATNotificationDemo.h */,
+				DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */,
+				DC92FC532476679400DCF84F /* ATProtocolManagerDemo.h */,
+				DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		DCB2557E2476585900AE8255 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +119,7 @@
 		DCB255892476585900AE8255 /* AppToolboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC92FC4A2476679400DCF84F /* Demo */,
 				DCB2558A2476585900AE8255 /* AppDelegate.h */,
 				DCB2558B2476585900AE8255 /* AppDelegate.m */,
 				DCB255902476585900AE8255 /* ViewController.h */,
@@ -211,8 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB255922476585900AE8255 /* ViewController.m in Sources */,
+				DC92FC592476679400DCF84F /* ATComponentDemo.m in Sources */,
+				DC92FC562476679400DCF84F /* ATNotificationDemo.m in Sources */,
+				DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */,
+				DC92FC582476679400DCF84F /* ATProtocolManagerDemo.m in Sources */,
 				DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */,
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
+				DC92FC572476679400DCF84F /* ATModuleManagerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +339,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../AppToolbox/**";
 			};
 			name = Debug;
 		};
@@ -352,6 +391,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../AppToolbox/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
