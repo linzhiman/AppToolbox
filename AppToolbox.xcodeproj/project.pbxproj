@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DCB255682476564900AE8255 /* AppToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255672476564900AE8255 /* AppToolbox.m */; };
 		DCB255692476564900AE8255 /* AppToolbox.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCB255662476564900AE8255 /* AppToolbox.h */; };
-		DCB255762476580D00AE8255 /* AppToolboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255752476580D00AE8255 /* AppToolboxTests.m */; };
 		DCB255782476580D00AE8255 /* libAppToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB255632476564900AE8255 /* libAppToolbox.a */; };
 		DCB255E824765D8A00AE8255 /* ATTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255B324765D8900AE8255 /* ATTaskQueue.m */; };
 		DCB255E924765D8A00AE8255 /* ATWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255B824765D8900AE8255 /* ATWeakObject.m */; };
@@ -32,6 +31,10 @@
 		DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DF24765D8900AE8255 /* ATRuntimeUtils.m */; };
 		DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255E224765D8900AE8255 /* ATComponentService.m */; };
 		DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255E624765D8900AE8255 /* ATApiStrategy.m */; };
+		DCB25601247660B400AE8255 /* ATWeakTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */; };
+		DCB25602247660B400AE8255 /* ATTaskQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */; };
+		DCB25603247660B400AE8255 /* ATGCDTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FF247660B400AE8255 /* ATGCDTimerTest.m */; };
+		DCB25604247660B400AE8255 /* ATStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB25600247660B400AE8255 /* ATStringTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +65,6 @@
 		DCB255662476564900AE8255 /* AppToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppToolbox.h; sourceTree = "<group>"; };
 		DCB255672476564900AE8255 /* AppToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppToolbox.m; sourceTree = "<group>"; };
 		DCB255732476580D00AE8255 /* AppToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB255752476580D00AE8255 /* AppToolboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppToolboxTests.m; sourceTree = "<group>"; };
 		DCB255772476580D00AE8255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCB255B324765D8900AE8255 /* ATTaskQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTaskQueue.m; sourceTree = "<group>"; };
 		DCB255B424765D8900AE8255 /* ATTaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTaskQueue.h; sourceTree = "<group>"; };
@@ -107,6 +109,10 @@
 		DCB255E424765D8900AE8255 /* ATGlobalMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGlobalMacro.h; sourceTree = "<group>"; };
 		DCB255E624765D8900AE8255 /* ATApiStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATApiStrategy.m; sourceTree = "<group>"; };
 		DCB255E724765D8900AE8255 /* ATApiStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATApiStrategy.h; sourceTree = "<group>"; };
+		DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakTimerTest.m; sourceTree = "<group>"; };
+		DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTaskQueueTest.m; sourceTree = "<group>"; };
+		DCB255FF247660B400AE8255 /* ATGCDTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCDTimerTest.m; sourceTree = "<group>"; };
+		DCB25600247660B400AE8255 /* ATStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStringTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +165,10 @@
 		DCB255742476580D00AE8255 /* AppToolboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				DCB255752476580D00AE8255 /* AppToolboxTests.m */,
+				DCB255FF247660B400AE8255 /* ATGCDTimerTest.m */,
+				DCB25600247660B400AE8255 /* ATStringTest.m */,
+				DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */,
+				DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */,
 				DCB255772476580D00AE8255 /* Info.plist */,
 			);
 			path = AppToolboxTests;
@@ -347,6 +356,7 @@
 		DCB2555B2476564900AE8255 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AT;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = AppToolbox;
 				TargetAttributes = {
@@ -421,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB255762476580D00AE8255 /* AppToolboxTests.m in Sources */,
+				DCB25602247660B400AE8255 /* ATTaskQueueTest.m in Sources */,
+				DCB25601247660B400AE8255 /* ATWeakTimerTest.m in Sources */,
+				DCB25604247660B400AE8255 /* ATStringTest.m in Sources */,
+				DCB25603247660B400AE8255 /* ATGCDTimerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +591,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppToolbox.AppToolboxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -594,6 +608,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppToolbox.AppToolboxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
