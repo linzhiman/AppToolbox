@@ -14,7 +14,7 @@
 
 @interface ATApiFluidStrategy ()
 
-@property (nonatomic, strong) NSDate *lastFluid;
+@property (nonatomic, assign) NSTimeInterval lastFluidTimestamp;
 @property (nonatomic, assign) BOOL hasPerform;
 
 @end
@@ -26,7 +26,7 @@
     self = [super init];
     if (self) {
         _delaySeconds = 5;
-        _lastFluid = [NSDate dateWithTimeIntervalSince1970:0];
+        _lastFluidTimestamp = 0;
     }
     return self;
 }
@@ -38,15 +38,22 @@
 
 - (void)fluid
 {
-    NSDate *now = [NSDate date];
-    NSTimeInterval time = [now timeIntervalSinceDate:self.lastFluid];
-    if (time > self.delaySeconds) {
+    NSUInteger delaySeconds = self.delaySeconds;
+    NSTimeInterval timestamp = self.lastFluidTimestamp;
+    
+    NSTimeInterval offset = [[NSDate date] timeIntervalSince1970] - timestamp;
+    if (offset > delaySeconds) {
         [self callDoWork];
     }
     else {
+        BOOL need = NO;
         if (!self.hasPerform) {
             self.hasPerform = YES;
-            [self performSelector:@selector(callDoWork) withObject:nil afterDelay:self.delaySeconds];
+            need = YES;
+        }
+        
+        if (need) {
+            [self performSelector:@selector(callDoWork) withObject:nil afterDelay:delaySeconds];
         }
     }
 }
@@ -54,9 +61,53 @@
 - (void)callDoWork
 {
     self.hasPerform = NO;
-    self.lastFluid = [NSDate date];
+    self.lastFluidTimestamp = [[NSDate date] timeIntervalSince1970];
+    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+
+    AT_SAFETY_CALL_BLOCK(self.doWork, self);
+}
+
+@end
+
+#pragma mark - ATApiDelayStrategy
+
+@interface ATApiDelayStrategy ()
+
+@end
+
+@implementation ATApiDelayStrategy
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _delaySeconds = 5;
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
+- (void)restartDelay
+{
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     
+    [self performSelector:@selector(callDoWork) withObject:nil afterDelay:self.delaySeconds];
+}
+
+- (void)cancelDelay
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
+- (void)callDoWork
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
+
     AT_SAFETY_CALL_BLOCK(self.doWork, self);
 }
 
