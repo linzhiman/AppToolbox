@@ -46,15 +46,15 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     return self;
 }
 
-- (void)addInstance:(id)instance protocol:(Protocol *)protocol
+- (BOOL)addInstance:(id)instance protocol:(Protocol *)protocol
 {
-    [self addInstance:instance protocol:protocol group:kATProtocolManagerDefaultGroup];
+    return [self addInstance:instance protocol:protocol group:kATProtocolManagerDefaultGroup];
 }
 
-- (void)addInstance:(id)instance protocol:(Protocol *)protocol group:(NSInteger)group
+- (BOOL)addInstance:(id)instance protocol:(Protocol *)protocol group:(NSInteger)group
 {
-    if (![instance conformsToProtocol:protocol]) {
-        return;
+    if (instance == nil || ![instance conformsToProtocol:protocol]) {
+        return NO;
     }
     
     [self.lock lock];
@@ -68,17 +68,19 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     [self addMeta:meta group:group];
     
     [self.lock unlock];
+    
+    return YES;
 }
 
-- (void)registerClass:(Class)aClass protocol:(Protocol *)protocol
+- (BOOL)registerClass:(Class)aClass protocol:(Protocol *)protocol
 {
-    [self registerClass:aClass protocol:protocol group:kATProtocolManagerDefaultGroup];
+    return [self registerClass:aClass protocol:protocol group:kATProtocolManagerDefaultGroup];
 }
 
-- (void)registerClass:(Class)aClass protocol:(Protocol *)protocol group:(NSInteger)group
+- (BOOL)registerClass:(Class)aClass protocol:(Protocol *)protocol group:(NSInteger)group
 {
     if (![aClass conformsToProtocol:protocol]) {
-        return;
+        return NO;
     }
     
     [self.lock lock];
@@ -92,25 +94,28 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     [self addMeta:meta group:group];
     
     [self.lock unlock];
+    
+    return YES;
 }
 
-- (id)instance:(Protocol *)protocol
+- (id _Nullable)instance:(Protocol *)protocol
 {
     id instance = [self instanceOnlyForProtocol:protocol];
     if (instance == nil) {
-        Class class = [self classForProtocol:protocol];
-        if (class != NULL) {
-            instance = [[class alloc] init];
+        Class aClass = [self classForProtocol:protocol];
+        if (aClass != NULL) {
+            instance = [[aClass alloc] init];
             [self addInstance:instance protocol:protocol group:[self groupForProtocol:protocol]];
         }
     }
     return instance;
 }
 
-- (void)removeInstance:(Protocol *)protocol
+- (BOOL)removeInstance:(Protocol *)protocol
 {
-    [self removeInstanceOnlyForProtocol:protocol];
-    [self unRegisterClass:protocol];
+    BOOL res = [self removeInstanceOnlyForProtocol:protocol];
+    BOOL res2 = [self unRegisterClass:protocol];
+    return res || res2;
 }
 
 - (NSArray *)instancesInDefaultGroup
@@ -143,18 +148,18 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     return [value copy];
 }
 
-- (id)instanceOnlyForProtocol:(Protocol *)protocol
+- (id _Nullable)instanceOnlyForProtocol:(Protocol *)protocol
 {
     [self.lock lock];
     
-    id tmp = [self.instancesMap objectForKey:protocol];
+    id instance = [self.instancesMap objectForKey:protocol];
     
     [self.lock unlock];
     
-    return tmp;
+    return instance;
 }
 
-- (void)removeInstanceOnlyForProtocol:(Protocol *)protocol
+- (BOOL)removeInstanceOnlyForProtocol:(Protocol *)protocol
 {
     [self.lock lock];
     
@@ -169,34 +174,38 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     }
     
     [self.lock unlock];
+    
+    return instance != nil;
 }
 
 - (Class)classForProtocol:(Protocol *)protocol
 {
     [self.lock lock];
     
-    Class tmp = [self.instanceClassesMap objectForKey:protocol];
+    Class aClass = [self.instanceClassesMap objectForKey:protocol];
     
     [self.lock unlock];
     
-    return tmp;
+    return aClass;
 }
 
-- (void)unRegisterClass:(Protocol *)protocol
+- (BOOL)unRegisterClass:(Protocol *)protocol
 {
     [self.lock lock];
     
-    id obj = [self.instanceClassesMap objectForKey:protocol];
-    if (obj != nil) {
+    Class aClass = [self.instanceClassesMap objectForKey:protocol];
+    if (aClass != NULL) {
         [self.instanceClassesMap removeObjectForKey:protocol];
         
         ATProtocolManagerMeta *meta = [[ATProtocolManagerMeta alloc] init];
         meta.protocol = protocol;
-        meta.aClass = obj;
+        meta.aClass = aClass;
         [self removeMeta:meta];
     }
     
     [self.lock unlock];
+    
+    return aClass != NULL;
 }
 
 - (void)addMeta:(ATProtocolManagerMeta *)meta group:(NSInteger)group

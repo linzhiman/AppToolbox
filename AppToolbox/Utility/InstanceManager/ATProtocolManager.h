@@ -30,33 +30,33 @@ extern const NSInteger kATProtocolManagerGroup2;
 /**
  在默认组添加实例，添加到instance表
  */
-- (void)addInstance:(id)instance protocol:(Protocol *)protocol;
+- (BOOL)addInstance:(id)instance protocol:(Protocol *)protocol;
 
 /**
  在指定组添加实例，添加到instance表
  */
-- (void)addInstance:(id)instance protocol:(Protocol *)protocol group:(NSInteger)group;
+- (BOOL)addInstance:(id)instance protocol:(Protocol *)protocol group:(NSInteger)group;
 
 /**
  在默认组注册实例类名，添加到class表
  */
-- (void)registerClass:(Class)aClass protocol:(Protocol *)protocol;
+- (BOOL)registerClass:(Class)aClass protocol:(Protocol *)protocol;
 
 /**
  在指定组注册实例类名，添加到class表
  */
-- (void)registerClass:(Class)aClass protocol:(Protocol *)protocol group:(NSInteger)group;
+- (BOOL)registerClass:(Class)aClass protocol:(Protocol *)protocol group:(NSInteger)group;
 
 /**
  获取实例
  先查instance表，再查class表，有则创建实例并调用@selector(addInstance:protocol:group:)
  */
-- (id)instance:(Protocol *)protocol;
+- (id _Nullable)instance:(Protocol *)protocol;
 
 /**
  移除instance及反注册class
  */
-- (void)removeInstance:(Protocol *)protocol;
+- (BOOL)removeInstance:(Protocol *)protocol;
 
 /**
  获取默认组的所有实例
