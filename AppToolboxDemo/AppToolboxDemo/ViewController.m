@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ATApiStrategyDemo.h"
 #import "ATComponentDemo.h"
-#import "ATModuleManagerDemo.h"
+#import "ATInstanceManagerDemo.h"
 #import "ATNotificationDemo.h"
 #import "ATProtocolManagerDemo.h"
 
@@ -152,8 +152,8 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
         [[[ATComponentDemo alloc] init] demo];
     }];
     
-    [self addItem:@"ModuleManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATModuleManagerDemo alloc] init] demo];
+    [self addItem:@"InstanceManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATInstanceManagerDemo alloc] init] demo];
     }];
     
     [self addItem:@"ProtocolManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{

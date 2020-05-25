@@ -1,5 +1,5 @@
 //
-//  ATModuleManagerDemo.h
+//  ATInstanceManagerDemo.h
 //  AppToolboxDemo
 //
 //  Created by linzhiman on 2020/5/21.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ATModuleManager.h"
+#import "ATInstanceManager.h"
 #import "ATGlobalMacro.h"
 
 @protocol ATModuleProtocol <NSObject>
@@ -32,19 +32,19 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 #define ATDEMO_GET_MODULE(atModuleClass) \
-    AT_GET_MODULE([ATModuleManagerEx sharedObject].moduleManager, atModuleClass)
+    AT_GET_INSTANCE([ATModuleManagerEx sharedObject].insManager, atModuleClass)
 #define ATDEMO_GET_MODULE_VARIABLE(atModuleClass, atVariable) \
-    AT_GET_MODULE_VARIABLE([ATModuleManagerEx sharedObject].moduleManager, atModuleClass, atVariable)
+    AT_GET_INSTANCE_VARIABLE([ATModuleManagerEx sharedObject].insManager, atModuleClass, atVariable)
 
 @interface ATModuleManagerEx : NSObject
 
 AT_DECLARE_SINGLETON;
 
-@property (nonatomic, strong) ATModuleManager *moduleManager;
+@property (nonatomic, strong) ATInstanceManager *insManager;
 
 @end
 
-@interface ATModuleManagerDemo : NSObject
+@interface ATInstanceManagerDemo : NSObject
 
 - (void)demo;
 

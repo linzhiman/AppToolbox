@@ -1,12 +1,12 @@
 //
-//  ATModuleManagerDemo.m
+//  ATInstanceManagerDemo.m
 //  AppToolboxDemo
 //
 //  Created by linzhiman on 2020/5/21.
 //  Copyright © 2020 AppToolbox. All rights reserved.
 //
 
-#import "ATModuleManagerDemo.h"
+#import "ATInstanceManagerDemo.h"
 
 @implementation ATModuleManagerClassA
 
@@ -66,13 +66,13 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
 
 - (void)initModule
 {
-    self.moduleManager = [[ATModuleManager alloc] init];
+    self.insManager = [[ATInstanceManager alloc] init];
     
-    AT_ADD_MODULE(self.moduleManager, ATModuleManagerClassA);
-    AT_ADD_MODULE_GROUP(self.moduleManager, ATModuleManagerClassB , kATModuleGroup1);
+    AT_ADD_INSTANCE(self.insManager, ATModuleManagerClassA);
+    AT_ADD_INSTANCE_GROUP(self.insManager, ATModuleManagerClassB , kATInstanceGroup1);
     
     {{
-        NSArray *modules = [self.moduleManager modulesInGroup:kATModuleDefaultGroup];
+        NSArray *modules = [self.insManager instancesInGroup:kATInstanceDefaultGroup];
         for (id<ATModuleProtocol> tmp in modules) {
             if ([tmp respondsToSelector:@selector(initModule)]) {
                 [tmp initModule];
@@ -81,7 +81,7 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
     }}
     
     {{
-        NSArray *modules = [self.moduleManager modulesInGroup:kATModuleGroup1];
+        NSArray *modules = [self.insManager instancesInGroup:kATInstanceGroup1];
         for (id<ATModuleProtocol> tmp in modules) {
             if ([tmp respondsToSelector:@selector(initModule)]) {
                 [tmp initModule];
@@ -92,11 +92,11 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
 
 - (void)uninitModule
 {
-    AT_REMOVE_MODULE(self.moduleManager, ATModuleManagerClassA);
-    AT_REMOVE_MODULE_GROUP(self.moduleManager, ATModuleManagerClassB , kATModuleGroup1);
+    AT_REMOVE_INSTANCE(self.insManager, ATModuleManagerClassA);
+    AT_REMOVE_INSTANCE_GROUP(self.insManager, ATModuleManagerClassB , kATInstanceGroup1);
     
     {{
-        NSArray *modules = [self.moduleManager modulesInGroup:kATModuleDefaultGroup];
+        NSArray *modules = [self.insManager instancesInGroup:kATInstanceDefaultGroup];
         for (id<ATModuleProtocol> tmp in modules) {
             if ([tmp respondsToSelector:@selector(initModule)]) {
                 [tmp uninitModule];
@@ -105,7 +105,7 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
     }}
     
     {{
-        NSArray *modules = [self.moduleManager modulesInGroup:kATModuleGroup1];
+        NSArray *modules = [self.insManager instancesInGroup:kATInstanceGroup1];
         for (id<ATModuleProtocol> tmp in modules) {
             if ([tmp respondsToSelector:@selector(initModule)]) {
                 [tmp uninitModule];
@@ -116,7 +116,7 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
 
 @end
 
-@implementation ATModuleManagerDemo
+@implementation ATInstanceManagerDemo
 
 - (void)demo
 {

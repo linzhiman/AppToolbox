@@ -25,7 +25,7 @@
 		DCB255F424765D8A00AE8255 /* ATFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255CE24765D8900AE8255 /* ATFileManager.m */; };
 		DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */; };
 		DCB255F624765D8A00AE8255 /* ATProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D424765D8900AE8255 /* ATProtocolManager.m */; };
-		DCB255F724765D8A00AE8255 /* ATModuleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D524765D8900AE8255 /* ATModuleManager.m */; };
+		DCB255F724765D8A00AE8255 /* ATInstanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255D524765D8900AE8255 /* ATInstanceManager.m */; };
 		DCB255F824765D8A00AE8255 /* ATGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DB24765D8900AE8255 /* ATGCDTimer.m */; };
 		DCB255F924765D8A00AE8255 /* ATWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DC24765D8900AE8255 /* ATWeakTimer.m */; };
 		DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255DF24765D8900AE8255 /* ATRuntimeUtils.m */; };
@@ -95,9 +95,9 @@
 		DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBlockNotificationCenter.m; sourceTree = "<group>"; };
 		DCB255D224765D8900AE8255 /* ATBlockNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBlockNotificationCenter.h; sourceTree = "<group>"; };
 		DCB255D424765D8900AE8255 /* ATProtocolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATProtocolManager.m; sourceTree = "<group>"; };
-		DCB255D524765D8900AE8255 /* ATModuleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATModuleManager.m; sourceTree = "<group>"; };
+		DCB255D524765D8900AE8255 /* ATInstanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATInstanceManager.m; sourceTree = "<group>"; };
 		DCB255D624765D8900AE8255 /* ATProtocolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATProtocolManager.h; sourceTree = "<group>"; };
-		DCB255D724765D8900AE8255 /* ATModuleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATModuleManager.h; sourceTree = "<group>"; };
+		DCB255D724765D8900AE8255 /* ATInstanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATInstanceManager.h; sourceTree = "<group>"; };
 		DCB255D924765D8900AE8255 /* ATGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCDTimer.h; sourceTree = "<group>"; };
 		DCB255DA24765D8900AE8255 /* ATWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATWeakTimer.h; sourceTree = "<group>"; };
 		DCB255DB24765D8900AE8255 /* ATGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCDTimer.m; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 				DCB255E024765D8900AE8255 /* Component */,
 				DCB255CD24765D8900AE8255 /* File */,
 				DCB255E324765D8900AE8255 /* Macro */,
-				DCB255D324765D8900AE8255 /* ModuleManager */,
+				DCB255D324765D8900AE8255 /* InstanceManager */,
 				DCB255D024765D8900AE8255 /* Notification */,
 				DCB255DD24765D8900AE8255 /* Runtime */,
 				DCB255B224765D8900AE8255 /* TaskQueue */,
@@ -255,15 +255,15 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
-		DCB255D324765D8900AE8255 /* ModuleManager */ = {
+		DCB255D324765D8900AE8255 /* InstanceManager */ = {
 			isa = PBXGroup;
 			children = (
-				DCB255D724765D8900AE8255 /* ATModuleManager.h */,
-				DCB255D524765D8900AE8255 /* ATModuleManager.m */,
+				DCB255D724765D8900AE8255 /* ATInstanceManager.h */,
+				DCB255D524765D8900AE8255 /* ATInstanceManager.m */,
 				DCB255D624765D8900AE8255 /* ATProtocolManager.h */,
 				DCB255D424765D8900AE8255 /* ATProtocolManager.m */,
 			);
-			path = ModuleManager;
+			path = InstanceManager;
 			sourceTree = "<group>";
 		};
 		DCB255D824765D8900AE8255 /* Timer */ = {
@@ -408,7 +408,7 @@
 				DCB255F824765D8A00AE8255 /* ATGCDTimer.m in Sources */,
 				DCB255EB24765D8A00AE8255 /* NSDictionary+AppToolbox.m in Sources */,
 				DCB255682476564900AE8255 /* AppToolbox.m in Sources */,
-				DCB255F724765D8A00AE8255 /* ATModuleManager.m in Sources */,
+				DCB255F724765D8A00AE8255 /* ATInstanceManager.m in Sources */,
 				DCB255F424765D8A00AE8255 /* ATFileManager.m in Sources */,
 				DCB255EF24765D8A00AE8255 /* UIColor+AppToolbox.m in Sources */,
 				DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */,
