@@ -18,12 +18,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ATComponentA : NSObject
 
 AT_COMPONENT_ACTION(version);
+AT_COMPONENT_ACTION(fly);
 
 @end
 
 @interface ATComponentService(ComponentA)
 
 + (NSString *)a_versionWithPrefix:(NSString *)prefix callback:(void(^)(NSString *version))callback;
++ (NSString *)a_flyWithSpeed:(NSNumber *)speed;
 
 @end
 

@@ -144,11 +144,12 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     
     /// =========================== 测试页面 ==================================
 
-    [self addItem:@"Notification" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATNotificationDemo alloc] init] demo];
+    [self addItem:@"ApiStrategy" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATApiStrategyDemo alloc] init] demo];
     }];
-    [self addItem:@"Notification2" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATNotificationDemo2 alloc] init] demo];
+    
+    [self addItem:@"Component" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATComponentDemo alloc] init] demo];
     }];
     
     [self addItem:@"ModuleManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
@@ -159,12 +160,12 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
         [[[ATProtocolManagerDemo alloc] init] demo];
     }];
     
-    [self addItem:@"Component" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATComponentDemo alloc] init] demo];
+    [self addItem:@"Notification" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATNotificationDemo alloc] init] demo];
     }];
     
-    [self addItem:@"ApiStrategy" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATApiStrategyDemo alloc] init] demo];
+    [self addItem:@"Notification2" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATNotificationDemo2 alloc] init] demo];
     }];
     
     [self makeSectionList];

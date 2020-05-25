@@ -20,16 +20,33 @@ AT_COMPONENT_ACTION(version)
     return dic;
 }
 
+AT_COMPONENT_ACTION(fly)
+{
+    NSNumber *speed = params[@"speed"];
+    NSMutableDictionary *dic = [NSMutableDictionary atcs_resultDic];
+    [dic setObject:[NSString stringWithFormat:@"fly with speed %@", speed] forKey:@"flyResult"];
+    AT_SAFETY_CALL_BLOCK(callback, dic);
+    return dic;
+}
+
 @end
 
 @implementation ATComponentService(ComponentA)
 
 + (NSString *)a_versionWithPrefix:(NSString *)prefix callback:(void(^)(NSString *version))callback
 {
-    NSDictionary *result = [ATComponentService callTarget:@"A" action:@"version" params:@{@"prefix":prefix} callback:^(NSDictionary * _Nullable params) {
+    NSDictionary *result = [ATComponentService callTarget:@"a" action:@"version" params:@{@"prefix":prefix} callback:^(NSDictionary * _Nullable params) {
         AT_SAFETY_CALL_BLOCK(callback, params[@"version"]);
     }];
     return result[@"version"];
+}
+
++ (NSString *)a_flyWithSpeed:(NSNumber *)speed
+{
+    NSDictionary *result = [ATComponentService callTarget:@"a" action:@"fly" params:@{@"speed":speed} callback:^(NSDictionary * _Nullable params) {
+        ;;
+    }];
+    return result[@"flyResult"];
 }
 
 @end
@@ -40,18 +57,21 @@ AT_COMPONENT_ACTION(version)
 
 @implementation ATComponentDemo
 
-static NSString * _Nonnull extracted() {
-    return [ATComponentService a_versionWithPrefix:@"abc" callback:^(NSString * _Nonnull version) {
-        NSLog(@"ATComponentDemo callback %@", version);
-    }];
-}
-
 - (void)demo
 {
     AT_COMPONENT_REGISTER(A, ATComponentA);
     
-    NSString *version = extracted();
-    NSLog(@"ATComponentDemo retrun %@", version);
+    [ATComponentService a_versionWithPrefix:@"abc" callback:^(NSString * _Nonnull version) {
+        NSLog(@"ATComponentDemo version %@", version);
+    }];
+    
+    NSString *flyResult = [ATComponentService a_flyWithSpeed:@(99)];
+    NSLog(@"ATComponentDemo flyResult %@", flyResult);
+    
+    NSDictionary *resultDic = [ATComponentService callTargetUrl:[NSURL URLWithString:@"abc://a/fly?speed=100"]];
+    if (resultDic.atcs_success) {
+        NSLog(@"ATComponentDemo flyResult %@", resultDic[@"flyResult"]);
+    }
 }
 
 @end

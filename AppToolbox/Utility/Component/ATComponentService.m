@@ -42,6 +42,7 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
 
 - (BOOL)registerTarget:(NSString *)name aClass:(Class)aClass
 {
+    name = name.lowercaseString;
     ATComponentLaunchType launchType = ATComponentLaunchTypeOnCall;
     if ([aClass respondsToSelector:@selector(launchType)]) {
         launchType = [aClass launchType];
@@ -68,6 +69,8 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
 {
     BOOL res = NO;
     
+    name = name.lowercaseString;
+    
     [self.lock lock];
     id oldObject = [self.componentMap objectForKey:name];
     if (oldObject != nil && [oldObject isKindOfClass:aClass]) {
@@ -87,6 +90,8 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
 - (id)componentNamed:(NSString *)name
 {
     id res = nil;
+    
+    name = name.lowercaseString;
     
     [self.lock lock];
     id anObject = [self.componentMap objectForKey:name];
@@ -129,12 +134,12 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
     NSDictionary *aDictionary = nil;
     
     if (name.length == 0 || action.length == 0) {
-        aDictionary = [NSDictionary atcs_dicWithCode:ATComponentServiceCodeArgErr msg:@"Argument error"];
+        aDictionary = [NSDictionary atcs_resultDicWithCode:ATComponentServiceCodeArgErr msg:@"Argument error"];
     }
     else {
         id anObject = [[ATComponentServiceInner sharedObject] componentNamed:name];
         if (anObject == nil) {
-            aDictionary = [NSDictionary atcs_dicWithCode:ATComponentServiceCodeNoTarget msg:[NSString stringWithFormat:@"No target named %@", name]];
+            aDictionary = [NSDictionary atcs_resultDicWithCode:ATComponentServiceCodeNoTarget msg:[NSString stringWithFormat:@"No target named %@", name]];
         }
         else {
             NSString *actionString = [NSString stringWithFormat:@"%@:callback:", action];
@@ -146,14 +151,14 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
                 id value = [anObject performSelector:selector withObject:params withObject:callback];
 #pragma clang diagnostic pop
                 if (value == nil || ![value isKindOfClass:[NSDictionary class]]) {
-                    aDictionary = [NSDictionary atcs_dicWithCode:ATComponentServiceCodeResultError msg:[NSString stringWithFormat:@"Result error action %@ in %@", action, name]];
+                    aDictionary = [NSDictionary atcs_resultDicWithCode:ATComponentServiceCodeResultError msg:[NSString stringWithFormat:@"Result error action %@ in %@", action, name]];
                 }
                 else {
                     aDictionary = value;
                 }
             }
             else {
-                aDictionary = [NSDictionary atcs_dicWithCode:ATComponentServiceCodeNoAction msg:[NSString stringWithFormat:@"Unsupported action %@ in %@", action, name]];
+                aDictionary = [NSDictionary atcs_resultDicWithCode:ATComponentServiceCodeNoAction msg:[NSString stringWithFormat:@"Unsupported action %@ in %@", action, name]];
             }
         }
     }
@@ -230,10 +235,10 @@ AT_IMPLEMENT_SINGLETON(ATComponentServiceInner);
 
 + (instancetype)atcs_resultDic
 {
-    return [NSDictionary atcs_dicWithCode:ATComponentServiceCodeOK msg:nil];
+    return [NSDictionary atcs_resultDicWithCode:ATComponentServiceCodeOK msg:nil];
 }
 
-+ (instancetype)atcs_dicWithCode:(NSInteger)code msg:(NSString * _Nullable)msg
++ (instancetype)atcs_resultDicWithCode:(NSInteger)code msg:(NSString * _Nullable)msg
 {
     return @{ kATComponentServiceCode : @(code),
               kATComponentServiceMsg : msg ?: @""
