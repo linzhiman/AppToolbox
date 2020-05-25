@@ -142,23 +142,23 @@ AT_IMPLEMENT_SINGLETON(ATProtocolManagerEx)
 {
     self.protocolManager = [[ATProtocolManager alloc] init];
     
-    [self.protocolManager addModule:[[ATProtocolManagerClassA alloc] init] protocol:@protocol(ATProtocolManagerProtocolA)];
-    [self.protocolManager addModule:[[ATProtocolManagerClassB alloc] init] protocol:@protocol(ATProtocolManagerProtocolB) group:1];
+    [self.protocolManager addInstance:[[ATProtocolManagerClassA alloc] init] protocol:@protocol(ATProtocolManagerProtocolA)];
+    [self.protocolManager addInstance:[[ATProtocolManagerClassB alloc] init] protocol:@protocol(ATProtocolManagerProtocolB) group:1];
     [self.protocolManager registerClass:[ATProtocolManagerClassC class] protocol:@protocol(ATProtocolManagerProtocolC)];
     [self.protocolManager registerClass:[ATProtocolManagerClassD class] protocol:@protocol(ATProtocolManagerProtocolD) group:1];
 }
 
 - (void)uninitModule
 {
-    [self.protocolManager removeProtocol:@protocol(ATProtocolManagerProtocolA)];
-    [self.protocolManager removeProtocol:@protocol(ATProtocolManagerProtocolB)];
-    [self.protocolManager removeProtocol:@protocol(ATProtocolManagerProtocolC)];
-    [self.protocolManager removeProtocol:@protocol(ATProtocolManagerProtocolD)];
+    [self.protocolManager removeInstance:@protocol(ATProtocolManagerProtocolA)];
+    [self.protocolManager removeInstance:@protocol(ATProtocolManagerProtocolB)];
+    [self.protocolManager removeInstance:@protocol(ATProtocolManagerProtocolC)];
+    [self.protocolManager removeInstance:@protocol(ATProtocolManagerProtocolD)];
 }
 
 - (void)callModulesInGroup1
 {
-    NSArray *aArray = [self.protocolManager modulesInGroup:1 createIfNeed:YES];
+    NSArray *aArray = [self.protocolManager instancesInGroup:1];
     [aArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         id<ATProtocolManagerProtocolBase> module = obj;
         [module base];

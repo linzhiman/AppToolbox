@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-// 基于协议的模块管理
-// 通过protocol标识模块，支持懒加载，支持分组，线程安全
+/**
+ 基于协议的模块管理类
+ 通过protocol标识对象，支持懒加载、分组，线程安全。
+*/
 
-#define AT_GET_MODULE_PROTOCOL(atManager, atProtocol) \
-    ((id<atProtocol>)[atManager module:@protocol(atProtocol)])
+#define AT_GET_INSTANCE_PROTOCOL(atManager, atProtocol) \
+    ((id<atProtocol>)[atManager instance:@protocol(atProtocol)])
 
-#define AT_GET_MODULE_PROTOCOL_VARIABLE(atManager, atProtocol, atVariable) \
-    id<atProtocol> atVariable = (id<atProtocol>)[atManager module:@protocol(atProtocol)];
+#define AT_GET_INSTANCE_PROTOCOL_VARIABLE(atManager, atProtocol, atVariable) \
+    id<atProtocol> atVariable = (id<atProtocol>)[atManager instance:@protocol(atProtocol)];
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,31 +27,46 @@ extern const NSInteger kATProtocolManagerGroup2;
 
 @interface ATProtocolManager : NSObject
 
-- (id)moduleForProtocol:(Protocol *)protocol;
+/**
+ 在默认组添加实例，添加到instance表
+ */
+- (void)addInstance:(id)instance protocol:(Protocol *)protocol;
 
-- (void)addModule:(id)module protocol:(Protocol *)protocol;
-- (void)addModule:(id)module protocol:(Protocol *)protocol group:(NSInteger)group;
+/**
+ 在指定组添加实例，添加到instance表
+ */
+- (void)addInstance:(id)instance protocol:(Protocol *)protocol group:(NSInteger)group;
 
-- (void)removeModule:(Protocol *)protocol;
-
-- (Class)classForProtocol:(Protocol *)procotol;
-
+/**
+ 在默认组注册实例类名，添加到class表
+ */
 - (void)registerClass:(Class)aClass protocol:(Protocol *)protocol;
+
+/**
+ 在指定组注册实例类名，添加到class表
+ */
 - (void)registerClass:(Class)aClass protocol:(Protocol *)protocol group:(NSInteger)group;
 
-- (void)unRegisterClass:(Protocol *)protocol;
+/**
+ 获取实例
+ 先查instance表，再查class表，有则创建实例并调用@selector(addInstance:protocol:group:)
+ */
+- (id)instance:(Protocol *)protocol;
 
 /**
- 先查module表，再查class表，有则创建对象并addModule添加到module表
+ 移除instance及反注册class
  */
-- (id)module:(Protocol *)protocol;
+- (void)removeInstance:(Protocol *)protocol;
 
 /**
- 移除module及class
+ 获取默认组的所有实例
  */
-- (void)removeProtocol:(Protocol *)protocol;
+- (NSArray *)instancesInDefaultGroup;
 
-- (NSArray *)modulesInGroup:(NSInteger)group createIfNeed:(BOOL)createIfNeed;
+/**
+ 获取指定组的所有实例
+ */
+- (NSArray *)instancesInGroup:(NSInteger)group;
 
 @end
 

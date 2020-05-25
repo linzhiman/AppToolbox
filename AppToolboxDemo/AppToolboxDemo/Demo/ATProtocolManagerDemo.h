@@ -59,9 +59,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 #define ATDEMO_GET_MODULE_PROTOCOL(atProtocol) \
-    AT_GET_MODULE_PROTOCOL([ATProtocolManagerEx sharedObject].protocolManager, atProtocol)
+    AT_GET_INSTANCE_PROTOCOL([ATProtocolManagerEx sharedObject].protocolManager, atProtocol)
 #define ATDEMO_GET_MODULE_PROTOCOL_VARIABLE(atProtocol, atVariable) \
-    AT_GET_MODULE_PROTOCOL_VARIABLE([ATProtocolManagerEx sharedObject].protocolManager, atProtocol, atVariable)
+    AT_GET_INSTANCE_PROTOCOL_VARIABLE([ATProtocolManagerEx sharedObject].protocolManager, atProtocol, atVariable)
 
 @interface ATProtocolManagerEx : NSObject
 
