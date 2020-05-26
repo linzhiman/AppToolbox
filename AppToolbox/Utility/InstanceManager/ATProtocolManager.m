@@ -7,6 +7,7 @@
 //
 
 #import "ATProtocolManager.h"
+#import "ATRuntimeUtils.h"
 
 const NSInteger kATProtocolManagerDefaultGroup = 0;
 const NSInteger kATProtocolManagerGroup1 = 1;
@@ -57,6 +58,18 @@ const NSInteger kATProtocolManagerGroup2 = 2;
         return NO;
     }
     
+#ifdef DEBUG
+    NSArray *tmp = [NSArray new];
+    if (![ATRuntimeUtils detectInstance:instance protocol:protocol unRespondsMethods:&tmp]) {
+        NSAssert(tmp.count == 0, @"%@ unRespondsMethods %@", NSStringFromClass([instance class]), tmp);
+        return NO;
+    }
+#else
+    if (![ATRuntimeUtils fastDetectInstance:instance protocol:protocol]) {
+        return NO;
+    }
+#endif
+    
     [self.lock lock];
     
     [self.instancesMap setObject:instance forKey:protocol];
@@ -82,6 +95,18 @@ const NSInteger kATProtocolManagerGroup2 = 2;
     if (![aClass conformsToProtocol:protocol]) {
         return NO;
     }
+    
+#ifdef DEBUG
+    NSArray *tmp = [NSArray new];
+    if (![ATRuntimeUtils detectClass:aClass protocol:protocol unRespondsMethods:&tmp]) {
+        NSAssert(tmp.count == 0, @"%@ unRespondsMethods %@", NSStringFromClass(aClass), tmp);
+        return NO;
+    }
+#else
+    if (![ATRuntimeUtils fastDetectClass:aClass protocol:protocol]) {
+        return NO;
+    }
+#endif
     
     [self.lock lock];
     
