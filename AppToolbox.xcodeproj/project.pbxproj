@@ -168,11 +168,11 @@
 			isa = PBXGroup;
 			children = (
 				DCB255FF247660B400AE8255 /* ATGCDTimerTest.m */,
+				DC84FC7A247CFA2E00A2A5AA /* ATRuntimeUtilsTest.m */,
 				DCB25600247660B400AE8255 /* ATStringTest.m */,
 				DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */,
 				DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */,
 				DCB255772476580D00AE8255 /* Info.plist */,
-				DC84FC7A247CFA2E00A2A5AA /* ATRuntimeUtilsTest.m */,
 			);
 			path = AppToolboxTests;
 			sourceTree = "<group>";

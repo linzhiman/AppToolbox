@@ -90,10 +90,10 @@
 				DC92FC512476679400DCF84F /* ATComponentDemo.m */,
 				DC92FC542476679400DCF84F /* ATInstanceManagerDemo.h */,
 				DC92FC4E2476679400DCF84F /* ATInstanceManagerDemo.m */,
-				DC92FC502476679400DCF84F /* ATNotificationDemo.h */,
-				DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */,
 				DC92FC532476679400DCF84F /* ATProtocolManagerDemo.h */,
 				DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */,
+				DC92FC502476679400DCF84F /* ATNotificationDemo.h */,
+				DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
