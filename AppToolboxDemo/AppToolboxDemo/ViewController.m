@@ -10,8 +10,9 @@
 #import "ATApiStrategyDemo.h"
 #import "ATComponentDemo.h"
 #import "ATInstanceManagerDemo.h"
-#import "ATNotificationDemo.h"
 #import "ATProtocolManagerDemo.h"
+#import "ATNotificationDemo.h"
+#import "ATCountdownObjDemo.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -166,6 +167,10 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     
     [self addItem:@"Notification2" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
         [[[ATNotificationDemo2 alloc] init] demo];
+    }];
+    
+    [self addItem:@"CountdownObj" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATCountdownObjDemo alloc] init] demo];
     }];
     
     [self makeSectionList];

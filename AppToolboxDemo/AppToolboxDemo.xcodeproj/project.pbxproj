@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC84FC98247F5BAE00A2A5AA /* ATCountdownObjDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */; };
 		DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */; };
 		DC92FC562476679400DCF84F /* ATNotificationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */; };
 		DC92FC572476679400DCF84F /* ATInstanceManagerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4E2476679400DCF84F /* ATInstanceManagerDemo.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC84FC96247F5BAE00A2A5AA /* ATCountdownObjDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCountdownObjDemo.h; sourceTree = "<group>"; };
+		DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCountdownObjDemo.m; sourceTree = "<group>"; };
 		DC92FC4B2476679400DCF84F /* ATComponentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATComponentDemo.h; sourceTree = "<group>"; };
 		DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATApiStrategyDemo.m; sourceTree = "<group>"; };
 		DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNotificationDemo.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */,
 				DC92FC502476679400DCF84F /* ATNotificationDemo.h */,
 				DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */,
+				DC84FC96247F5BAE00A2A5AA /* ATCountdownObjDemo.h */,
+				DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				DC92FC592476679400DCF84F /* ATComponentDemo.m in Sources */,
 				DC92FC562476679400DCF84F /* ATNotificationDemo.m in Sources */,
 				DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */,
+				DC84FC98247F5BAE00A2A5AA /* ATCountdownObjDemo.m in Sources */,
 				DC92FC582476679400DCF84F /* ATProtocolManagerDemo.m in Sources */,
 				DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */,
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
