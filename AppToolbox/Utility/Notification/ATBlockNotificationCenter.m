@@ -67,7 +67,7 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
     
     ATWeakObject *aWrapObj = [[ATWeakObject alloc] init];
     aWrapObj.target = observer;
-    aWrapObj.extension = [block copy];
+    aWrapObj.userInfo = [block copy];
     
     for (NSUInteger i = 0; i < observers.count; ++i) {
         ATWeakObject *aWrapObj = observers[i];
@@ -132,12 +132,13 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
     
     NSString *objectKey = [ATWeakObject objectKey:observer];
     NSMutableSet *notifications = [self.notifications objectForKey:objectKey];
+    
+    [self.lock unlock];
+    
     [notifications enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
         NSString *name = obj;
         [self removeObserver:observer name:name];
     }];
-    
-    [self.lock unlock];
 }
 
 - (NSArray *)blocksNamed:(NSString *)name
@@ -152,7 +153,7 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
         
         for (ATWeakObject *aWrapObj in observers) {
             if (aWrapObj.target != nil) {
-                [callbacks addObject:aWrapObj.extension];
+                [callbacks addObject:aWrapObj.userInfo];
             }
             else {
                 [invalidatedObservers addObject:aWrapObj];
@@ -194,7 +195,7 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
     
     ATWeakObject *aWrapObj = [[ATWeakObject alloc] init];
     aWrapObj.target = observer;
-    aWrapObj.extension = [block copy];
+    aWrapObj.userInfo = [block copy];
     
     for (NSUInteger i = 0; i < observers.count; ++i) {
         ATWeakObject *aWrapObj = observers[i];
@@ -260,12 +261,13 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
     
     NSString *objectKey = [ATWeakObject objectKey:observer];
     NSMutableSet *notifications = [self.nativeNotifications objectForKey:objectKey];
+    
+    [self.lock unlock];
+    
     [notifications enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
         NSString *name = obj;
         [self removeNativeObserver:observer name:name];
     }];
-    
-    [self.lock unlock];
 }
 
 - (void)onNotification:(NSNotification *)notification
@@ -280,7 +282,7 @@ AT_IMPLEMENT_SINGLETON(ATBlockNotificationCenter);
         
         for (ATWeakObject *aWrapObj in observers) {
             if (aWrapObj.target != nil) {
-                [callbacks addObject:aWrapObj.extension];
+                [callbacks addObject:aWrapObj.userInfo];
             }
             else {
                 [invalidatedObservers addObject:aWrapObj];

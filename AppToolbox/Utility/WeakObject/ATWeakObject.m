@@ -13,12 +13,25 @@
     NSString *_objectKey;
 }
 
-- (BOOL)isEqual:(ATWeakObject *)object
++ (instancetype)objectWithTarget:(id)target
 {
-    if ([self.objectKey isEqual:object.objectKey]) {
-        return YES;
+    return [ATWeakObject objectWithTarget:target userInfo:nil];
+}
+
++ (instancetype)objectWithTarget:(id)target userInfo:(id _Nullable)userInfo
+{
+    ATWeakObject *tmp = [ATWeakObject new];
+    tmp.target = target;
+    tmp.userInfo = userInfo;
+    return tmp;
+}
+
++ (NSString *)objectKey:(id)target
+{
+    if (target != nil) {
+        return [[NSString alloc] initWithFormat:@"%p", target];
     }
-    return [self.target isEqual:object.target];
+    return @"";
 }
 
 - (void)setTarget:(id)target
@@ -38,12 +51,12 @@
     return (_objectKey == nil ? @"" : _objectKey);
 }
 
-+ (NSString *)objectKey:(id)targetObj
+- (BOOL)isEqual:(ATWeakObject *)object
 {
-    if (targetObj != nil) {
-        return [[NSString alloc] initWithFormat:@"%p", targetObj];
+    if ([self.objectKey isEqual:object.objectKey]) {
+        return YES;
     }
-    return @"";
+    return [self.target isEqual:object.target];
 }
 
 - (NSUInteger)hash
