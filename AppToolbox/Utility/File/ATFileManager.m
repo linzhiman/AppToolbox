@@ -7,7 +7,6 @@
 //
 
 #import "ATFileManager.h"
-#import <sys/stat.h>
 
 @implementation ATFileManager
 
@@ -18,51 +17,14 @@
 
 + (BOOL)isFileExists:(NSString *)filePath
 {
-    struct stat statbuf = {0};
-    const char *cpath = [filePath fileSystemRepresentation];
-    if (cpath && stat(cpath, &statbuf) == 0) {
-        return YES;
-    }
-    return NO;
+    BOOL isDirectory = NO;
+    return [[NSFileManager defaultManager] fileExistsAtPath:filePath isDirectory:&isDirectory] && !isDirectory;
 }
 
 + (BOOL)isDirectoryExist:(NSString *)directoryPath
 {
     BOOL isDirectory = NO;
     return [[NSFileManager defaultManager] fileExistsAtPath:directoryPath isDirectory:&isDirectory] && isDirectory;
-}
-
-+ (NSString *)fileNameFromUrl:(NSString *)url
-{
-    NSInteger indexOfLastSlash = -1;
-    for (NSUInteger i = [url length]; i > 0; i --) {
-        if ('/' == [url characterAtIndex:i - 1]) {
-            indexOfLastSlash = i - 1;
-            break;
-        }
-    }
-    
-    if (-1 == indexOfLastSlash) {
-        return url;
-    }
-    return [url substringFromIndex:indexOfLastSlash + 1];
-}
-
-+ (NSString *)fileExtensionFromUrl:(NSString *)url
-{
-    NSString *fileName = [ATFileManager fileNameFromUrl:url];
-    NSInteger indexOfLastPoint = -1;
-    for (NSUInteger i = 0; i < fileName.length; i++) {
-        if ('.' == [fileName characterAtIndex:i]) {
-            indexOfLastPoint = i - 1;
-            break;
-        }
-    }
-    
-    if (-1 == indexOfLastPoint) {
-        return fileName;
-    }
-    return [fileName substringFromIndex:indexOfLastPoint + 1];
 }
 
 + (BOOL)moveFile:(NSString *)oldFileName to:(NSString *)newFileName
@@ -157,7 +119,7 @@
             });
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                block([NSError errorWithDomain:@"[HttpUtils writeData]" code:-1 userInfo:nil]);
+                block([NSError errorWithDomain:@"[ATFileManager writeData]" code:-1 userInfo:nil]);
             });
         }
     });
@@ -286,6 +248,39 @@
     } while (false);
     
     return systemTmpDirectory;
+}
+
++ (NSString *)fileNameFromUrl:(NSString *)url
+{
+    NSInteger indexOfLastSlash = -1;
+    for (NSUInteger i = [url length]; i > 0; i --) {
+        if ('/' == [url characterAtIndex:i - 1]) {
+            indexOfLastSlash = i - 1;
+            break;
+        }
+    }
+    
+    if (-1 == indexOfLastSlash) {
+        return url;
+    }
+    return [url substringFromIndex:indexOfLastSlash + 1];
+}
+
++ (NSString *)fileExtensionFromUrl:(NSString *)url
+{
+    NSString *fileName = [ATFileManager fileNameFromUrl:url];
+    NSInteger indexOfLastPoint = -1;
+    for (NSUInteger i = 0; i < fileName.length; i++) {
+        if ('.' == [fileName characterAtIndex:i]) {
+            indexOfLastPoint = i - 1;
+            break;
+        }
+    }
+    
+    if (-1 == indexOfLastPoint) {
+        return fileName;
+    }
+    return [fileName substringFromIndex:indexOfLastPoint + 1];
 }
 
 @end
