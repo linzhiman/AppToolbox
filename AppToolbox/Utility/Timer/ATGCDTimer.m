@@ -52,6 +52,10 @@
 
 - (void)start
 {
+    if (self.interval == 0) {
+        return;
+    }
+    
     if (!self.isValid || !self.suspended) {
         return;
     }
@@ -73,16 +77,16 @@
 
 - (void)stop
 {
-    if (self.isValid) {
-        dispatch_source_cancel(self.dispatchTimer);
-    }
-}
-
-- (void)suspend
-{
     if (self.isValid && !self.suspended) {
         dispatch_suspend(self.dispatchTimer);
         self.suspended = YES;
+    }
+}
+
+- (void)invalidate
+{
+    if (self.isValid) {
+        dispatch_source_cancel(self.dispatchTimer);
     }
 }
 
@@ -93,17 +97,6 @@
 
 
 #pragma mark - initialization
-
-- (id)init
-{
-    if (self = [super init]) {
-        _dispatchTimer = nil;
-        _suspended = NO;
-        _repeats = NO;
-        _interval = 0;
-    }
-    return self;
-}
 
 - (id)initWithInterval:(NSTimeInterval)ti
                timeout:(ATGCDTimerTimeout)timeout
@@ -124,7 +117,6 @@
         [self initDispatchTimer:timeout
                         repeats:yesOrNo
                   dispatchQueue:dispatchQueue];
-        
         _suspended = YES;
         _repeats = yesOrNo;
         _interval = ti;
@@ -136,16 +128,12 @@
                   repeats:(BOOL)yesOrNo
             dispatchQueue:(dispatch_queue_t)dispatchQueue
 {
-    _dispatchTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER,
-                                            0, 0, dispatchQueue);
-    
+    _dispatchTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatchQueue);
     dispatch_source_t aDispatchTimer = _dispatchTimer;
-    dispatch_source_set_timer(aDispatchTimer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0);
     dispatch_source_set_event_handler(aDispatchTimer, ^{
         if (!yesOrNo) {
             dispatch_source_cancel(aDispatchTimer);
         }
-        
         if (timeout) {
             timeout();
         };
@@ -154,7 +142,7 @@
 
 - (void)dealloc
 {
-    [self stop];
+    [self invalidate];
 }
 
 @end

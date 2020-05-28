@@ -29,7 +29,8 @@ typedef void (^ATGCDTimerTimeout)(void);
 
 - (void)stop;
 
-- (void)suspend;
+/// 失效后不能再start
+- (void)invalidate;
 
 - (BOOL)isValid;
 
