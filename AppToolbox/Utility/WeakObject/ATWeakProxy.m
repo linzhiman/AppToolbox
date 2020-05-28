@@ -23,7 +23,7 @@
 
 - (id)forwardingTargetForSelector:(SEL)selector
 {
-    return _target;
+    return self.target;
 }
 
 - (void)forwardInvocation:(NSInvocation *)invocation
@@ -34,47 +34,47 @@
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector
 {
-    return [_target methodSignatureForSelector:selector];
+    return [self.target methodSignatureForSelector:selector];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
-    return [_target respondsToSelector:aSelector];
+    return [self.target respondsToSelector:aSelector];
 }
 
 - (BOOL)isEqual:(id)object
 {
-    return [_target isEqual:object];
+    return [self.target isEqual:object];
 }
 
 - (NSUInteger)hash
 {
-    return [_target hash];
+    return [self.target hash];
 }
 
 - (Class)superclass
 {
-    return [_target superclass];
+    return [self.target superclass];
 }
 
 - (Class)class
 {
-    return [_target class];
+    return [self.target class];
 }
 
 - (BOOL)isKindOfClass:(Class)aClass
 {
-    return [_target isKindOfClass:aClass];
+    return [self.target isKindOfClass:aClass];
 }
 
 - (BOOL)isMemberOfClass:(Class)aClass
 {
-    return [_target isMemberOfClass:aClass];
+    return [self.target isMemberOfClass:aClass];
 }
 
 - (BOOL)conformsToProtocol:(Protocol *)aProtocol
 {
-    return [_target conformsToProtocol:aProtocol];
+    return [self.target conformsToProtocol:aProtocol];
 }
 
 - (BOOL)isProxy
@@ -84,12 +84,12 @@
 
 - (NSString *)description
 {
-    return [_target description];
+    return [self.target description];
 }
 
 - (NSString *)debugDescription
 {
-    return [_target debugDescription];
+    return [self.target debugDescription];
 }
 
 @end
