@@ -53,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Url
 
 - (NSString *)at_urlEncode;
+- (NSString *)at_urlDecode;
 - (NSDictionary *)at_getURLParameters;
 
 #pragma mark - Crypto

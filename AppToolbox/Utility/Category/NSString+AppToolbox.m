@@ -197,6 +197,13 @@ static const int kBufferSize = 1024;
     return newString != nil ? newString : @"";
 }
 
+
+- (NSString *)at_urlDecode
+{
+    NSString *decodeString = [self stringByReplacingOccurrencesOfString:@"+" withString:@" "];
+    return decodeString.stringByRemovingPercentEncoding;
+}
+
 - (NSDictionary *)at_getURLParameters
 {
     NSRange range = [self rangeOfString:@"?"];
