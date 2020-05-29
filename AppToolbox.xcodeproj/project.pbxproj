@@ -38,6 +38,7 @@
 		DCB25602247660B400AE8255 /* ATTaskQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */; };
 		DCB25604247660B400AE8255 /* ATStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB25600247660B400AE8255 /* ATStringTest.m */; };
 		DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */; };
+		DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		DCB25600247660B400AE8255 /* ATStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStringTest.m; sourceTree = "<group>"; };
 		DCEBE8402480A3B400AC13E1 /* NSDate+AppToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+AppToolbox.h"; sourceTree = "<group>"; };
 		DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AppToolbox.m"; sourceTree = "<group>"; };
+		DCEBE8442480A88300AC13E1 /* ATUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATUserDefaults.h; sourceTree = "<group>"; };
+		DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,7 @@
 				DCB255E524765D8900AE8255 /* ApiStrategy */,
 				DCB255BA24765D8900AE8255 /* Category */,
 				DCB255E024765D8900AE8255 /* Component */,
+				DCEBE8432480A80700AC13E1 /* Config */,
 				DCB255CD24765D8900AE8255 /* File */,
 				DCEBE83F2480A24B00AC13E1 /* Http */,
 				DCB255D324765D8900AE8255 /* InstanceManager */,
@@ -333,6 +337,15 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		DCEBE8432480A80700AC13E1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBE8442480A88300AC13E1 /* ATUserDefaults.h */,
+				DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,6 +456,7 @@
 				DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */,
 				DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */,
 				DC84FC95247F57B300A2A5AA /* ATCountdownObj.m in Sources */,
+				DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */,
 				DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */,
 				DCB255EC24765D8A00AE8255 /* NSDateFormatter+AppToolbox.m in Sources */,
 				DCB255F224765D8A00AE8255 /* NSObject+AppToolbox.m in Sources */,
