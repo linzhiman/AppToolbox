@@ -23,32 +23,129 @@ id ATDictionarySafeGet(NSDictionary *dic, Class cls, id key)
 
 @implementation NSDictionary (AppToolbox)
 
-- (NSString *)at_getString:(id)key
+/// nil able
+
+- (NSString *)at_stringSafeGet:(id)aKey
 {
-    return ATDictionarySafeGet(self, [NSString class], key);
+    return ATDictionarySafeGet(self, [NSString class], aKey);
 }
 
-- (NSAttributedString *)at_getAttributedString:(id)key
+- (NSAttributedString *)at_attributedStringSafeGet:(id)aKey
 {
-    return ATDictionarySafeGet(self, [NSAttributedString class], key);
+    return ATDictionarySafeGet(self, [NSAttributedString class], aKey);
 }
 
-- (NSNumber *)at_getNumber:(id)key
+- (NSNumber *)at_numberSafeGet:(id)aKey
 {
-    return ATDictionarySafeGet(self, [NSNumber class], key);
+    return ATDictionarySafeGet(self, [NSNumber class], aKey);
 }
 
-- (NSArray *)at_getArray:(id)key
+- (NSArray *)at_arraySafeGet:(id)aKey
 {
-    return ATDictionarySafeGet(self, [NSArray class], key);
+    return ATDictionarySafeGet(self, [NSArray class], aKey);
 }
 
-- (NSDictionary *)at_getDictionary:(id)key
+- (NSDictionary *)at_dictionarySafeGet:(id)aKey;
 {
-    return ATDictionarySafeGet(self, [NSDictionary class], key);
+    return ATDictionarySafeGet(self, [NSDictionary class], aKey);
 }
 
-#pragma mark - JSON
+/// not nil
+
+- (NSString *)at_notNilStringSafeGet:(id)aKey
+{
+    return [self at_stringSafeGet:aKey] ?: @"";
+}
+
+- (NSAttributedString *)at_notNilAttributedStringSafeGet:(id)aKey
+{
+    return [self at_attributedStringSafeGet:aKey] ?: [[NSAttributedString alloc] initWithString:@""];
+}
+
+- (NSNumber *)at_notNilNumberSafeGet:(id)aKey
+{
+    return [self at_numberSafeGet:aKey] ?: @(0);
+}
+
+- (NSArray *)at_notNilArraySafeGet:(id)aKey
+{
+    return [self at_arraySafeGet:aKey] ?: @[];
+}
+
+- (NSDictionary *)at_notNilDictionarySafeGet:(id)aKey
+{
+    return [self at_dictionarySafeGet:aKey] ?: @{};
+}
+
+/// num
+
+- (int)at_intSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value intValue];
+}
+
+- (unsigned int)at_unsignedIntSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value unsignedIntValue];
+}
+
+- (long)at_longSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value longValue];
+}
+
+- (unsigned long)at_unsignedLongSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value unsignedLongValue];
+}
+
+- (long long)at_longLongSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value longLongValue];
+}
+
+- (unsigned long long)at_unsignedLongLongSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value unsignedLongLongValue];
+}
+
+- (float)at_floatSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value floatValue];
+}
+
+- (double)at_doubleSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value doubleValue];
+}
+
+- (BOOL)at_boolSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value boolValue];
+}
+
+- (NSInteger)at_integerSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value integerValue];
+}
+
+- (NSUInteger)at_unsignedIntegerSafeGet:(id)aKey
+{
+    NSNumber *value = [self at_numberSafeGet:aKey];
+    return [value unsignedIntegerValue];
+}
+
+/// JSON
 
 - (NSString *)at_JSONString
 {
