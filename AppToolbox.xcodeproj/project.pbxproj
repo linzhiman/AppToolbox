@@ -37,6 +37,7 @@
 		DCB25601247660B400AE8255 /* ATWeakTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */; };
 		DCB25602247660B400AE8255 /* ATTaskQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */; };
 		DCB25604247660B400AE8255 /* ATStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB25600247660B400AE8255 /* ATStringTest.m */; };
+		DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakTimerTest.m; sourceTree = "<group>"; };
 		DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTaskQueueTest.m; sourceTree = "<group>"; };
 		DCB25600247660B400AE8255 /* ATStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStringTest.m; sourceTree = "<group>"; };
+		DCEBE8402480A3B400AC13E1 /* NSDate+AppToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+AppToolbox.h"; sourceTree = "<group>"; };
+		DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AppToolbox.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +190,9 @@
 				DCB255BA24765D8900AE8255 /* Category */,
 				DCB255E024765D8900AE8255 /* Component */,
 				DCB255CD24765D8900AE8255 /* File */,
-				DCB255E324765D8900AE8255 /* Macro */,
+				DCEBE83F2480A24B00AC13E1 /* Http */,
 				DCB255D324765D8900AE8255 /* InstanceManager */,
+				DCB255E324765D8900AE8255 /* Macro */,
 				DCB255D024765D8900AE8255 /* Notification */,
 				DCB255DD24765D8900AE8255 /* Runtime */,
 				DCB255B224765D8900AE8255 /* TaskQueue */,
@@ -225,6 +229,8 @@
 				DCB255C524765D8900AE8255 /* NSArray+AppToolbox.m */,
 				DCB255C124765D8900AE8255 /* NSBundle+AppToolbox.h */,
 				DCB255CC24765D8900AE8255 /* NSBundle+AppToolbox.m */,
+				DCEBE8402480A3B400AC13E1 /* NSDate+AppToolbox.h */,
+				DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */,
 				DCB255C824765D8900AE8255 /* NSDateFormatter+AppToolbox.h */,
 				DCB255BF24765D8900AE8255 /* NSDateFormatter+AppToolbox.m */,
 				DCB255C924765D8900AE8255 /* NSDictionary+AppToolbox.h */,
@@ -318,6 +324,13 @@
 				DCB255E624765D8900AE8255 /* ATApiStrategy.m */,
 			);
 			path = ApiStrategy;
+			sourceTree = "<group>";
+		};
+		DCEBE83F2480A24B00AC13E1 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +439,7 @@
 				DCB255F324765D8A00AE8255 /* NSBundle+AppToolbox.m in Sources */,
 				DCB255EA24765D8A00AE8255 /* ATWeakProxy.m in Sources */,
 				DCB255F024765D8A00AE8255 /* NSArray+AppToolbox.m in Sources */,
+				DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */,
 				DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */,
 				DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */,
 				DC84FC95247F57B300A2A5AA /* ATCountdownObj.m in Sources */,
