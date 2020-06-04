@@ -42,6 +42,9 @@
             }
         }
     }
+    if (methodDescriptions != NULL) {
+        free(methodDescriptions);
+    }
 //    methodDescriptions = protocol_copyMethodDescriptionList(protocol, NO, YES, &methodCount);
 //    for (unsigned int index = 0; index < methodCount; index++) {
 //        struct objc_method_description description = methodDescriptions[index];
@@ -51,6 +54,9 @@
 //                return NO;
 //            }
 //        }
+//    }
+//    if (methodDescriptions != NULL) {
+//        free(methodDescriptions);
 //    }
     
     methodDescriptions = protocol_copyMethodDescriptionList(protocol, YES, NO, &methodCount);
@@ -63,6 +69,9 @@
             }
         }
     }
+    if (methodDescriptions != NULL) {
+        free(methodDescriptions);
+    }
 //    methodDescriptions = protocol_copyMethodDescriptionList(protocol, NO, NO, &methodCount);
 //    for (unsigned int index = 0; index < methodCount; index++) {
 //        struct objc_method_description description = methodDescriptions[index];
@@ -72,6 +81,9 @@
 //                return NO;
 //            }
 //        }
+//    }
+//    if (methodDescriptions != NULL) {
+//        free(methodDescriptions);
 //    }
     
     unsigned int protocolCount = 0;
@@ -85,6 +97,9 @@
                 return NO;
             }
         }
+    }
+    if (protocolList != NULL) {
+        free(protocolList);
     }
     
     return unRespondsMethods.count == 0;
@@ -121,6 +136,9 @@
             }
         }
     }
+    if (methodDescriptions != NULL) {
+        free(methodDescriptions);
+    }
 //    methodDescriptions = protocol_copyMethodDescriptionList(protocol, NO, YES, &methodCount);
 //    for (unsigned int index = 0; index < methodCount; index++) {
 //        struct objc_method_description description = methodDescriptions[index];
@@ -130,6 +148,9 @@
 //                return NO;
 //            }
 //        }
+//    }
+//    if (methodDescriptions != NULL) {
+//        free(methodDescriptions);
 //    }
     
     methodDescriptions = protocol_copyMethodDescriptionList(protocol, YES, NO, &methodCount);
@@ -142,6 +163,9 @@
             }
         }
     }
+    if (methodDescriptions != NULL) {
+        free(methodDescriptions);
+    }
 //    methodDescriptions = protocol_copyMethodDescriptionList(protocol, NO, NO, &methodCount);
 //    for (unsigned int index = 0; index < methodCount; index++) {
 //        struct objc_method_description description = methodDescriptions[index];
@@ -151,6 +175,9 @@
 //                return NO;
 //            }
 //        }
+//    }
+//    if (methodDescriptions != NULL) {
+//        free(methodDescriptions);
 //    }
     
     unsigned int protocolCount = 0;
@@ -164,6 +191,9 @@
                 return NO;
             }
         }
+    }
+    if (protocolList != NULL) {
+        free(protocolList);
     }
     
     return unRespondsMethods.count == 0;
