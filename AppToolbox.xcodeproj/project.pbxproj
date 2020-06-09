@@ -39,6 +39,7 @@
 		DCB25604247660B400AE8255 /* ATStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB25600247660B400AE8255 /* ATStringTest.m */; };
 		DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */; };
 		DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */; };
+		DCEBE8512484B1D700AC13E1 /* ATTimeWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8502484B1D700AC13E1 /* ATTimeWheel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AppToolbox.m"; sourceTree = "<group>"; };
 		DCEBE8442480A88300AC13E1 /* ATUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATUserDefaults.h; sourceTree = "<group>"; };
 		DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATUserDefaults.m; sourceTree = "<group>"; };
+		DCEBE84F2484B1D700AC13E1 /* ATTimeWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTimeWheel.h; sourceTree = "<group>"; };
+		DCEBE8502484B1D700AC13E1 /* ATTimeWheel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTimeWheel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +294,8 @@
 				DCB255DC24765D8900AE8255 /* ATWeakTimer.m */,
 				DC84FC93247F57B300A2A5AA /* ATCountdownObj.h */,
 				DC84FC94247F57B300A2A5AA /* ATCountdownObj.m */,
+				DCEBE84F2484B1D700AC13E1 /* ATTimeWheel.h */,
+				DCEBE8502484B1D700AC13E1 /* ATTimeWheel.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */,
 				DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */,
 				DCB255EC24765D8A00AE8255 /* NSDateFormatter+AppToolbox.m in Sources */,
+				DCEBE8512484B1D700AC13E1 /* ATTimeWheel.m in Sources */,
 				DCB255F224765D8A00AE8255 /* NSObject+AppToolbox.m in Sources */,
 				DCB255F924765D8A00AE8255 /* ATWeakTimer.m in Sources */,
 			);
