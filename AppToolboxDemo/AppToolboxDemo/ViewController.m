@@ -14,6 +14,7 @@
 #import "ATNotificationDemo.h"
 #import "ATCountdownObjDemo.h"
 #import "ATTimeWheelDemo.h"
+#import "ATRuntimeDemo.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -174,8 +175,12 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
         [[[ATCountdownObjDemo alloc] init] demo];
     }];
     
-    [self addItem:@"ATTimeWheel" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+    [self addItem:@"TimeWheel" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
         [[[ATTimeWheelDemo alloc] init] demo];
+    }];
+    
+    [self addItem:@"Runtime" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATRuntimeDemo alloc] init] demo];
     }];
     
     [self makeSectionList];

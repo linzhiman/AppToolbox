@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC18DD9324887E3E00F49513 /* ATTimeWheelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC18DD9224887E3E00F49513 /* ATTimeWheelDemo.m */; };
+		DC4A8EDA248F81FC00800009 /* ATRuntimeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4A8ED9248F81FC00800009 /* ATRuntimeDemo.m */; };
 		DC84FC98247F5BAE00A2A5AA /* ATCountdownObjDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */; };
 		DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4C2476679400DCF84F /* ATApiStrategyDemo.m */; };
 		DC92FC562476679400DCF84F /* ATNotificationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4D2476679400DCF84F /* ATNotificationDemo.m */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		DC18DD9124887E3E00F49513 /* ATTimeWheelDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTimeWheelDemo.h; sourceTree = "<group>"; };
 		DC18DD9224887E3E00F49513 /* ATTimeWheelDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTimeWheelDemo.m; sourceTree = "<group>"; };
+		DC4A8ED8248F81FC00800009 /* ATRuntimeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeDemo.h; sourceTree = "<group>"; };
+		DC4A8ED9248F81FC00800009 /* ATRuntimeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeDemo.m; sourceTree = "<group>"; };
 		DC84FC96247F5BAE00A2A5AA /* ATCountdownObjDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCountdownObjDemo.h; sourceTree = "<group>"; };
 		DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCountdownObjDemo.m; sourceTree = "<group>"; };
 		DC92FC4B2476679400DCF84F /* ATComponentDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATComponentDemo.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				DC84FC97247F5BAE00A2A5AA /* ATCountdownObjDemo.m */,
 				DC18DD9124887E3E00F49513 /* ATTimeWheelDemo.h */,
 				DC18DD9224887E3E00F49513 /* ATTimeWheelDemo.m */,
+				DC4A8ED8248F81FC00800009 /* ATRuntimeDemo.h */,
+				DC4A8ED9248F81FC00800009 /* ATRuntimeDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				DC92FC552476679400DCF84F /* ATApiStrategyDemo.m in Sources */,
 				DC84FC98247F5BAE00A2A5AA /* ATCountdownObjDemo.m in Sources */,
 				DC92FC582476679400DCF84F /* ATProtocolManagerDemo.m in Sources */,
+				DC4A8EDA248F81FC00800009 /* ATRuntimeDemo.m in Sources */,
 				DC18DD9324887E3E00F49513 /* ATTimeWheelDemo.m in Sources */,
 				DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */,
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
