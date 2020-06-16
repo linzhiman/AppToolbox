@@ -51,6 +51,7 @@
 /* Begin PBXFileReference section */
 		DC18DD9124887E3E00F49513 /* ATTimeWheelDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATTimeWheelDemo.h; sourceTree = "<group>"; };
 		DC18DD9224887E3E00F49513 /* ATTimeWheelDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATTimeWheelDemo.m; sourceTree = "<group>"; };
+		DC3D008924989CCA00602DEE /* YYModel性能优化的几个Tip.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "YYModel性能优化的几个Tip.md"; sourceTree = "<group>"; };
 		DC4A8ED8248F81FC00800009 /* ATRuntimeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATRuntimeDemo.h; sourceTree = "<group>"; };
 		DC4A8ED9248F81FC00800009 /* ATRuntimeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeDemo.m; sourceTree = "<group>"; };
 		DC84FC96247F5BAE00A2A5AA /* ATCountdownObjDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCountdownObjDemo.h; sourceTree = "<group>"; };
@@ -90,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC3D008524989C0D00602DEE /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				DC3D008924989CCA00602DEE /* YYModel性能优化的几个Tip.md */,
+			);
+			name = Doc;
+			path = ../Doc;
+			sourceTree = "<group>";
+		};
 		DC92FC4A2476679400DCF84F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		DCB2557E2476585900AE8255 = {
 			isa = PBXGroup;
 			children = (
+				DC3D008524989C0D00602DEE /* Doc */,
 				DCB255A32476597D00AE8255 /* AppToolbox.xcodeproj */,
 				DCB255892476585900AE8255 /* AppToolboxDemo */,
 				DCB255882476585900AE8255 /* Products */,
