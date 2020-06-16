@@ -15,6 +15,11 @@ void myMethodIMP(id self, SEL _cmd)
     NSLog(@"myMethodIMP");
 }
 
+void MyEnumerationMutationHandler(id obj)
+{
+    NSLog(@"MyEnumerationMutationHandler %@", obj);
+}
+
 @protocol IDemoProtocol <NSObject>
 
 - (void)demo;
@@ -98,6 +103,7 @@ void myMethodIMP(id self, SEL _cmd)
     [self workingWithSelectors];
     [self workingWithProtocols];
     [self workingWithProperties];
+    [self usingObjectiveCLanguageFeatures];
 }
 
 - (void)workingWithClasses
@@ -923,5 +929,59 @@ void myMethodIMP(id self, SEL _cmd)
 //    copyAttributeValue _propertyA
 }
 
+- (void)usingObjectiveCLanguageFeatures
+{
+//    objc_enumerationMutation
+//    Inserted by the compiler when a mutation is detected during a foreach iteration.
+//    The compiler inserts this function when it detects that an object is mutated during a foreach iteration. The function is called when a mutation occurs, and the enumeration mutation handler is enacted if it is set up (via the objc_setEnumerationMutationHandler function). If the handler is not set up, a fatal error occurs.
+    
+//    objc_setEnumerationMutationHandler
+//    !still crash
+    objc_setEnumerationMutationHandler(MyEnumerationMutationHandler);
+    
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@1, @2, @3, nil];
+    for (NSNumber *tmp in array) {
+        NSLog(@"enumeration %@", tmp);
+//        [array addObject:@4];
+    }
+//    *** Terminating app due to uncaught exception 'NSGenericException', reason: '*** Collection <__NSArrayM: 0x600000043360> was mutated while being enumerated.'
+    
+//    imp_implementationWithBlock
+//    Creates a pointer to a function that calls the specified block when the method is called.
+//    The block that implements this method. The signature of block should be method_return_type ^(id self, self, method_args …). The selector of the method is not available to block. block is copied with Block_copy().
+    id block = ^(id self, id value) {
+        NSLog(@"block %@", value);
+    };
+    IMP block_imp = imp_implementationWithBlock(block);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    class_addMethod([self class], @selector(testBlock:), block_imp, "v@:@");
+    [self performSelector:@selector(testBlock:) withObject:@"123"];
+//    block 123
+#pragma clang diagnostic pop
+    
+//    imp_getBlock
+//    Returns the block associated with an IMP that was created using imp_implementationWithBlock.
+    id getBlock = imp_getBlock(block_imp);
+    ((void(^)(id, id))getBlock)(self, @(789));
+//    block 789
+    
+//    imp_removeBlock
+//    Disassociates a block from an IMP that was created using imp_implementationWithBlock, and releases the copy of the block that was created.
+    NSLog(@"removeBlock %d", imp_removeBlock(block_imp));
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+//    [self performSelector:@selector(testBlock:) withObject:@"123"];
+//    !crash
+#pragma clang diagnostic pop
+    
+//    objc_loadWeak
+//    Loads the object referenced by a weak pointer and returns it.
+//    This function loads the object referenced by a weak pointer and returns it after retaining and autoreleasing the object. As a result, the object stays alive long enough for the caller to use it. This function is typically used anywhere a __weak variable is used in an expression.
+    
+//    objc_storeWeak
+//    Stores a new value in a __weak variable.
+//    This function is typically used anywhere a __weak variable is the target of an assignment.
+}
 
 @end
