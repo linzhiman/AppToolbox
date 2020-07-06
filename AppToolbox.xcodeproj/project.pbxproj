@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4B1CCB24AD89D400FD01C8 /* ATEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B1CCA24AD89D400FD01C8 /* ATEventBus.m */; };
 		DC84FC7B247CFA2E00A2A5AA /* ATRuntimeUtilsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC7A247CFA2E00A2A5AA /* ATRuntimeUtilsTest.m */; };
 		DC84FC92247F486C00A2A5AA /* ATGCDTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC91247F486C00A2A5AA /* ATGCDTimerTest.m */; };
 		DC84FC95247F57B300A2A5AA /* ATCountdownObj.m in Sources */ = {isa = PBXBuildFile; fileRef = DC84FC94247F57B300A2A5AA /* ATCountdownObj.m */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC4B1CC924AD89D400FD01C8 /* ATEventBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATEventBus.h; sourceTree = "<group>"; };
+		DC4B1CCA24AD89D400FD01C8 /* ATEventBus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATEventBus.m; sourceTree = "<group>"; };
 		DC84FC7A247CFA2E00A2A5AA /* ATRuntimeUtilsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATRuntimeUtilsTest.m; sourceTree = "<group>"; };
 		DC84FC91247F486C00A2A5AA /* ATGCDTimerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATGCDTimerTest.m; sourceTree = "<group>"; };
 		DC84FC93247F57B300A2A5AA /* ATCountdownObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCountdownObj.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 			children = (
 				DCB255D224765D8900AE8255 /* ATBlockNotificationCenter.h */,
 				DCB255D124765D8900AE8255 /* ATBlockNotificationCenter.m */,
+				DC4B1CC924AD89D400FD01C8 /* ATEventBus.h */,
+				DC4B1CCA24AD89D400FD01C8 /* ATEventBus.m */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */,
 				DCB255FC24765D8A00AE8255 /* ATApiStrategy.m in Sources */,
 				DCB255F524765D8A00AE8255 /* ATBlockNotificationCenter.m in Sources */,
+				DC4B1CCB24AD89D400FD01C8 /* ATEventBus.m in Sources */,
 				DC84FC95247F57B300A2A5AA /* ATCountdownObj.m in Sources */,
 				DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */,
 				DCB255FB24765D8A00AE8255 /* ATComponentService.m in Sources */,

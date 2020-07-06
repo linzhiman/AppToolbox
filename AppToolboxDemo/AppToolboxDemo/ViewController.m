@@ -15,6 +15,7 @@
 #import "ATCountdownObjDemo.h"
 #import "ATTimeWheelDemo.h"
 #import "ATRuntimeDemo.h"
+#import "ATEventBusDemo.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -181,6 +182,10 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     
     [self addItem:@"Runtime" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
         [[[ATRuntimeDemo alloc] init] demo];
+    }];
+    
+    [self addItem:@"EventBus" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
+        [[[ATEventBusDemo alloc] init] demo];
     }];
     
     [self makeSectionList];
