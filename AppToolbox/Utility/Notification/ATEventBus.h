@@ -14,19 +14,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 单例对象
 #define AT_EVENT_BUS [ATEventBus sharedObject]
 
-#define AT_EB_EVENT_TYPE(atName) metamacro_concat(ATEB_EVENT_, atName)
-#define AT_EB_ACTION_TYPE(atName) metamacro_concat(ATEB_ACTION_, atName)
+#define AT_EB_NAME_PREFIX @"ATEB_"
+#define AT_EB_DATA_TYPE(atName) metamacro_concat(ATEB_DATA_, atName)
 
 /// 声明自定义事件
 /// AT_EB_DECLARE(kName, int, a);
 #define AT_EB_DECLARE(atName, ...) \
-    @class AT_EB_EVENT_TYPE(atName); \
-    typedef void(^AT_EB_ACTION_TYPE(atName))(AT_EB_EVENT_TYPE(atName) *event); \
+    AT_STRING_EXTERN(atName); \
+    @class AT_EB_DATA_TYPE(atName); \
     AT_EB_DECLARE_INTERFACE(atName, AT_PROPERTY_DECLARE(__VA_ARGS__), __VA_ARGS__) \
-    typedef AT_EB_EVENT_TYPE(atName) atName;
 
 #define AT_EB_DECLARE_INTERFACE(atName, atPropertys, ...) \
-    @interface AT_EB_EVENT_TYPE(atName) : ATEBUserEvent \
+    @interface AT_EB_DATA_TYPE(atName) : NSObject \
     atPropertys \
     + (void)metamacro_concat(post##_, AT_SELECTOR_ARGS(__VA_ARGS__)); \
     @end \
@@ -34,25 +33,25 @@ NS_ASSUME_NONNULL_BEGIN
 /// 定义自定义事件
 /// AT_EB_DEFINE(kName, int, a);
 #define AT_EB_DEFINE(atName, ...) \
+    AT_STRING_DEFINE_VALUE(atName, AT_EB_NAME_PREFIX#atName); \
     AT_EB_DEFINE_IMPLEMENTATION(atName, __VA_ARGS__) \
     { \
-        AT_EB_EVENT_TYPE(atName) *obj = [AT_EB_EVENT_TYPE(atName) new]; \
+        AT_EB_DATA_TYPE(atName) *obj = [AT_EB_DATA_TYPE(atName) new]; \
         AT_PROPERTY_SET_VALUE(__VA_ARGS__) \
-        [ATEventBusUserAdapter postEvent:obj]; \
+        ATEBEvent *event = [ATEBEvent eventWithName:atName]; \
+        [event post_data:obj]; \
     } \
     @end \
 
 #define AT_EB_DEFINE_IMPLEMENTATION(atName, ...) \
-    @implementation AT_EB_EVENT_TYPE(atName) \
+    @implementation AT_EB_DATA_TYPE(atName) \
     + (void)metamacro_concat(post##_, AT_SELECTOR_ARGS(__VA_ARGS__))
 
 /// 订阅/取消订阅自定义事件
 /// [AT_EB_USER_EVENT(kName).observer(self) reg:^(ATEB_EVENT_kName * _Nonnull event) {}];
 /// AT_EB_USER_EVENT(kName).observer(self).unReg();
 #define AT_EB_USER_EVENT(atName) \
-    _AT_EB_USER_EVENT(AT_EB_EVENT_TYPE(atName))
-#define _AT_EB_USER_EVENT(atClass) \
-    [ATEBObserverBuilder<atClass *> builderWithEvent:[atClass new]]
+    [ATEBObserverBuilder<AT_EB_DATA_TYPE(atName) *> builderWithEvent:[ATEBEvent eventWithName:atName]]
 
 /// 声明系统事件（NSNotification）
 /// AT_EXTERN_NOTIFICATION(kSysName);
@@ -64,9 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// [AT_EB_SYS_EVENT(kSysName).observer(self) reg:^(ATEBSysEvent * _Nonnull event) {}];
 /// AT_EB_SYS_EVENT(kSysName).observer(self).unReg();
 #define AT_EB_SYS_EVENT(atName) \
-    _AT_EB_SYS_EVENT(atName)
-#define _AT_EB_SYS_EVENT(atName) \
-    [ATEBObserverBuilder<ATEBSysEvent *> builderWithEvent:[ATEBSysEvent eventWithName:atName]]
+    [ATEBObserverBuilder<NSDictionary *> builderWithEvent:[ATEBEvent eventWithName:atName]]
 
 /// 取消所有订阅，一般不需要使用，内部弱引用observer
 /// [AT_EVENT_BUS unRegAllEvent:self];
@@ -74,16 +71,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 触发自定义事件
 /// [AT_EB_USER_BUS(kName) post_a:0];
 #define AT_EB_USER_BUS(atName) \
-    AT_EB_EVENT_TYPE(atName)
+    AT_EB_DATA_TYPE(atName)
 
 /// 触发系统事件
 /// [AT_EB_SYS_BUS() post_name:kSysName userInfo:@{@"data":@(0)}];
-#define AT_EB_SYS_BUS() \
-    ATEventBusSysAdapter
+#define AT_EB_SYS_BUS(atName) \
+    [ATEBEvent<NSDictionary *> eventWithName:atName]
 
 @protocol IATEBEvent <NSObject>
 
 - (NSString *)eventId;
+- (BOOL)sysEvent;
+- (id)data;
 
 @end
 
@@ -93,25 +92,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/// 自定义事件
-@interface ATEBUserEvent : NSObject<IATEBEvent>
-
-@end
-
-/// 系统事件（NSNotification）
-@interface ATEBSysEvent : NSObject<IATEBEvent>
-
-@property (nullable, nonatomic, strong, readonly) NSDictionary *userInfo;
+@interface ATEBEvent<T> : NSObject<IATEBEvent>
 
 + (instancetype)eventWithName:(NSString *)name;
-+ (instancetype)eventWithName:(NSString *)name userInfo:(nullable NSDictionary *)userInfo;
++ (instancetype)eventWithName:(NSString *)name data:(nullable T)data;
+
+@property (nonatomic, strong, readonly) T data;
+
+- (void)post_data:(T)data;
 
 @end
 
 /// 订阅/取消订阅参数构造器，支持点语法，链式调用
 @interface ATEBObserverBuilder<T> : NSObject
 
-typedef void (^ATEBObserverBuilderBlock)(T event);
+typedef void (^ATEBObserverBuilderBlock)(ATEBEvent<T> *event);
 
 @property (nonatomic, copy, readonly) ATEBObserverBuilder<T> *(^observer)(id);
 @property (nonatomic, copy, readonly) ATEBObserverBuilder<T> *(^atQueue)(dispatch_queue_t); // 暂不支持
@@ -124,20 +119,6 @@ typedef void (^ATEBObserverBuilderBlock)(T event);
 - (id<IATEBEventToken>)forceReg:(ATEBObserverBuilderBlock)action; // 同上
 
 + (ATEBObserverBuilder<T> *)builderWithEvent:(id<IATEBEvent>)event;
-
-@end
-
-/// 触发自定义事件桥接器，内部使用，触发事件请使用AT_EB_USER_BUS
-@interface ATEventBusUserAdapter : NSObject
-
-+ (void)postEvent:(id<IATEBEvent>)event;
-
-@end
-
-/// 触发系统事件（NSNotification）桥接器，内部使用，触发事件请使用AT_EB_SYS_BUS
-@interface ATEventBusSysAdapter : NSObject
-
-+ (void)post_name:(NSString *)name userInfo:(nullable NSDictionary *)userInfo;
 
 @end
 

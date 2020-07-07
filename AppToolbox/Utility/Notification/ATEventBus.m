@@ -12,46 +12,56 @@
 
 @protocol IATEBEvent;
 
-@interface ATEBUserEvent ()
+typedef void (^ATEventBusAction)(id<IATEBEvent> event);
+
+@interface ATEventBus (Private)
+
+- (void)regEvent:(id<IATEBEvent>)event observer:(id)observer action:(ATEventBusAction)action;
+
+- (void)unRegEvent:(id<IATEBEvent>)event observer:(id)observer;
+
+- (void)postEvent:(id<IATEBEvent>)event;
 
 @end
 
-@implementation ATEBUserEvent
-
-- (NSString *)eventId
-{
-    return NSStringFromClass(self.class);
-}
-
-@end
-
-@interface ATEBSysEvent ()
+@interface ATEBEvent ()
 
 @property (nonatomic, strong) NSString *name;
-@property (nullable, nonatomic, strong) NSDictionary *userInfo;
+@property (nullable, nonatomic, strong) id data;
 
 @end
 
-@implementation ATEBSysEvent
+@implementation ATEBEvent
 
 + (instancetype)eventWithName:(NSString *)name
 {
-    ATEBSysEvent *tmp = [ATEBSysEvent new];
+    ATEBEvent *tmp = [ATEBEvent new];
     tmp.name = name;
     return tmp;
 }
 
-+ (instancetype)eventWithName:(NSString *)name userInfo:(nullable NSDictionary *)userInfo
++ (instancetype)eventWithName:(NSString *)name data:(nullable id)data
 {
-    ATEBSysEvent *tmp = [ATEBSysEvent new];
+    ATEBEvent *tmp = [ATEBEvent new];
     tmp.name = name;
-    tmp.userInfo = userInfo;
+    tmp.data = data;
     return tmp;
 }
 
 - (NSString *)eventId
 {
     return self.name;
+}
+
+- (BOOL)sysEvent
+{
+    return ![self.name hasPrefix:AT_EB_NAME_PREFIX];
+}
+
+- (void)post_data:(id)data
+{
+    self.data = data;
+    [AT_EVENT_BUS postEvent:self];
 }
 
 @end
@@ -136,8 +146,6 @@
 }
 
 @end
-
-typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 
 @interface ATEventMap : NSObject
 
@@ -308,23 +316,13 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 
 @end
 
-@interface ATEventBus (Private)
-
-- (void)regEvent:(id<IATEBEvent>)event observer:(id)observer action:(ATEventBusAction)action;
-
-- (void)unRegEvent:(id<IATEBEvent>)event observer:(id)observer;
-
-- (void)postEvent:(id<IATEBEvent>)event;
-
-@end
-
-@interface ATEBObserverBuilder<T> ()
+@interface ATEBObserverBuilder ()
 
 @property (nonatomic, strong) id anObserver;
 @property (nonatomic, strong) id<IATEBEvent> anEvent;
 @property (nonatomic, strong) dispatch_queue_t aQueue;
 
-@property (nonatomic, copy, readonly) ATEBObserverBuilder<T>  *(^event)(id<IATEBEvent>);
+@property (nonatomic, copy, readonly) ATEBObserverBuilder *(^event)(id<IATEBEvent>);
 
 @end
 
@@ -391,25 +389,6 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 
 @end
 
-@implementation ATEventBusUserAdapter
-
-+ (void)postEvent:(id<IATEBEvent>)event;
-{
-    [AT_EVENT_BUS postEvent:event];
-}
-
-@end
-
-@implementation ATEventBusSysAdapter
-
-+ (void)post_name:(NSString *)name userInfo:(nullable NSDictionary *)userInfo;
-{
-    ATEBSysEvent *event = [ATEBSysEvent eventWithName:name userInfo:userInfo];
-    [AT_EVENT_BUS postEvent:event];
-}
-
-@end
-
 @interface ATEventBus ()
 
 @property (nonatomic, strong) ATEventMap *sysEvents;
@@ -468,12 +447,12 @@ AT_IMPLEMENT_SINGLETON(ATEventBus);
     }
     
     NSString *eventId = [event eventId];
-    if ([event isKindOfClass:[ATEBSysEvent class]]) {
+    if (event.sysEvent) {
         [self.sysEvents add:eventId observer:observer action:action];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:eventId object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification:) name:eventId object:nil];
     }
-    else if ([event isKindOfClass:[ATEBUserEvent class]]) {
+    else {
         [self.userEvents add:eventId observer:observer action:action];
     }
 }
@@ -485,13 +464,13 @@ AT_IMPLEMENT_SINGLETON(ATEventBus);
     }
     
     NSString *eventId = [event eventId];
-    if ([event isKindOfClass:[ATEBSysEvent class]]) {
+    if (event.sysEvent) {
         BOOL noObserver = [self.sysEvents remove:eventId observer:observer];
         if (noObserver) {
             [[NSNotificationCenter defaultCenter] removeObserver:observer name:eventId object:nil];
         }
     }
-    else if ([event isKindOfClass:[ATEBUserEvent class]]) {
+    else {
         [self.userEvents remove:eventId observer:observer];
     }
 }
@@ -503,17 +482,17 @@ AT_IMPLEMENT_SINGLETON(ATEventBus);
     }
     
     NSString *eventId = [event eventId];
-    if ([event isKindOfClass:[ATEBSysEvent class]]) {
+    if (event.sysEvent) {
         if ([NSThread isMainThread]) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:eventId object:self userInfo:((ATEBSysEvent *)event).userInfo];
+            [[NSNotificationCenter defaultCenter] postNotificationName:eventId object:self userInfo:event.data];
         }
         else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [[NSNotificationCenter defaultCenter] postNotificationName:eventId object:self userInfo:((ATEBSysEvent *)event).userInfo];
+                [[NSNotificationCenter defaultCenter] postNotificationName:eventId object:self userInfo:event.data];
             });
         }
     }
-    else if ([event isKindOfClass:[ATEBUserEvent class]]) {
+    else {
         for (ATEventBusAction action in [self.userEvents actions:eventId]) {
             AT_SAFETY_CALL_BLOCK(action, event);
         }
@@ -523,7 +502,7 @@ AT_IMPLEMENT_SINGLETON(ATEventBus);
 - (void)onNotification:(NSNotification *)notification
 {
     NSString *eventId = notification.name;
-    ATEBSysEvent *event = [ATEBSysEvent eventWithName:eventId userInfo:notification.userInfo];
+    ATEBEvent *event = [ATEBEvent eventWithName:eventId data:notification.userInfo];
     for (ATEventBusAction action in [self.sysEvents actions:eventId]) {
         AT_SAFETY_CALL_BLOCK(action, event);
     }
