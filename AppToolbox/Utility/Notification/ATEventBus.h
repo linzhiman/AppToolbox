@@ -9,10 +9,44 @@
 #import <Foundation/Foundation.h>
 #import "ATGlobalMacro.h"
 
-NS_ASSUME_NONNULL_BEGIN
+/**
+类型安全的事件总线
+- 假设需要定义一个名字为kName的事件，具有2个参数，第一个参数类型int，第二个参数类型为NSString*
+- 头文件添加申明
+        AT_EB_DECLARE(kName, int, a, NSString *, b)
+- 实现文件添加定义
+        AT_EB_DEFINE(kName, int, a, NSString *, b)
+- 订阅事件
+        [AT_EB_EVENT(kName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
+- 取消订阅
+        AT_EB_EVENT(kName).observer(self).unReg();
+- 取消所有订阅，注意不会取消强力订阅，一般不需要调用，内部弱引用observer
+        [[ATEventBus sharedObject] unRegAllEvent:self];
+- 强力订阅和取消
+        self.eventToken = [AT_EB_EVENT(kName).observer(self) forceReg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
+        [self.eventToken dispose];
+- 触发事件
+        [AT_EB_BUS(kName) post_a:123 b:@"abc"];
+ 
+兼容NSNotification：
+- 声明系统事件
+        AT_EXTERN_NOTIFICATION(kSysName);
+- 定义系统事件
+        AT_DECLARE_NOTIFICATION(kSysName);
+- 订阅事件
+        [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
+- 取消订阅
+        AT_EB_EVENT_SYS(kSysName).observer(self).unReg();
+ - 取消所有订阅，注意不会取消强力订阅，一般不需要调用，内部弱引用observer
+        [[ATEventBus sharedObject] unRegAllEvent:self];
+- 强力订阅和取消
+        self.eventToken = [AT_EB_EVENT_SYS(kSysName).observer(self) forceReg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
+        [self.eventToken dispose];
+- 触发事件
+        [AT_EB_BUS_SYS(kSysName) post_data:@{}];
+ */
 
-/// 单例对象
-#define AT_EVENT_BUS [ATEventBus sharedObject]
+NS_ASSUME_NONNULL_BEGIN
 
 #define AT_EB_NAME_PREFIX @"ATEB_"
 #define AT_EB_DATA_TYPE(atName) metamacro_concat(ATEB_DATA_, atName)
@@ -48,35 +82,37 @@ NS_ASSUME_NONNULL_BEGIN
     + (void)metamacro_concat(post##_, AT_SELECTOR_ARGS(__VA_ARGS__))
 
 /// 订阅/取消订阅自定义事件
-/// [AT_EB_USER_EVENT(kName).observer(self) reg:^(ATEB_EVENT_kName * _Nonnull event) {}];
-/// AT_EB_USER_EVENT(kName).observer(self).unReg();
-#define AT_EB_USER_EVENT(atName) \
+/// [AT_EB_EVENT(kName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
+/// AT_EB_EVENT(kName).observer(self).unReg();
+#define AT_EB_EVENT(atName) \
     [ATEBObserverBuilder<AT_EB_DATA_TYPE(atName) *> builderWithEvent:[ATEBEvent eventWithName:atName]]
 
-/// 声明系统事件（NSNotification）
-/// AT_EXTERN_NOTIFICATION(kSysName);
-
-/// 定义系统事件（NSNotification）
-/// AT_DECLARE_NOTIFICATION(kSysName);
-
-/// 订阅/取消订阅系统事件（NSNotification）
-/// [AT_EB_SYS_EVENT(kSysName).observer(self) reg:^(ATEBSysEvent * _Nonnull event) {}];
-/// AT_EB_SYS_EVENT(kSysName).observer(self).unReg();
-#define AT_EB_SYS_EVENT(atName) \
-    [ATEBObserverBuilder<NSDictionary *> builderWithEvent:[ATEBEvent eventWithName:atName]]
-
-/// 取消所有订阅，一般不需要使用，内部弱引用observer
-/// [AT_EVENT_BUS unRegAllEvent:self];
-
 /// 触发自定义事件
-/// [AT_EB_USER_BUS(kName) post_a:0];
-#define AT_EB_USER_BUS(atName) \
+/// [AT_EB_BUS(kName) post_a:0];
+#define AT_EB_BUS(atName) \
     AT_EB_DATA_TYPE(atName)
 
+/// 兼容NSNotification：
+
+/// 声明系统事件
+/// AT_EXTERN_NOTIFICATION(kSysName);
+
+/// 定义系统事件
+/// AT_DECLARE_NOTIFICATION(kSysName);
+
+/// 订阅/取消订阅系统事件
+/// [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
+/// AT_EB_EVENT_SYS(kSysName).observer(self).unReg();
+#define AT_EB_EVENT_SYS(atName) \
+    [ATEBObserverBuilder<NSDictionary *> builderWithEvent:[ATEBEvent eventWithName:atName]]
+
 /// 触发系统事件
-/// [AT_EB_SYS_BUS() post_name:kSysName userInfo:@{@"data":@(0)}];
-#define AT_EB_SYS_BUS(atName) \
+/// [AT_EB_BUS_SYS(kSysName) post_data:@{}];
+#define AT_EB_BUS_SYS(atName) \
     [ATEBEvent<NSDictionary *> eventWithName:atName]
+
+/// 取消所有订阅，一般不需要使用，内部弱引用observer
+/// [[ATEventBus sharedObject] unRegAllEvent:self];
 
 @protocol IATEBEvent <NSObject>
 

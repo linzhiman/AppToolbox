@@ -46,33 +46,33 @@ AT_DECLARE_NOTIFICATION(kSysName2);
 
 - (void)regEvent
 {
-    [AT_EB_USER_EVENT(kEBName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kEBName *> * _Nonnull event) {
+    [AT_EB_EVENT(kEBName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kEBName *> * _Nonnull event) {
         NSLog(@"ATEventBusTest user event %@ %@", event.eventId, @(event.data.a));
     }];
-    [AT_EB_USER_EVENT(kEBName2).observer(self) reg:^(ATEBEvent<ATEB_DATA_kEBName2 *> * _Nonnull event) {
+    [AT_EB_EVENT(kEBName2).observer(self) reg:^(ATEBEvent<ATEB_DATA_kEBName2 *> * _Nonnull event) {
         NSLog(@"ATEventBusTest user event %@ %@", event.eventId, @(event.data.b));
     }];
-    [AT_EB_SYS_EVENT(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
+    [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
         NSLog(@"ATEventBusTest sys event %@ %@", event.eventId, event.data);
     }];
-    [AT_EB_SYS_EVENT(kSysName2).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
+    [AT_EB_EVENT_SYS(kSysName2).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
         NSLog(@"ATEventBusTest sys event %@ %@", event.eventId, event.data);
     }];
 
-    self.eventToken = [AT_EB_USER_EVENT(kEBName).observer(self) forceReg:^(ATEBEvent<ATEB_DATA_kEBName *> * _Nonnull event) {
+    self.eventToken = [AT_EB_EVENT(kEBName).observer(self) forceReg:^(ATEBEvent<ATEB_DATA_kEBName *> * _Nonnull event) {
         NSLog(@"ATEventBusTest user force event %@ %@", event.eventId, @(event.data.a));
     }];
-    self.eventToken2 = [AT_EB_SYS_EVENT(kSysName).observer(self) forceReg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
+    self.eventToken2 = [AT_EB_EVENT_SYS(kSysName).observer(self) forceReg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {
         NSLog(@"ATEventBusTest sys force event %@ %@", event.eventId, event.data);
     }];
 }
 
 - (void)unRegEvent
 {
-    AT_EB_USER_EVENT(kEBName).observer(self).unReg();
-    AT_EB_USER_EVENT(kEBName2).observer(self).unReg();
-    AT_EB_SYS_EVENT(kSysName).observer(self).unReg();
-    AT_EB_SYS_EVENT(kSysName2).observer(self).unReg();
+    AT_EB_EVENT(kEBName).observer(self).unReg();
+    AT_EB_EVENT(kEBName2).observer(self).unReg();
+    AT_EB_EVENT_SYS(kSysName).observer(self).unReg();
+    AT_EB_EVENT_SYS(kSysName2).observer(self).unReg();
     
     [self.eventToken dispose];
     [self.eventToken2 dispose];
@@ -107,10 +107,10 @@ AT_DECLARE_NOTIFICATION(kSysName2);
 
 - (void)post:(int)num
 {
-    [AT_EB_USER_BUS(kEBName) post_a:num];
-    [AT_EB_USER_BUS(kEBName2) post_b:num];
-    [AT_EB_SYS_BUS(kSysName) post_data:@{@"data":@(num)}];
-    [AT_EB_SYS_BUS(kSysName2) post_data:@{@"data":@(num)}];
+    [AT_EB_BUS(kEBName) post_a:num];
+    [AT_EB_BUS(kEBName2) post_b:num];
+    [AT_EB_BUS_SYS(kSysName) post_data:@{@"data":@(num)}];
+    [AT_EB_BUS_SYS(kSysName2) post_data:@{@"data":@(num)}];
 }
 
 @end

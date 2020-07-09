@@ -61,7 +61,7 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 - (void)post_data:(id)data
 {
     self.data = data;
-    [AT_EVENT_BUS postEvent:self];
+    [[ATEventBus sharedObject] postEvent:self];
 }
 
 @end
@@ -74,7 +74,7 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 
 - (void)dispose
 {
-    [AT_EVENT_BUS unRegAllEvent:self];
+    [[ATEventBus sharedObject] unRegAllEvent:self];
 }
 
 @end
