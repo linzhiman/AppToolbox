@@ -119,10 +119,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// AT_BN_DECLARE(kName, int, a, NSString *, b)
 /// Block类型为^(ATBNkNameObj * _Nonnull obj) {}
-/// 参数支持内置类型添加到obj属性，自定义类型需定义HANDLER宏，否则编译失败
-/// 编译失败提示：Unknown type name 'AT_PROPERTY_DECLARE_HANDLER_xxx'
-/// HANDLER宏：#define AT_PROPERTY_DECLARE_HANDLER_xxx AT_PROPERTY_DECLARE_STRONG xxx
-/// 通用系统类型在ATGlobalMacro.h添加，自定义类型在app工程中添加，建议添加一个公用文件并加入预编译便于使用
 #define AT_BN_DECLARE(atName, ...) \
     @class ATBN##atName##Obj; \
     typedef void(^AT_BN_BLOCK_TYPE(atName))(ATBN##atName##Obj *obj); \
@@ -130,7 +126,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// AT_BN_DECLARE_NO_OBJ(kName, int, a, NSString *, b)
 /// Block类型为^(int a, NSString * b) {}
-/// 参数支持所有类型，参数列表改动将导致所有订阅代码需要改动，一般用于自定义obj类型
 #define AT_BN_DECLARE_NO_OBJ(atName, ...) \
     typedef void(^AT_BN_BLOCK_TYPE(atName))(AT_PAIR_CONCAT_ARGS(__VA_ARGS__)); \
     AT_BN_DECLARE_BASE(atName, , __VA_ARGS__)

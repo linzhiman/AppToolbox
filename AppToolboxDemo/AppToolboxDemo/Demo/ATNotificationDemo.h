@@ -25,9 +25,8 @@ AT_BN_DECLARE(kName8, int, a, NSString *, b, id, c, id, d, id, e, id, f, id, g, 
 @property (nonatomic, assign) BOOL test;
 @end
 
-//#define UseObj
+#define UseObj
 #ifdef UseObj
-#define AT_PROPERTY_DECLARE_HANDLER_ATNotificationTest AT_PROPERTY_DECLARE_STRONG ATNotificationTest
 AT_BN_DECLARE(kName9, ATNotificationTest *, test);
 #else
 AT_BN_DECLARE_NO_OBJ(kName9, ATNotificationTest *, test);
