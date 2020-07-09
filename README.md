@@ -1,73 +1,30 @@
 # AppToolbox
 
-## ATEventBus
+## ATEventBus-类型安全的事件总线
 
-OC类型安全的基于block的事件总线，自动生成参数模型，支持Xcode代码提示，兼容NSNotification
-
-使用说明：
-
-- 假设需要定义一个名字为kName的事件，具有2个参数，第一个参数类型int，第二个参数类型为NSString*
-
-- 头文件添加申明
-
-        AT_EB_DECLARE(kName, int, a, NSString *, b)
+        OC类型安全的基于block的事件总线，自动生成参数模型，支持Xcode代码提示，兼容NSNotification
         
-- 实现文件添加定义
+## BlockNotificationCenter-类型安全的通知中心（Deprecated, use ATEventBus）
 
-        AT_EB_DEFINE(kName, int, a, NSString *, b)
+[设计及使用说明](http://linzhiman.github.io/2019/08/29/BlockNotificationCenter-类型安全的通知中心.html)
 
-- 订阅事件，通过event.data的属性访问事件参数
+## ATInstanceManager-简单模块管理
 
-        [AT_EB_EVENT(kName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {
-                event.data.a;
-                event.data.b;
-        }];
+        通过identifier标识和缓存对象，支持分组，不关心对象类型
+        提供便利使用的宏，将identifier限定为对象的类名，使用者可以不关心identifier
+
+## ATProtocolManager-基于协议的模块管理
+
+        通过protocol标识模块，支持懒加载，支持分组，线程安全
+
+## ATTaskQueue-任务队列
+
+        支持并发或者串行执行任务，支持触发所有或者只触发一个任务，支持手动结束任务，支持优先级
+      
+## ATComponentService-组件中间件
+
+[设计及使用说明](http://linzhiman.github.io/2017/07/07/一种iOS组件化方案.html)
+
+        基于字符串的弱类型调用。ComponentName[NSString]定位组件，Command[NSString]指定方法，Argument[NSDictionary]指定参数，Callback[Block]指定回调方法。
         
-- 取消订阅
-
-        AT_EB_EVENT(kName).observer(self).unReg();
-        
-- 取消所有订阅，注意不会取消强力订阅，一般不需要调用，内部弱引用observer
-
-        [[ATEventBus sharedObject] unRegAllEvent:self];
-        
-- 强力订阅和取消
-
-        self.eventToken = [AT_EB_EVENT(kName).observer(self) forceReg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
-        [self.eventToken dispose];
-        
-- 触发事件
-
-        [AT_EB_BUS(kName) post_a:123 b:@"abc"];
- 
-兼容NSNotification：
-
-- 声明系统事件
-
-        AT_EXTERN_NOTIFICATION(kSysName);或自行声明NSString
-        
-- 定义系统事件
-
-        AT_DECLARE_NOTIFICATION(kSysName);或自行定义NSString
-        
-- 订阅事件
-
-        [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
-        
-- 取消订阅
-
-        AT_EB_EVENT_SYS(kSysName).observer(self).unReg();
-        
- - 取消所有订阅，注意不会取消强力订阅，一般不需要调用，内部弱引用observer
- 
-        [[ATEventBus sharedObject] unRegAllEvent:self];
-        
-- 强力订阅和取消
-
-        self.eventToken = [AT_EB_EVENT_SYS(kSysName).observer(self) forceReg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
-        [self.eventToken dispose];
-        
-- 触发事件
-
-        [AT_EB_BUS_SYS(kSysName) post_data:@{}];
         
