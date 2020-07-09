@@ -11,12 +11,13 @@
 
 /**
 类型安全的事件总线
+ 
 - 假设需要定义一个名字为kName的事件，具有2个参数，第一个参数类型int，第二个参数类型为NSString*
 - 头文件添加申明
         AT_EB_DECLARE(kName, int, a, NSString *, b)
 - 实现文件添加定义
         AT_EB_DEFINE(kName, int, a, NSString *, b)
-- 订阅事件
+- 订阅事件，通过event.data的属性访问事件参数
         [AT_EB_EVENT(kName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
 - 取消订阅
         AT_EB_EVENT(kName).observer(self).unReg();
@@ -30,9 +31,9 @@
  
 兼容NSNotification：
 - 声明系统事件
-        AT_EXTERN_NOTIFICATION(kSysName);
+        AT_EXTERN_NOTIFICATION(kSysName);或自行声明NSString
 - 定义系统事件
-        AT_DECLARE_NOTIFICATION(kSysName);
+        AT_DECLARE_NOTIFICATION(kSysName);或自行定义NSString
 - 订阅事件
         [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
 - 取消订阅
@@ -81,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
     @implementation AT_EB_DATA_TYPE(atName) \
     + (void)metamacro_concat(post##_, AT_SELECTOR_ARGS(__VA_ARGS__))
 
-/// 订阅/取消订阅自定义事件
+/// 订阅/取消订阅自定义事件，通过event.data的属性访问事件参数
 /// [AT_EB_EVENT(kName).observer(self) reg:^(ATEBEvent<ATEB_DATA_kName *> * _Nonnull event) {}];
 /// AT_EB_EVENT(kName).observer(self).unReg();
 #define AT_EB_EVENT(atName) \
@@ -100,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 定义系统事件
 /// AT_DECLARE_NOTIFICATION(kSysName);
 
-/// 订阅/取消订阅系统事件
+/// 订阅/取消订阅系统事件，event.data即notification.userInfo
 /// [AT_EB_EVENT_SYS(kSysName).observer(self) reg:^(ATEBEvent<NSDictionary *> * _Nonnull event) {}];
 /// AT_EB_EVENT_SYS(kSysName).observer(self).unReg();
 #define AT_EB_EVENT_SYS(atName) \
