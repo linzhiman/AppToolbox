@@ -98,7 +98,7 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
     {{
         NSArray *modules = [self.insManager instancesInGroup:kATInstanceDefaultGroup];
         for (id<ATModuleProtocol> tmp in modules) {
-            if ([tmp respondsToSelector:@selector(initModule)]) {
+            if ([tmp respondsToSelector:@selector(uninitModule)]) {
                 [tmp uninitModule];
             }
         }
@@ -107,7 +107,7 @@ AT_IMPLEMENT_SINGLETON(ATModuleManagerEx)
     {{
         NSArray *modules = [self.insManager instancesInGroup:kATInstanceGroup1];
         for (id<ATModuleProtocol> tmp in modules) {
-            if ([tmp respondsToSelector:@selector(initModule)]) {
+            if ([tmp respondsToSelector:@selector(uninitModule)]) {
                 [tmp uninitModule];
             }
         }
