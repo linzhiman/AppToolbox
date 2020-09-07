@@ -27,7 +27,7 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 @interface ATEBEvent ()
 
 @property (nonatomic, strong) NSString *name;
-@property (nullable, nonatomic, strong) id data;
+@property (nullable, nonatomic, strong) id userData;
 
 @end
 
@@ -44,7 +44,7 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
 {
     ATEBEvent *tmp = [ATEBEvent new];
     tmp.name = name;
-    tmp.data = data;
+    tmp.userData = data;
     return tmp;
 }
 
@@ -58,9 +58,14 @@ typedef void (^ATEventBusAction)(id<IATEBEvent> event);
     return ![self.name hasPrefix:AT_EB_NAME_PREFIX];
 }
 
+- (id)data
+{
+    return self.userData;
+}
+
 - (void)post_data:(id)data
 {
-    self.data = data;
+    self.userData = data;
     [[ATEventBus sharedObject] postEvent:self];
 }
 
