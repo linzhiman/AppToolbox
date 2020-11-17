@@ -41,20 +41,25 @@ def get_dir_size(dir_path):
 
 def get_all_path_size(file_dir, dic_path_size, exclude_dir_list):
     for file in os.listdir(file_dir):
-        if file in exclude_dir_list:
+        file_decode = file
+        try:
+            file_decode = file.encode('cp437').decode('utf-8')
+        except:
+            file_decode = file.encode('utf-8').decode('utf-8')
+        if file_decode in exclude_dir_list:
             continue
         file_path = os.path.join(file_dir, file)
         if os.path.isdir(file_path):
-            dic_path_size[file] = get_dir_size(file_path)
+            dic_path_size[file_decode] = get_dir_size(file_path)
         else:
-            dic_path_size[file] = get_file_size(file_path)
+            dic_path_size[file_decode] = get_file_size(file_path)
 
 
 def write_html_begin(version):
     if not os.path.exists('./trackIPASize/'):
         os.mkdir('./trackIPASize/')
     html_file_path = './trackIPASize/trackIPASize%s.html' % version
-    file = open(html_file_path, 'w+')
+    file = open(html_file_path, 'w+', encoding='utf-8')
     file.write('<html><meta http-equiv="Content-Type" content="text/html; charset=utf-8">')
     file.write('<head><title>trackIPASize</title></head><body>')
     return file
@@ -173,4 +178,6 @@ def do(app_name, file_url, exclude_dir_list, cur_version, pre_version):
     shutil.rmtree(unzip_file_path)
 
 
-do('WooHoo', 'http://repo.yypm.com/dwbuild/mobile/ios/WooHoo/WOOHOO-IOS_1.0.0_REVIEW12/20190929-12-rfe3e3f00c501cf1af8920a573c7359297813368c/WooHoo.ipa', [], '1.0.0', '0.0.1')
+do('QingYu',
+   'http://repo.yy.com/dwbuild/mobile/ios/xunyin/XUNYIN-IOS_4.28.1_REVIEW2/20201106-123-rd73cee3096c1bcd6b4a0ca69ef099a65365b0e9a/xunyin.ipa',
+   [], '4.28.1', '4.28.0')
