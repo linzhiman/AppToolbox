@@ -58,7 +58,7 @@
 {
     if (self.fluid == nil) {
         self.fluid = [ATApiFluidStrategy new];
-        self.fluid.delaySeconds = 3;
+        self.fluid.delayMs = 3000;
         self.fluid.doWork = ^(ATApiFluidStrategy * _Nonnull apiStrategy) {
             NSLog(@"fluid doWork");
         };

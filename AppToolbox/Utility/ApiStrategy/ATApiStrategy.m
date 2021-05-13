@@ -25,7 +25,7 @@
 {
     self = [super init];
     if (self) {
-        _delaySeconds = 5;
+        _delayMs = 5000;
         _lastFluidTimestamp = 0;
     }
     return self;
@@ -38,11 +38,11 @@
 
 - (void)fluid
 {
-    NSUInteger delaySeconds = self.delaySeconds;
-    NSTimeInterval timestamp = self.lastFluidTimestamp;
+    NSUInteger delayMs = self.delayMs;
+    NSTimeInterval lastTimestamp = self.lastFluidTimestamp;
     
-    NSTimeInterval offset = [[NSDate date] timeIntervalSince1970] - timestamp;
-    if (offset > delaySeconds) {
+    NSTimeInterval remain = delayMs - ([[NSDate date] timeIntervalSince1970] - lastTimestamp) * 1000;
+    if (remain <= 0) {
         [self callDoWork];
     }
     else {
@@ -53,17 +53,22 @@
         }
         
         if (need) {
-            [self performSelector:@selector(callDoWork) withObject:nil afterDelay:delaySeconds];
+            [self performSelector:@selector(callDoWork) withObject:nil afterDelay:remain];
         }
     }
 }
 
-- (void)callDoWork
+- (void)cancel
 {
     self.hasPerform = NO;
     self.lastFluidTimestamp = [[NSDate date] timeIntervalSince1970];
     
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
+- (void)callDoWork
+{
+    [self cancel];
 
     AT_SAFETY_CALL_BLOCK(self.doWork, self);
 }
@@ -310,6 +315,7 @@
 - (void)completeSucceed:(BOOL)succeed
 {
     if (succeed) {
+        AT_SAFETY_CALL_BLOCK(self.finish, self, self.retryCount);
         self.retryCount = -1;
         return;
     }
@@ -317,6 +323,7 @@
     self.retryCount++;
     
     if (self.retryCount > self.maxRetryCount) {
+        AT_SAFETY_CALL_BLOCK(self.finish, self, self.retryCount);
         return;
     }
     

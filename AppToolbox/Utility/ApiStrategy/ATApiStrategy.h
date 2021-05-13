@@ -39,11 +39,14 @@ typedef void (^ATApiFluidStrategyDoWork)(ATApiFluidStrategy *apiStrategy);
 @interface ATApiFluidStrategy : NSObject
 
 @property (nonatomic, strong) id userInfo;
-@property (nonatomic, assign) NSUInteger delaySeconds;
+@property (nonatomic, assign) NSUInteger delayMs;
 @property (nonatomic, copy) ATApiFluidStrategyDoWork doWork;
 
-/// 触发计时，调用后延迟delaySeconds后回调doWork，期间的其他fluid调用会被吃掉
+/// 触发计时，调用后延迟delayMs后回调doWork，期间的其他fluid调用会被吃掉
 - (void)fluid;
+
+/// 取消正在延迟的调用
+- (void)cancel;
 
 @end
 
@@ -142,6 +145,7 @@ typedef void (^ATApiRetryStrategyDoWork)(ATApiRetryStrategy *apiStrategy, NSUInt
 @property (nonatomic, assign) NSUInteger maxRetryCount;
 @property (nonatomic, assign) ATApiRetryStrategyPolicy retryPolicy;
 @property (nonatomic, copy) ATApiRetryStrategyDoWork doWork;
+@property (nonatomic, copy) ATApiRetryStrategyDoWork finish;
 
 /**
  @brief 开始执行，初始时直接回调doWork，完成时需调用completeSucceed设置执行结果
