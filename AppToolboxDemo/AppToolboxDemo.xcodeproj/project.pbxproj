@@ -16,6 +16,7 @@
 		DC92FC572476679400DCF84F /* ATInstanceManagerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4E2476679400DCF84F /* ATInstanceManagerDemo.m */; };
 		DC92FC582476679400DCF84F /* ATProtocolManagerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC4F2476679400DCF84F /* ATProtocolManagerDemo.m */; };
 		DC92FC592476679400DCF84F /* ATComponentDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92FC512476679400DCF84F /* ATComponentDemo.m */; };
+		DCA8A08127F5349100F9D13D /* ATWaterfallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8A08027F5349100F9D13D /* ATWaterfallLayoutViewController.m */; };
 		DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2558B2476585900AE8255 /* AppDelegate.m */; };
 		DCB255922476585900AE8255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255912476585900AE8255 /* ViewController.m */; };
 		DCB255952476585900AE8255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB255932476585900AE8255 /* Main.storyboard */; };
@@ -69,6 +70,8 @@
 		DC92FC522476679400DCF84F /* ATApiStrategyDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATApiStrategyDemo.h; sourceTree = "<group>"; };
 		DC92FC532476679400DCF84F /* ATProtocolManagerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATProtocolManagerDemo.h; sourceTree = "<group>"; };
 		DC92FC542476679400DCF84F /* ATInstanceManagerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATInstanceManagerDemo.h; sourceTree = "<group>"; };
+		DCA8A07F27F5349100F9D13D /* ATWaterfallLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATWaterfallLayoutViewController.h; sourceTree = "<group>"; };
+		DCA8A08027F5349100F9D13D /* ATWaterfallLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATWaterfallLayoutViewController.m; sourceTree = "<group>"; };
 		DCB255872476585900AE8255 /* AppToolboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppToolboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB2558A2476585900AE8255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCB2558B2476585900AE8255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				DC4A8ED9248F81FC00800009 /* ATRuntimeDemo.m */,
 				DC4B1CCC24ADC54C00FD01C8 /* ATEventBusDemo.h */,
 				DC4B1CCD24ADC54C00FD01C8 /* ATEventBusDemo.m */,
+				DCA8A07F27F5349100F9D13D /* ATWaterfallLayoutViewController.h */,
+				DCA8A08027F5349100F9D13D /* ATWaterfallLayoutViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				DCB2558C2476585900AE8255 /* AppDelegate.m in Sources */,
 				DC4B1CCE24ADC54C00FD01C8 /* ATEventBusDemo.m in Sources */,
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
+				DCA8A08127F5349100F9D13D /* ATWaterfallLayoutViewController.m in Sources */,
 				DC92FC572476679400DCF84F /* ATInstanceManagerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

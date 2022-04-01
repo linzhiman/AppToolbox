@@ -213,7 +213,6 @@
 				DCB255E024765D8900AE8255 /* Component */,
 				DCEBE8432480A80700AC13E1 /* Config */,
 				DCB255CD24765D8900AE8255 /* File */,
-				DCEBE83F2480A24B00AC13E1 /* Http */,
 				DCB255D324765D8900AE8255 /* InstanceManager */,
 				DCB255E324765D8900AE8255 /* Macro */,
 				DCB255D024765D8900AE8255 /* Notification */,
@@ -351,13 +350,6 @@
 				DCB255E624765D8900AE8255 /* ATApiStrategy.m */,
 			);
 			path = ApiStrategy;
-			sourceTree = "<group>";
-		};
-		DCEBE83F2480A24B00AC13E1 /* Http */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Http;
 			sourceTree = "<group>";
 		};
 		DCEBE8432480A80700AC13E1 /* Config */ = {

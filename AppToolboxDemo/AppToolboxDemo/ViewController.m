@@ -16,6 +16,7 @@
 #import "ATTimeWheelDemo.h"
 #import "ATRuntimeDemo.h"
 #import "ATEventBusDemo.h"
+#import "ATWaterfallLayoutViewController.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -140,10 +141,13 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
 {
     _dataList = [NSMutableArray new];
     
+    AT_WEAKIFY_SELF;
+    
     /// =========================== 基础工具控件 ==================================
 
-    [self addItem:@"UI" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        ;;
+    [self addItem:@"WaterfallLayout" inSectionType:ATDemoSectionTypeUI clickCallback:^{
+        ATWaterfallLayoutViewController *tmp = [ATWaterfallLayoutViewController new];
+        [weak_self presentViewController:tmp animated:YES completion:nil];
     }];
     
     /// =========================== 测试页面 ==================================
