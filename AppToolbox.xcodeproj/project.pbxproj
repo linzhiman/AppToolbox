@@ -39,6 +39,8 @@
 		DCB25601247660B400AE8255 /* ATWeakTimerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */; };
 		DCB25602247660B400AE8255 /* ATTaskQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */; };
 		DCB25604247660B400AE8255 /* ATStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB25600247660B400AE8255 /* ATStringTest.m */; };
+		DCB908CD27F70CED00C62FAF /* ATScrollTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB908CC27F70CED00C62FAF /* ATScrollTabView.m */; };
+		DCB908D027F7122600C62FAF /* UIView+ATFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB908CF27F7122600C62FAF /* UIView+ATFrame.m */; };
 		DCEBE8422480A3B400AC13E1 /* NSDate+AppToolbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */; };
 		DCEBE8462480A88300AC13E1 /* ATUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8452480A88300AC13E1 /* ATUserDefaults.m */; };
 		DCEBE8512484B1D700AC13E1 /* ATTimeWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEBE8502484B1D700AC13E1 /* ATTimeWheel.m */; };
@@ -127,6 +129,10 @@
 		DCB255FD247660B400AE8255 /* ATWeakTimerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATWeakTimerTest.m; sourceTree = "<group>"; };
 		DCB255FE247660B400AE8255 /* ATTaskQueueTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTaskQueueTest.m; sourceTree = "<group>"; };
 		DCB25600247660B400AE8255 /* ATStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATStringTest.m; sourceTree = "<group>"; };
+		DCB908CB27F70CED00C62FAF /* ATScrollTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATScrollTabView.h; sourceTree = "<group>"; };
+		DCB908CC27F70CED00C62FAF /* ATScrollTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATScrollTabView.m; sourceTree = "<group>"; };
+		DCB908CE27F7122600C62FAF /* UIView+ATFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ATFrame.h"; sourceTree = "<group>"; };
+		DCB908CF27F7122600C62FAF /* UIView+ATFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATFrame.m"; sourceTree = "<group>"; };
 		DCEBE8402480A3B400AC13E1 /* NSDate+AppToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+AppToolbox.h"; sourceTree = "<group>"; };
 		DCEBE8412480A3B400AC13E1 /* NSDate+AppToolbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AppToolbox.m"; sourceTree = "<group>"; };
 		DCEBE8442480A88300AC13E1 /* ATUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATUserDefaults.h; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 			children = (
 				DC33419F27F1CAF900BA340E /* ATCollectionViewWaterfallLayout.h */,
 				DC3341A027F1CAF900BA340E /* ATCollectionViewWaterfallLayout.m */,
+				DCB908CB27F70CED00C62FAF /* ATScrollTabView.h */,
+				DCB908CC27F70CED00C62FAF /* ATScrollTabView.m */,
+				DCB908CE27F7122600C62FAF /* UIView+ATFrame.h */,
+				DCB908CF27F7122600C62FAF /* UIView+ATFrame.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -457,8 +467,10 @@
 				DCB255F824765D8A00AE8255 /* ATGCDTimer.m in Sources */,
 				DCB255EB24765D8A00AE8255 /* NSDictionary+AppToolbox.m in Sources */,
 				DCB255682476564900AE8255 /* AppToolbox.m in Sources */,
+				DCB908CD27F70CED00C62FAF /* ATScrollTabView.m in Sources */,
 				DCB255F724765D8A00AE8255 /* ATInstanceManager.m in Sources */,
 				DCB255F424765D8A00AE8255 /* ATFileManager.m in Sources */,
+				DCB908D027F7122600C62FAF /* UIView+ATFrame.m in Sources */,
 				DCB255EF24765D8A00AE8255 /* UIColor+AppToolbox.m in Sources */,
 				DCB255FA24765D8A00AE8255 /* ATRuntimeUtils.m in Sources */,
 				DCB255EE24765D8A00AE8255 /* NSString+AppToolbox.m in Sources */,

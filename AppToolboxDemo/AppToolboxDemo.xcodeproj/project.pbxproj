@@ -24,6 +24,7 @@
 		DCB2559A2476585B00AE8255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB255982476585B00AE8255 /* LaunchScreen.storyboard */; };
 		DCB2559D2476585B00AE8255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2559C2476585B00AE8255 /* main.m */; };
 		DCB255AF24765A1100AE8255 /* libAppToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB255A92476597D00AE8255 /* libAppToolbox.a */; };
+		DCBA125E27F7E28A00D62F63 /* ATScrollTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		DCB2559B2476585B00AE8255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCB2559C2476585B00AE8255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCB255A32476597D00AE8255 /* AppToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppToolbox.xcodeproj; path = ../AppToolbox.xcodeproj; sourceTree = "<group>"; };
+		DCBA125C27F7E28A00D62F63 /* ATScrollTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATScrollTabViewController.h; sourceTree = "<group>"; };
+		DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATScrollTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				DC4B1CCD24ADC54C00FD01C8 /* ATEventBusDemo.m */,
 				DCA8A07F27F5349100F9D13D /* ATWaterfallLayoutViewController.h */,
 				DCA8A08027F5349100F9D13D /* ATWaterfallLayoutViewController.m */,
+				DCBA125C27F7E28A00D62F63 /* ATScrollTabViewController.h */,
+				DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				DC4B1CCE24ADC54C00FD01C8 /* ATEventBusDemo.m in Sources */,
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
 				DCA8A08127F5349100F9D13D /* ATWaterfallLayoutViewController.m in Sources */,
+				DCBA125E27F7E28A00D62F63 /* ATScrollTabViewController.m in Sources */,
 				DC92FC572476679400DCF84F /* ATInstanceManagerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppToolbox.AppToolboxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,6 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppToolbox.AppToolboxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

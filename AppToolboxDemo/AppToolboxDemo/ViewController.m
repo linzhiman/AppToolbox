@@ -17,6 +17,7 @@
 #import "ATRuntimeDemo.h"
 #import "ATEventBusDemo.h"
 #import "ATWaterfallLayoutViewController.h"
+#import "ATScrollTabViewController.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -147,6 +148,11 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
 
     [self addItem:@"WaterfallLayout" inSectionType:ATDemoSectionTypeUI clickCallback:^{
         ATWaterfallLayoutViewController *tmp = [ATWaterfallLayoutViewController new];
+        [weak_self presentViewController:tmp animated:YES completion:nil];
+    }];
+    
+    [self addItem:@"ScrollTab" inSectionType:ATDemoSectionTypeUI clickCallback:^{
+        ATScrollTabViewController *tmp = [ATScrollTabViewController new];
         [weak_self presentViewController:tmp animated:YES completion:nil];
     }];
     
