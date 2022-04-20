@@ -8,6 +8,7 @@
 
 #import "ATScrollTabViewController.h"
 #import "ATScrollTabView.h"
+#import "ATWaterfallLayoutViewController.h"
 
 @interface ATScrollTabViewController ()<ATScrollTabViewDelegate>
 
@@ -37,17 +38,17 @@
     self.scrollTabView =  scrollTabView;
     
     NSArray *titles = @[@"社会主义核心价值观", @"富强", @"民主文明", @"和谐自由平等", @"公正法治爱国敬业", @"诚信友善"];
-    UIViewController *content1 = [UIViewController new];
+    UIViewController *content1 = [ATWaterfallLayoutViewController new];
     content1.view.backgroundColor = UIColor.redColor;
-    UIViewController *content2 = [UIViewController new];
+    UIViewController *content2 = [ATWaterfallLayoutViewController new];
     content2.view.backgroundColor = UIColor.blueColor;
-    UIViewController *content3 = [UIViewController new];
+    UIViewController *content3 = [ATWaterfallLayoutViewController new];
     content3.view.backgroundColor = UIColor.greenColor;
-    UIViewController *content4 = [UIViewController new];
+    UIViewController *content4 = [ATWaterfallLayoutViewController new];
     content4.view.backgroundColor = UIColor.grayColor;
-    UIViewController *content5 = [UIViewController new];
+    UIViewController *content5 = [ATWaterfallLayoutViewController new];
     content5.view.backgroundColor = UIColor.yellowColor;
-    UIViewController *content6 = [UIViewController new];
+    UIViewController *content6 = [ATWaterfallLayoutViewController new];
     content6.view.backgroundColor = UIColor.brownColor;
     NSArray *contents = @[content1, content2, content3, content4, content5, content6];
     [scrollTabView setTitles:titles contents:contents];
