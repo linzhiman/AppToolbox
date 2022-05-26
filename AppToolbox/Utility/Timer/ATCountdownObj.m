@@ -120,3 +120,98 @@
 }
 
 @end
+
+
+@interface ATCountingObj()
+
+@property (nonatomic, assign) NSInteger counting;
+@property (nonatomic, strong) ATGCDTimer *timer;
+@property (nonatomic, assign) NSTimeInterval timestamp;
+@property (nonatomic, assign) BOOL delayStart;
+
+@end
+
+@implementation ATCountingObj
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onNotification:)
+                                                     name:UIApplicationDidBecomeActiveNotification object:nil];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)updateCountingMs:(NSUInteger)countingMs
+{
+    self.delayStart = NO;
+    
+    self.counting = countingMs / 1000;
+    self.timestamp = CACurrentMediaTime();
+    
+    double delay = countingMs % 1000 / 1000.0;
+    
+    if (delay == 0) {
+        [self startCounting];
+    }
+    else {
+        AT_SAFETY_CALL_BLOCK(self.cb, self.counting);
+        [self stopCounting];
+        
+        self.delayStart = YES;
+        AT_WEAKIFY_SELF;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if (weak_self.delayStart) {
+                weak_self.counting++;
+                [weak_self startCounting];
+            }
+        });
+    }
+}
+
+- (void)startCounting
+{
+    AT_WEAKIFY_SELF;
+    self.timer = [ATGCDTimer scheduleTimer:1 timeout:^{
+        [weak_self onTimeout];
+    } repeats:YES];
+    [self onTimeout];
+}
+
+- (void)stopCounting
+{
+    if (self.timer) {
+        [self.timer stop];
+        self.timer = nil;
+    }
+}
+
+- (void)onTimeout
+{
+    AT_SAFETY_CALL_BLOCK(self.cb, self.counting);
+    self.counting++;
+}
+
+- (void)onNotification:(NSNotification *)notification
+{
+    [self refreshCounting];
+}
+
+- (void)refreshCounting
+{
+    NSTimeInterval duration = CACurrentMediaTime() - self.timestamp;
+    if (duration < 0.1) {
+        duration = 0;
+    }
+    if (duration > self.counting) {
+        [self updateCountingMs:duration * 1000];
+    }
+}
+
+@end
