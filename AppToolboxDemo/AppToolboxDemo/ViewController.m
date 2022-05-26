@@ -121,6 +121,8 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
 
     [super viewDidLoad];
     
+    self.title = @"AppToolbox-Demo";
+    
     BEGIN_BIND_SECTION()
     
     BIND_SECTION_TITLE(ATDemoSectionTypeUtils, @"Utils"),
@@ -147,13 +149,11 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     /// =========================== 基础工具控件 ==================================
 
     [self addItem:@"WaterfallLayout" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        ATWaterfallLayoutViewController *tmp = [ATWaterfallLayoutViewController new];
-        [weak_self presentViewController:tmp animated:YES completion:nil];
+        [weak_self.navigationController pushViewController:[ATWaterfallLayoutViewController new] animated:YES];
     }];
     
     [self addItem:@"ScrollTab" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        ATScrollTabViewController *tmp = [ATScrollTabViewController new];
-        [weak_self presentViewController:tmp animated:YES completion:nil];
+        [weak_self.navigationController pushViewController:[ATScrollTabViewController new] animated:YES];
     }];
     
     /// =========================== 测试页面 ==================================
