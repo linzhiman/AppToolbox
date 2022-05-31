@@ -62,6 +62,12 @@ typedef NS_ENUM(NSUInteger, ATScrollTabTitleType) {
 @end
 
 
+@protocol IATScrollTabContent <NSObject>
+
+- (UIScrollView *)scrollTabContentScrollView;
+
+@end
+
 @class ATScrollTabContentView;
 @protocol ATScrollTabContentViewDelegate<NSObject>
 
@@ -69,21 +75,23 @@ typedef NS_ENUM(NSUInteger, ATScrollTabTitleType) {
 
 @end
 
+@class ATScrollTabView;
+
 @interface ATScrollTabContentView : UIView
 
 @property (nonatomic, weak) id<ATScrollTabContentViewDelegate>delegate;
 
+@property (nonatomic, weak) ATScrollTabView *scrollTabView;
 @property (nonatomic, strong, readonly) UIScrollView *scrollView;
 @property (nonatomic, assign, readonly) NSUInteger curIndex;
 @property (nonatomic, strong, readonly) UIViewController *curContent;
 
-- (void)setContents:(NSArray<UIViewController *> *)contents;
+- (void)setContents:(NSArray<UIViewController<IATScrollTabContent> *> *)contents;
 - (void)scrollToIndex:(NSUInteger)index;
 
 @end
 
 
-@class ATScrollTabView;
 @protocol ATScrollTabViewDelegate <NSObject>
 
 @optional
@@ -103,10 +111,12 @@ typedef NS_ENUM(NSUInteger, ATScrollTabTitleType) {
 @property (nonatomic, assign, readonly) NSUInteger curIndex;
 @property (nonatomic, strong, readonly) UIViewController *curContent;
 
+@property (nonatomic, strong, nullable) UIView *headerView; // 需指定高度
+@property (nonatomic, assign, readonly) CGFloat headerHeight;
 
 - (instancetype)initWithFrame:(CGRect)frame tabStyle:(nullable ATScrollTabStyle *)tabStyle;
 
-- (void)setTitles:(NSArray<NSString *> *)titles contents:(NSArray<UIViewController *> *)contents;
+- (void)setTitles:(NSArray<NSString *> *)titles contents:(NSArray<UIViewController<IATScrollTabContent> *> *)contents;
 
 - (void)scrollToTop;
 

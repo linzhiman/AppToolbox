@@ -113,6 +113,8 @@ AT_STRING_DEFINE(WaterfallFooter)
 {
     [super viewDidLoad];
     
+    self.title = @"WaterfallLayout";
+    
     ATCollectionViewWaterfallLayout *layout = [[ATCollectionViewWaterfallLayout alloc] init];
 
     layout.minimumLineSpacing = 20;
@@ -153,6 +155,11 @@ AT_STRING_DEFINE(WaterfallFooter)
         _city = @[@"city1.jpg", @"city2.jpg", @"city3.jpg", @"city4.jpg"];
     }
     return _city;
+}
+
+- (UIScrollView *)scrollTabContentScrollView
+{
+    return self.collectionView;
 }
 
 #pragma mark - UICollectionViewDataSource

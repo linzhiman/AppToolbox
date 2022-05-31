@@ -22,6 +22,8 @@
 {
     [super viewDidLoad];
     
+    self.title = @"ScrollTabView";
+    
     self.view.backgroundColor = UIColor.whiteColor;
     
     ATScrollTabStyle *style = [ATScrollTabStyle new];
@@ -52,6 +54,10 @@
     content6.view.backgroundColor = UIColor.brownColor;
     NSArray *contents = @[content1, content2, content3, content4, content5, content6];
     [scrollTabView setTitles:titles contents:contents];
+    
+    UIImageView *headerView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, 150)];
+    headerView.image = [UIImage imageNamed:@"banner"];
+    scrollTabView.headerView = headerView;
 }
 
 - (void)viewWillLayoutSubviews

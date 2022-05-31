@@ -9,6 +9,19 @@
 #import "ATScrollTabView.h"
 #import "UIView+ATFrame.h"
 #import "NSString+AppToolbox.h"
+#import "NSObject+AppToolbox.h"
+#import "ATWeakObject.h"
+#import <objc/runtime.h>
+
+NSMutableDictionary<NSString *, ATWeakObject *> *at_scrollTabViewData(void)
+{
+    static NSMutableDictionary<NSString *, ATWeakObject *> *sData;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sData = [NSMutableDictionary new];
+    });
+    return sData;
+}
 
 @implementation ATScrollTabStyle
 
@@ -239,7 +252,7 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) NSMutableSet<NSNumber *> *loadedViewIndexes;
 
-@property (nonatomic, strong) NSArray<UIViewController *> *contents;
+@property (nonatomic, strong) NSArray<UIViewController<IATScrollTabContent> *> *contents;
 @property (nonatomic, assign) NSUInteger curIndex;
 
 @end
@@ -282,7 +295,7 @@
     self.scrollView = scrollView;
 }
 
-- (void)setContents:(NSArray<UIViewController *> *)contents
+- (void)setContents:(NSArray<UIViewController<IATScrollTabContent> *> *)contents
 {
     for (NSNumber *index in self.loadedViewIndexes.allObjects) {
         [_contents[index.unsignedIntValue].view removeFromSuperview];
@@ -348,9 +361,18 @@
     CGFloat width = self.at_width;
     CGFloat height = self.at_height;
     
-    if (self.contents[index].view.superview != self.scrollView) {
-        self.contents[index].view.frame = CGRectMake(index * width, 0, width, height);
-        [self.scrollView addSubview:self.contents[index].view];
+    UIViewController<IATScrollTabContent> *curContent = self.contents[index];
+    if (curContent.view.superview != self.scrollView) {
+        curContent.view.frame = CGRectMake(index * width, 0, width, height);
+        [self.scrollView addSubview:curContent.view];
+        
+        UIScrollView *contentScrollView = nil;
+        if ([curContent respondsToSelector:@selector(scrollTabContentScrollView)]) {
+            contentScrollView = [curContent scrollTabContentScrollView];
+        }
+        if (contentScrollView != nil) {
+            [at_scrollTabViewData() setObject:[ATWeakObject objectWithTarget:self.scrollTabView] forKey:[ATWeakObject objectKey:contentScrollView]];
+        }
     }
     
     [self.loadedViewIndexes addObject:@(index)];
@@ -386,16 +408,82 @@
 @end
 
 
+@interface UIScrollView (ATScrollTabView)
+
+@end
+
+@implementation UIScrollView (ATScrollTabView)
+
+- (void)hook_notifyDidScroll
+{
+    [self hook_notifyDidScroll];
+    
+    ATWeakObject *tmp = [at_scrollTabViewData() objectForKey:[ATWeakObject objectKey:self]];
+    if (tmp != nil && tmp.target != nil) {
+        ATScrollTabView *scrollTabView = (ATScrollTabView *)tmp.target;
+        CGPoint contentOffset = scrollTabView.scrollView.contentOffset;
+        if (contentOffset.y < scrollTabView.headerHeight) {
+            CGPoint myOffset = self.contentOffset;
+            myOffset.y = 0;
+            self.contentOffset = myOffset;
+        }
+    }
+}
+
+@end
+
+
+@interface ATScrollTabScrollView : UIScrollView<UIGestureRecognizerDelegate>
+
+@end
+
+@implementation ATScrollTabScrollView
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
+
+@end
+
 @interface ATScrollTabView ()<UIScrollViewDelegate, ATScrollTabTitleViewDelegate, ATScrollTabContentViewDelegate>
 
 @property (nonatomic, strong) ATScrollTabStyle *tabStyle;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) ATScrollTabTitleView *titleView;
 @property (nonatomic, strong) ATScrollTabContentView *contentView;
+@property (nonatomic, assign) CGFloat headerHeight;
 
 @end
 
 @implementation ATScrollTabView
+
++ (void)load
+{
+    Class aClass = UIScrollView.class;
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL hookSEL = @selector(_notifyDidScroll);
+#pragma clang diagnostic pop
+    
+    SEL newSEL = @selector(hook_notifyDidScroll);
+    
+    Method hookMethod = class_getInstanceMethod(aClass, hookSEL);
+    Method newMethod = class_getInstanceMethod(aClass, newSEL);
+    
+    IMP hookImp = method_getImplementation(hookMethod);
+    IMP newImp = method_getImplementation(newMethod);
+    
+    const char *typeEncoding = method_getTypeEncoding(newMethod);
+    
+    if (class_addMethod(aClass, hookSEL, newImp, typeEncoding)) {
+        class_replaceMethod(aClass, newSEL, hookImp, typeEncoding);
+    }
+    else {
+        method_exchangeImplementations(hookMethod, newMethod);
+    }
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -420,15 +508,30 @@
     [super layoutSubviews];
     
     self.scrollView.frame = self.bounds;
-    self.scrollView.contentSize = self.bounds.size;
     
-    self.titleView.frame = CGRectMake(0, 0, self.at_width, self.tabStyle.titleHeight);
-    self.contentView.frame = CGRectMake(0, self.titleView.at_bottom, self.at_width, self.at_height - self.titleView.at_height);
+    CGFloat width = self.at_width;
+    
+    CGFloat headerHeight = 0;
+    if (self.headerView != nil) {
+        headerHeight = self.headerView.at_height;
+        self.headerView.frame = CGRectMake(0, 0, width, headerHeight);
+        
+        CGSize contentSize = self.bounds.size;
+        contentSize.height += headerHeight;
+        self.scrollView.contentSize = contentSize;
+    }
+    else {
+        self.scrollView.contentSize = self.bounds.size;
+    }
+    
+    self.titleView.frame = CGRectMake(0, headerHeight, width, self.tabStyle.titleHeight);
+    
+    self.contentView.frame = CGRectMake(0, self.titleView.at_bottom, width, self.at_height - self.tabStyle.titleHeight);
 }
 
 - (void)addSubviews
 {
-    UIScrollView *scrollView = [UIScrollView new];
+    UIScrollView *scrollView = [ATScrollTabScrollView new];
     scrollView.delegate = self;
     scrollView.bounces = YES;
     scrollView.alwaysBounceVertical = YES;
@@ -444,6 +547,7 @@
     
     self.contentView = [ATScrollTabContentView new];
     self.contentView.delegate = self;
+    self.contentView.scrollTabView = self;
     [self.scrollView addSubview:self.contentView];
 }
 
@@ -457,9 +561,12 @@
     return self.contentView.curContent;
 }
 
-- (void)setTitles:(NSArray<NSString *> *)titles contents:(NSArray<UIViewController *> *)contents
+- (void)setTitles:(NSArray<NSString *> *)titles contents:(NSArray<UIViewController<IATScrollTabContent> *> *)contents
 {
     NSAssert(titles.count == contents.count, @"tab数量要和content数量一致");
+    for (UIViewController<IATScrollTabContent> *tmp in contents) {
+        NSAssert([tmp respondsToSelector:@selector(scrollTabContentScrollView)], @"content未实现IATScrollTabContent协议");
+    }
     
     self.titleView.titles = titles;
     self.contentView.contents = contents;
@@ -470,16 +577,45 @@
     ;;
 }
 
+- (void)setHeaderView:(UIView *)headerView
+{
+    if (_headerView != nil) {
+        [_headerView removeFromSuperview];
+    }
+    _headerView = headerView;
+    if (headerView != nil) {
+        [self.scrollView addSubview:headerView];
+    }
+    self.scrollView.scrollEnabled = headerView != nil;
+    
+    self.headerHeight = headerView.at_height;
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
 #pragma mark - ScrollViewDelegate
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    ;
+    ;;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    ;
+    if (self.headerView == nil) {
+        return;
+    }
+    UIScrollView *target = nil;
+    if ([self.curContent respondsToSelector:@selector(scrollTabContentScrollView)]) {
+         target = [(UIViewController<IATScrollTabContent> *)self.curContent scrollTabContentScrollView];
+    }
+    CGPoint contentOffset = target.contentOffset;
+    if (contentOffset.y > 0) {
+        CGPoint myOffset = scrollView.contentOffset;
+        myOffset.y = _headerHeight;
+        scrollView.contentOffset = myOffset;
+    }
 }
 
 #pragma mark - ATScrollTabTitleViewDelegate
