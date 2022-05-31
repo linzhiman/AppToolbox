@@ -29,4 +29,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#define DEFINE_CATEGORY_PROPERTY_NUM(PType, PName, PSetter, PNumFun) \
+- (PType)PName \
+{ \
+    NSNumber *tmp = [self at_associatedObject:@#PName]; \
+    if (tmp != nil) { \
+        return tmp.PNumFun; \
+    } \
+    return 0; \
+} \
+- (void)PSetter:(PType)PName \
+{ \
+    [self at_setAssociatedObject:@(PName) key:@#PName]; \
+}
+
+#define DEFINE_CATEGORY_PROPERTY_OBJ(PType, PName, PSetter) \
+- (PType *)PName \
+{ \
+    return [self at_associatedObject:@#PName];; \
+} \
+- (void)PSetter:(PType *)PName \
+{ \
+    if (PName != nil) { \
+        [self at_setAssociatedObject:PName key:@#PName]; \
+    } \
+}
+
 NS_ASSUME_NONNULL_END
