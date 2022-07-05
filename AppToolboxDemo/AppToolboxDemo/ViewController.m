@@ -18,6 +18,7 @@
 #import "ATEventBusDemo.h"
 #import "ATWaterfallLayoutViewController.h"
 #import "ATScrollTabViewController.h"
+#import "ATPIPDemoViewController.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -154,6 +155,10 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     
     [self addItem:@"ScrollTab" inSectionType:ATDemoSectionTypeUI clickCallback:^{
         [weak_self.navigationController pushViewController:[ATScrollTabViewController new] animated:YES];
+    }];
+    
+    [self addItem:@"PictureInPicture" inSectionType:ATDemoSectionTypeUI clickCallback:^{
+        [weak_self.navigationController pushViewController:[ATPIPDemoViewController new] animated:YES];
     }];
     
     /// =========================== 测试页面 ==================================

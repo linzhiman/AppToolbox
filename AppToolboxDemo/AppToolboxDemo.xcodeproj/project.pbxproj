@@ -25,6 +25,7 @@
 		DCB2559D2476585B00AE8255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB2559C2476585B00AE8255 /* main.m */; };
 		DCB255AF24765A1100AE8255 /* libAppToolbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB255A92476597D00AE8255 /* libAppToolbox.a */; };
 		DCBA125E27F7E28A00D62F63 /* ATScrollTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */; };
+		DCDC20662872FF0F00705A72 /* ATPIPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDC20652872FF0F00705A72 /* ATPIPDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		DCB255A32476597D00AE8255 /* AppToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppToolbox.xcodeproj; path = ../AppToolbox.xcodeproj; sourceTree = "<group>"; };
 		DCBA125C27F7E28A00D62F63 /* ATScrollTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATScrollTabViewController.h; sourceTree = "<group>"; };
 		DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATScrollTabViewController.m; sourceTree = "<group>"; };
+		DCDC20642872FF0F00705A72 /* ATPIPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPIPDemoViewController.h; sourceTree = "<group>"; };
+		DCDC20652872FF0F00705A72 /* ATPIPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPIPDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				DCA8A08027F5349100F9D13D /* ATWaterfallLayoutViewController.m */,
 				DCBA125C27F7E28A00D62F63 /* ATScrollTabViewController.h */,
 				DCBA125D27F7E28A00D62F63 /* ATScrollTabViewController.m */,
+				DCDC20642872FF0F00705A72 /* ATPIPDemoViewController.h */,
+				DCDC20652872FF0F00705A72 /* ATPIPDemoViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				DCB2559D2476585B00AE8255 /* main.m in Sources */,
 				DCA8A08127F5349100F9D13D /* ATWaterfallLayoutViewController.m in Sources */,
 				DCBA125E27F7E28A00D62F63 /* ATScrollTabViewController.m in Sources */,
+				DCDC20662872FF0F00705A72 /* ATPIPDemoViewController.m in Sources */,
 				DC92FC572476679400DCF84F /* ATInstanceManagerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
