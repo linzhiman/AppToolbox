@@ -103,6 +103,11 @@ AT_STRING_DEFINE(WaterfallFooter)
 
 @implementation ATWaterfallLayoutViewController
 
++ (void)load
+{
+    REGISTER_UI_DEMO(@"WaterfallLayout", 300);
+}
+
 - (void)dealloc
 {
     _collectionView.delegate = nil;

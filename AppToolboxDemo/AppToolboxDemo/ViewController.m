@@ -7,18 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ATApiStrategyDemo.h"
-#import "ATComponentDemo.h"
-#import "ATInstanceManagerDemo.h"
-#import "ATProtocolManagerDemo.h"
-#import "ATNotificationDemo.h"
-#import "ATCountdownObjDemo.h"
-#import "ATTimeWheelDemo.h"
-#import "ATRuntimeDemo.h"
-#import "ATEventBusDemo.h"
-#import "ATWaterfallLayoutViewController.h"
-#import "ATScrollTabViewController.h"
-#import "ATPIPDemoViewController.h"
 
 typedef NS_ENUM(NSUInteger, ATDemoCellType) {
     ATDemoCellTypeDefault,
@@ -146,62 +134,22 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
     _dataList = [NSMutableArray new];
     
     AT_WEAKIFY_SELF;
-    
-    /// =========================== 基础工具控件 ==================================
 
-    [self addItem:@"WaterfallLayout" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        [weak_self.navigationController pushViewController:[ATWaterfallLayoutViewController new] animated:YES];
-    }];
-    
-    [self addItem:@"ScrollTab" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        [weak_self.navigationController pushViewController:[ATScrollTabViewController new] animated:YES];
-    }];
-    
-    [self addItem:@"PictureInPicture" inSectionType:ATDemoSectionTypeUI clickCallback:^{
-        [weak_self.navigationController pushViewController:[ATPIPDemoViewController new] animated:YES];
-    }];
-    
-    /// =========================== 测试页面 ==================================
-
-    [self addItem:@"ApiStrategy" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATApiStrategyDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"Component" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATComponentDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"InstanceManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATInstanceManagerDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"ProtocolManager" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATProtocolManagerDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"Notification" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATNotificationDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"Notification2" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATNotificationDemo2 alloc] init] demo];
-    }];
-    
-    [self addItem:@"CountdownObj" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATCountdownObjDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"TimeWheel" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATTimeWheelDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"Runtime" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATRuntimeDemo alloc] init] demo];
-    }];
-    
-    [self addItem:@"EventBus" inSectionType:ATDemoSectionTypeUtils clickCallback:^{
-        [[[ATEventBusDemo alloc] init] demo];
-    }];
+    NSArray<DemoItem *> *demoArray = [DemoManager defaultManager].demoArray;
+    for (DemoItem *item in demoArray) {
+        ATDemoSectionType type = ATDemoSectionTypeUtils;
+        if ([item.section isEqualToString:@"UI"]) {
+            type = ATDemoSectionTypeUI;
+        }
+        [self addItem:item.title inSectionType:type clickCallback:^{
+            if ([item.aClass isSubclassOfClass:UIViewController.class]) {
+                [weak_self.navigationController pushViewController:[item.aClass new] animated:YES];
+            }
+            else {
+                ;;
+            }
+        }];
+    }
     
     [self makeSectionList];
 }
@@ -309,7 +257,7 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
 - (void)makeSectionList
 {
     _sectionList = [[NSMutableArray alloc] init];
-    for (NSUInteger i = ATDemoSectionTypeUtils; i <= ATDemoSectionTypeEnd; i++) {
+    for (NSUInteger i = ATDemoSectionTypeUtils; i < ATDemoSectionTypeEnd; i++) {
         NSMutableArray *array = [[NSMutableArray alloc] init];
         [_dataList enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ATDemoConfig *model = obj;
@@ -317,9 +265,7 @@ static NSString * const ATDemoCellIdentifier = @"ATDemoCellIdentifier";
                 [array addObject:model];
             }
         }];
-        if (array.count > 0) {
-            [_sectionList addObject:array];
-        }
+        [_sectionList addObject:array];
     }
 }
 

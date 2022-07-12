@@ -131,3 +131,7 @@
 #define AT_PROPERTY_SET_VALUE(...) AT_PROPERTY_SET_VALUE_(__VA_ARGS__)
 
 // Property定义和赋值 <--
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

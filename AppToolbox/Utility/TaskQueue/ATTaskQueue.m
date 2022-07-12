@@ -15,7 +15,7 @@
 #define AT_TASK_NORMAL(atTask) ((ATTaskNormal *)atTask)
 #define AT_TASK_DELAY(atTask) ((ATTaskDelay *)atTask)
 
-NSUInteger ATTaskGenTaskId()
+NSUInteger ATTaskGenTaskId(void)
 {
     static NSUInteger taskId = 0;
     return ++taskId;

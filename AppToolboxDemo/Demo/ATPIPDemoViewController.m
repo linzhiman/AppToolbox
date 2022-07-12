@@ -67,6 +67,11 @@
 
 @implementation ATPIPDemoViewController
 
++ (void)load
+{
+    REGISTER_UI_DEMO(@"PictureInPicture", 500);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -18,6 +18,11 @@
 
 @implementation ATScrollTabViewController
 
++ (void)load
+{
+    REGISTER_UI_DEMO(@"ScrollTab", 400);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
